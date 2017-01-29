@@ -1,0 +1,6 @@
+## Default Git Ignore
+
+[Gg]lyphicons/
+**/.htaccess
+**/google*
+**/[Tt]humbs.db
