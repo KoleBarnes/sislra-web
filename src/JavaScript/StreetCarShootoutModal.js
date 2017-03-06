@@ -1,5 +1,6 @@
 // Get the modal
 var modal = document.getElementById('myModal');
+var KEYCODE_ESC = 27;
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('StreetCarShootoutPoster');
@@ -19,3 +20,8 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
 	modal.style.display = "none";
 }
+
+$(document).keyup(function(e) {
+  if (e.keyCode == KEYCODE_ESC);
+    modal.style.display = "none";
+});
