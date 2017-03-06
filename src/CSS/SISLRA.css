@@ -38,7 +38,7 @@ ul {
 
 #schedule {
 	list-style-type: decimal;
-	margin-left: 35px;	
+	margin-left: 32px;	
 }
 
 #PointsUpdate:after {
@@ -148,14 +148,21 @@ h6 {
 }
  
 #center {
-   margin-left: 300px;
-   margin-right: 300px;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+}
+
+#centerRacerInfo {
+  margin-left: 350px;
+  margin-right: 80px;
+  text-align: center;
 }
 
 #centerSponsors {
 	background-color: #000;
-    margin-left: 300px;
-    margin-right: 300px;
+  margin-left: 300px;
+  margin-right: 300px;
 	text-align: center;
 }
 
@@ -183,7 +190,7 @@ h6 {
 	margin-top: 5px;
 	background-color: #202020;
 	border-radius: 3px 3px 0px 0px;
-	color: #FF0;
+  color: #FC0;
 	z-index: 1; 
 	position:relative
 }
@@ -211,7 +218,7 @@ h6 {
 
 .footer-section {
 	display:table-cell;
-    width: 30%;
+  width: 30%;
 	font-size: 20px;
 }
 
@@ -338,11 +345,6 @@ h6 {
     to { transform:rotate(360deg); }
 }
 
-/* ------------- Center ------------- */
-#center {
-    text-align: center;
-}
-
 /* ------------- Contact Us Table ------------- */
 table {
     width: 786; 
@@ -416,13 +418,14 @@ td#VolunteerNeeded {
 
 /* ------------- Scrolling Boxes ------------- */
 .sidebarBox{
-	width: 20px; /* Replace with sidebar width */
+	width: 35px; /* Replace with sidebar width */
 	float: right;
+  margin-right: 10px;
 	position: relative;
 }
 
 .scrollingBox{
-	width: 20px; /* Replace with the same width as sidebar */
+	width: 35px; /* Replace with the same width as sidebar */
 	border-radius: 3px;
 }
 
@@ -471,12 +474,13 @@ td#VolunteerNeeded {
 }
 
 #leftScrolling {
-    background-color: #191919;
+  background-color: #191919;
 	border-radius: 3px;
 	width: 285px;
 	float: left;
+  margin-left: 16px;
 	padding: 0px 0px 0px 0px;
-	zIndex: -1;
+	Z-Index: -1;
 }
 
 .scrollingBoxLeftSponsors a:link {
@@ -535,7 +539,7 @@ td#VolunteerNeeded {
 
 #leftScrolling a:active {
     /* selected link */
-    color: #Fc0;
+    color: #666;
     text-decoration: none;
 }
 
@@ -656,6 +660,42 @@ a:active {
     text-decoration: none;
 }
 
+#BackToTopArrow {
+    font-size: 35px;
+    color: #999;
+    text-decoration: none;
+}
+
+#BackToTopArrow:link {
+    /* unvisited link */
+    color: #999;
+    text-decoration: none;
+}
+
+#BackToTopArrow:visited {
+    /* visited link */
+    color: #999;
+    text-decoration: none;
+}
+
+#BackToTopArrow:hover {
+	/* color: #2c8bde; */
+	/* mouse over link */
+    color: #FFF;
+    text-decoration: none;
+	outline: 0;
+	-webkit-transition:color .3s ease-in;
+	-moz-transition:color .3s ease-in;
+	-o-transition:color .3s ease-in;
+	transition:color .3s ease-in;
+}
+
+#BackToTopArrow:active {
+    /* selected link */
+    color: #666;
+    text-decoration: none;
+}
+
 /* ------------- Images ------------- */
 a {outline : none;}
 
@@ -744,15 +784,15 @@ img {border : 0;}
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 2; /* Sit on top */
-    padding-top: 25px; /* Location of the box */
+    z-index: 10; /* Sit on top */
+    padding-top: 35px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
-    height: 96.6%; /* Full height */
+    height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
@@ -760,7 +800,7 @@ img {border : 0;}
     margin: auto;
     display: block;
     width: 100%;
-    max-width: 550px;
+    max-width: 29%;
 }
 
 /* Caption of Modal Image */
@@ -770,7 +810,7 @@ img {border : 0;}
     width: 100%;
     max-width: 700px;
     text-align: center;
-    color: #ccc;
+    color: #fff;
     padding: 10px 0;
     height: 15px;
 }

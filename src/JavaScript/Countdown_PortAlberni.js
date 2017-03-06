@@ -1,4 +1,4 @@
-CountDownTimer('08/4/2016 12:00 AM', 'PortAlberni');
+CountDownTimer('08/11/2017 12:00 AM', 'PortAlberni');
 
 function CountDownTimer(dt, id)
 {
@@ -15,7 +15,7 @@ function showRemaining() {
 	var distance = end - now;
 	if (distance < 0) {
 		clearInterval(timer);
-		document.getElementById(id).innerHTML = 'TBD';
+		document.getElementById(id).innerHTML = 'This Weekend!';
 		return;
 	}
 		var days = Math.floor(distance / _day);
