@@ -4,32 +4,35 @@
 
 <head>
 
-	<title>SISLRA/About Us</title>
-	<link rel="icon" href="/Favicon/16ChristmasTree.ico">
-	<!-- CSS -->
-	<link rel="stylesheet" href="/Bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/Bootstrap/css/bootstrap-theme.css">
-	<link rel="stylesheet" href="/Bootstrap/css/bootstrap-theme.min.css">
-		
-	<link rel="stylesheet" href="/Glyphicons/glyphicons-social/web/html_css/css/glyphicons-social.css">
-	<link rel="stylesheet" href="/Glyphicons/glyphicons-filetypes/web/html_css/css/glyphicons-filetypes.css">
-	<link rel="stylesheet" href="/Glyphicons/glyphicons/web/html_css/css/glyphicons.css">
-	
-	<link rel="stylesheet" href="/CSS/SISLRA.css">
-	<!-- JavaScript -->
+  <title>SISLRA/About Us</title>
+  <link rel="icon" href="/Favicon/16ChristmasTree.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/Bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/Bootstrap/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="/Bootstrap/css/bootstrap-theme.min.css">
+
+  <link rel="stylesheet" href="/Glyphicons/glyphicons-social/web/html_css/css/glyphicons-social.css">
+  <link rel="stylesheet" href="/Glyphicons/glyphicons-filetypes/web/html_css/css/glyphicons-filetypes.css">
+  <link rel="stylesheet" href="/Glyphicons/glyphicons/web/html_css/css/glyphicons.css">
+
+  <link rel="stylesheet" href="/CSS/SISLRA.css">
+  <link rel="stylesheet" href="/CSS/SISLRAFooter.css">
+
+  <!-- JavaScript -->
   <script src="/JavaScript/jquery.js"></script>
   <script src="/JavaScript/scrollingBoxRight.js"></script>
-  
-	<script src="/JavaScript/Countdown_SISLRA.js"></script>
-	<script src="/JavaScript/Countdown_PortMcNeill.js"></script>
-	<script src="/JavaScript/Countdown_PortAlberni.js"></script>
 
-	<script src="/Bootstrap/js/bootstrap.js"></script>
-	<script src="/Bootstrap/js/bootstrap.min.js"></script>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/JavaScript/Countdown_SISLRA.js"></script>
+  <script src="/JavaScript/Countdown_PortMcNeill.js"></script>
+  <script src="/JavaScript/Countdown_PortAlberni.js"></script>
+
+  <script src="/Bootstrap/js/bootstrap.js"></script>
+  <script src="/Bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -37,189 +40,189 @@
 
 <div id="wrapper">
 
-	<div id="header">
+  <div id="header">
+
+    <div class="marquee">
+      <div>
+        <span class="marqueeInfo"></span>
+        <span class="marqueeInfo"></span>
+      </div>
+    </div>
+    
+    <a href="/"><img class="webbanner" src="/WebBanner/WebBanner.png" alt="SISLRA"></a>
+      
+    <table id="tableHeader">
+      <tr>
+        <td>
+          <h3><a href="/Events.html#RaceSchedule"><span class="sislraDate"></span></a></h3>
+        </td>
+        <td>
+          <h3><a href="http://www.northislandtimingassociation.com/" target="_blank"><span class="RumbleOnTheRunwayDate"></span></a></h3>
+        </td>
+        <td>
+          <h3><a href="http://www.albernidragracing.com/" target="_blank"><span class="ThunderInTheValleyDate"></span></a></h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div id="SISLRARace">&nbsp;</div>
+        </td>
+        <td>
+          <div id="PortMcNeill">&nbsp;</div>
+        </td>
+        <td>
+          <div id="PortAlberni">&nbsp;</div>
+        </td>
+      </tr>
+    </table>
+    
+    <nav class="navbar navbar-inverse navbar-topMargin">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
+          <li class="dropdown"><a href="/RacerInfo.html">Racer Info <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/RacerInfo.html#Fees">Fees</a></li>
+              <li><a href="/RacerInfo.html#DriverInformationSheet">Driver Information Sheet</a></li>
+              <li><a href="/RacerInfo.html#RaceClassesAndTimes">Classes & Times</a></li>
+              <li><a href="/RacerInfo.html#BracketRacingBasics">Racing Basics</a></li>
+              <li><a href="/RacerInfo.html#OutSideTrackLineUp">Track Line Up</a></li>
+              <li><a href="/RacerInfo.html#Tech.Inspection">Tech. Inspection</a></li> 
+              <li><a href="/RacerInfo.html#TheTrack">The Track</a></li> 
+              <li><a href="/RacerInfo.html#Qualifying&Eliminations">Qualifying & Eliminations</a></li> 
+              <li><a href="/RacerInfo.html#Disqualifications">Disqualifications</a></li> 
+              <li><a href="/RacerInfo.html#Tree">Tree</a></li>
+            </ul>
+          </li>
+          <li><a href="/Points.html">Points</a></li>
+          <li class="dropdown"><a href="/Events.html">Events <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/Events.html#RaceSchedule">Race Schedule</a></li>
+              <li><a href="/Events.html#Posters">Posters</a></li>
+            </ul>
+          </li>
+          <li><a href="/Sponsors.html">Sponsors</a></li>
+          <li><a href="/ContactUs.html">Contact Us</a></li>
+          <li class="active"><a href="/AboutUs.html">About Us</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="filetypes filetypes-pdf"></span> PDF<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/RacersInfo/NewRacersInformation.pdf" target="_blank"><span class="filetypes filetypes-pdf"></span> Racers Information</a></li>
+              <li><a href="/RacersInfo/DriverInformationSlip.pdf" target="_blank"><span class="filetypes filetypes-pdf"></span> Driver Information Slip</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <a href="https://www.facebook.com/groups/327092727329942/" target="_blank" class="btn btn-primary" role="button" data-toggle="tooltip" data-placement="bottom" title="Facebook" style="color: #FFF;  margin-top: 4%;"><span class="social social-facebook"></span></a>
+          <a href="https://twitter.com/DragRaceVic" target="_blank" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="bottom" title="Twitter" style="color: #FFF;  margin-top: 4%;"><span class="social social-twitter"></span></a>
+          <a href="https://www.instagram.com/dragracevictoria/?hl=en" target="_blank" class="btn btn-default" role="button" data-toggle="tooltip" data-placement="bottom" title="Instagram" style="color: #000;  margin-top: 4%;"><span class="social social-instagram"></span></a>
+          <a href="https://www.youtube.com/user/nostopinLucR" target="_blank" class="btn btn-danger" role="button" data-toggle="tooltip" data-placement="bottom" title="YouTube" style="color: #FFF; margin-top: 4%;"><span class="social social-youtube"></span></a>          &nbsp;
+        </ul>
+      </div>
+    </nav>
+
+  </div>  <!-- end of header-->
   
-		<div class="marquee">
-			<div>
-				<span class="marqueeInfo"></span>
-				<span class="marqueeInfo"></span>
-			</div>
-		</div>
-		
-		<a href="/"><img id="Webbanner" src="/WebBanner/WebBanner.png" alt="SISLRA" width="25%" style="margin-left: 37%; margin-top: 1%; margin-bottom: 1%;"/></a>
-			
-		<table id="tableHeader">
-			<tr>
-				<td>
-					<h3><a href="/Events.html#RaceSchedule"><span class="sislraDate"></span></a></h3>
-				</td>
-				<td>
-					<h3><a href="http://www.northislandtimingassociation.com/" target="_blank"><span class="RumbleOnTheRunwayDate"></span></a></h3>
-				</td>
-				<td>
-					<h3><a href="http://www.albernidragracing.com/" target="_blank"><span class="ThunderInTheValleyDate"></span></a></h3>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<div id="SISLRARace">&nbsp;</div>
-				</td>
-				<td>
-					<div id="PortMcNeill">&nbsp;</div>
-				</td>
-				<td>
-					<div id="PortAlberni">&nbsp;</div>
-				</td>
-			</tr>
-		</table>
-		
-		<nav class="navbar navbar-inverse" style="margin-top:19px;">
-			<div class="container-fluid">
-				<ul class="nav navbar-nav">
-					<li><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
-					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/RacerInfo.html">Racer Info <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="/RacerInfo.html">Fees</a></li>
-							<li><a href="/RacerInfo.html#DriverInformationSheet">Driver Information Sheet</a></li>
-							<li><a href="/RacerInfo.html#RaceClassesAndTimes">Classes & Times</a></li>
-							<li><a href="/RacerInfo.html#BracketRacingBasics">Racing Basics</a></li>
-							<li><a href="/RacerInfo.html#OutSideTrackLineUp">Track Line Up</a></li>
-							<li><a href="/RacerInfo.html#Tech.Inspection">Tech. Inspection</a></li> 
-							<li><a href="/RacerInfo.html#TheTrack">The Track</a></li> 
-							<li><a href="/RacerInfo.html#Qualifying&Eliminations">Qualifying & Eliminations</a></li> 
-							<li><a href="/RacerInfo.html#Disqualifications">Disqualifications</a></li> 
-							<li><a href="/RacerInfo.html#Tree">Tree</a></li>
-						</ul>
-					</li>
-					<li><a href="/Points.html">Points</a></li>
-					<li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="/Events.html">Events <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="/Events.html">Race Schedule</a></li>
-							<li><a href="/Events.html#Posters">Posters</a></li>
-						</ul>
-					</li>
-					<li><a href="/Sponsors.html">Sponsors</a></li>
-					<li><a href="/ContactUs.html">Contact Us</a></li>
-					<li class="active"><a href="/AboutUs.html">About Us</a></li>
-					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="filetypes filetypes-pdf"></span> PDF<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="/RacersInfo/NewRacersInformation.pdf" target="_blank"><span class="filetypes filetypes-pdf"></span> Racers Information</a></li>
-							<li><a href="/RacersInfo/DriverInformationSlip.pdf" target="_blank"><span class="filetypes filetypes-pdf"></span> Driver Information Slip</a></li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<a href="https://www.facebook.com/groups/327092727329942/" target="_blank" class="btn btn-primary" role="button" data-toggle="tooltip" data-placement="bottom" title="Facebook" style="color: #FFF;  margin-top: 4%;"><span class="social social-facebook"></span></a>
-					<a href="https://twitter.com/DragRaceVic" target="_blank" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="bottom" title="Twitter" style="color: #FFF;  margin-top: 4%;"><span class="social social-twitter"></span></a>
-					<a href="https://www.instagram.com/dragracevictoria/?hl=en" target="_blank" class="btn btn-default" role="button" data-toggle="tooltip" data-placement="bottom" title="Instagram" style="color: #000;  margin-top: 4%;"><span class="social social-instagram"></span></a>
-					<a href="https://www.youtube.com/user/nostopinLucR" target="_blank" class="btn btn-danger" role="button" data-toggle="tooltip" data-placement="bottom" title="YouTube" style="color: #FFF; margin-top: 4%;"><span class="social social-youtube"></span></a>					&nbsp;
-				</ul>
-			</div>
-		</nav>
+  <div id="main-section">
+  
+  <!-- This div is run by Java Script -->
+  <div class="sidebarBox">
+    <div class="scrollingBox">
+      <a class="BackToTopArrow buttonHyperLink" href="#" data-toggle="tooltip" data-placement="bottom" title="Back To Top"><span class="glyphicons glyphicons-circle-arrow-top"></span></a>
+    </div>
+  </div>
 
-	</div>	<!-- end of header-->
-	
-	<div id="main-section">
-	
-		<div class="sidebarBox">
-			<div class="scrollingBox">
-        <a id="BackToTopArrow" href="#" data-toggle="tooltip" data-placement="bottom" title="Back To Top"><span class="glyphicons glyphicons-circle-arrow-top"></span>
-        <!-- <img src="/WebBanner/Top.png"  alt="Arrow Up" width="30" height="30"> -->
-        </a>
-			</div>
-		</div>
-
-	<!--<div id="left">
+  <!--<div id="left">
     </div> <!-- end of left -->
-	
-	<!-- <div id="right">
- 	</div> <!-- end of right -->
-	 
-	<div id="center">
-	
-	<br>
-	
-	<img src="/WebBanner/AboutUs.png" alt="" width="560" height="193">
-	
-	<table>
-		<tr>
-			<td>
-				<p><strong>SISLRA</strong> is focused on saving lives and is concentrating efforts to attract 'street racers' to our sanctioned drag race  venue. Students, non students and racers  of all ages are encouraged to come to the drags.  No previous experience is needed.  There are club members and track officials to  explain the finer details of this exciting type of motor sport.</p>
-				<p>South Island Straight Liners Racing Association was formed back in the summer of 1980. A small handful of car and hot rod enthusiasts had a desire to test their cars, and held their meeting in a small area above a local body shop. </p>
-				<p>The club created a very simple and basic constitution:</p>
-				<p><em><strong>Club's constitution</strong></em></p>
-				<ul>
-					<li>1. The name of the Society is:</li>
-					<li>South Island Straight Liners Racing Association</li>
-					<li>2.The purposes of the Society are:</li>
-					<li style="margin-left:10px;">a) To promote high performance motor   vehicle safety on Vancouver Island.</li>
-					<li style="margin-left:10px;">b) To promote motor vehicle   soundness.</li>
-					<li style="margin-left:10px;">c) To test high performance motor vehicles in a controlled environment.</li>
-					<li style="margin-left:10px;">d) To eventually establish a permanent high performance motor vehicle testing facility (1/4 mile drag &nbsp;&nbsp;&nbsp;&nbsp; strip).</li>
-					<li style="margin-left:10px;">e) To provide for the interchange of information and/or parts.</li>
-					<li style="margin-left:10px;">f) To hold regular fund raising events such as dances, raffles, and other such events.</li>
-					<li style="margin-left:10px;">g) To co-operate with other societies with similar interests.</li>
-					<li style="margin-left:10px;">h) To gather together on a regular basis to carry out the above purposes, to plan, and to organize the &nbsp;&nbsp;&nbsp;&nbsp; above.</li>
-				</ul>
-			</td>
-		</tr>
-	</table>
-	
-	<br>
-	
-	<h1 id="LOCATEDAT">LOCATED AT:</h1>
-	<p>Western Speedway 2207 Millstream Rd, Victoria, B.C. Canada.</p>
-	<p>HWY-1 take Exit 14 (Millstream Rd North, toward Highlands/Langford) to Millstream Rd. Continue North/West on Millstream Rd. for 2.54 km until 
-		you reach Western Speedway 2207 Millstream Rd. Victoria, B.C. V9B-6H4</p>
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.2686272832516!2d-123.50331089999999!3d48.4705608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f0d506c5c3a71%3A0xd20cbb669f2015f7!2s2207+Millstream+Rd%2C+Victoria%2C+BC+V9B+6H4!5e0!3m2!1sen!2sca!4v1455568106379" width="580" height="480" frameborder="5px" style="border:5px" allowfullscreen></iframe>
+  
+  <!-- <div id="right">
+   </div> <!-- end of right -->
+   
+  <div id="center">
+  
+  <br>
+  
+  <img src="/WebBanner/AboutUs.png" alt="AboutUs" width="560" height="193">
+  
+  <table>
+    <tr>
+      <td>
+        <p><strong>SISLRA</strong> is focused on saving lives and is concentrating efforts to attract 'street racers' to our sanctioned drag race  venue. Students, non students and racers  of all ages are encouraged to come to the drags.  No previous experience is needed.  There are club members and track officials to  explain the finer details of this exciting type of motor sport.</p>
+        <p>South Island Straight Liners Racing Association was formed back in the summer of 1980. A small handful of car and hot rod enthusiasts had a desire to test their cars, and held their meeting in a small area above a local body shop. </p>
+        <p>The club created a very simple and basic constitution:</p>
+        <p><em><strong>Club's constitution</strong></em></p>
+        <ul>
+          <li>1. The name of the Society is:</li>
+          <li>South Island Straight Liners Racing Association</li>
+          <li>2.The purposes of the Society are:</li>
+          <div id="aboutUsli">
+            <li>a) To promote high performance motor vehicle safety on Vancouver Island.</li>
+            <li>b) To promote motor vehicle   soundness.</li>
+            <li>c) To test high performance motor vehicles in a controlled environment.</li>
+            <li>d) To eventually establish a permanent high performance motor vehicle testing facility (1/4 mile drag &nbsp;&nbsp;&nbsp;&nbsp; strip).</li>
+            <li>e) To provide for the interchange of information and/or parts.</li>
+            <li>f) To hold regular fund raising events such as dances, raffles, and other such events.</li>
+            <li>g) To co-operate with other societies with similar interests.</li>
+            <li>h) To gather together on a regular basis to carry out the above purposes, to plan, and to organize the &nbsp;&nbsp;&nbsp;&nbsp; above.</li>
+          </div>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  
+  <br>
+  
+  <h1 id="LOCATEDAT">LOCATED AT:</h1>
+  <p>Western Speedway 2207 Millstream Rd, Victoria, B.C. Canada.</p>
+  <p>HWY-1 take Exit 14 (Millstream Rd North, toward Highlands/Langford) to Millstream Rd. Continue North/West on Millstream Rd. for 2.54 km until 
+    you reach Western Speedway 2207 Millstream Rd. Victoria, B.C. V9B-6H4</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.2686272832516!2d-123.50331089999999!3d48.4705608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f0d506c5c3a71%3A0xd20cbb669f2015f7!2s2207+Millstream+Rd%2C+Victoria%2C+BC+V9B+6H4!5e0!3m2!1sen!2sca!4v1455568106379" width="580" height="480" frameborder="5px" style="border:5px" allowfullscreen></iframe>
 
-	<br>
-	<br>
-	
-	</div> <!-- end of center -->
-		
-	</div> <!-- end of main section -->
+  <br>
+  <br>
+  
+  </div> <!-- end of center -->
+    
+  </div> <!-- end of main section -->
 
-	<div id="footer" style="margin-bottom: -8px; z-index: 2;">
-
-		<div class="footer-row">
-			<div class="footer-section">
-				<img id="Webbanner" src="/WebBanner/WebBanner.png" alt="SISLRA" width="280px" style="margin-left: 100px; margin-top: 0%; margin-bottom: 0%;"/>
-			</div>
-				<div class="footer-section">
-				<div style="margin-left: 78px;">
-					<a id="Social-Media-Footer-Facebook" href="https://www.facebook.com/groups/327092727329942/" target="_blank" style="margin: 0px; margin-left: 10px;"><span class="social social-facebook x2"></span></a>
-          <a id="Social-Media-Footer-Youtube" href="https://twitter.com/DragRaceVic" target="_blank" style="margin-top: 0%; margin: 0px;"><span class="social social-twitter x2"></span></a>
-				<a id="Social-Media-Footer-Youtube" href="https://www.instagram.com/dragracevictoria/?hl=en" target="_blank" style="margin: 0px;"><span class="social social-instagram x2"></span></a>
-				<a id="Social-Media-Footer-Youtube" href="https://www.youtube.com/user/nostopinLucR" target="_blank" style="margin: 0px;"><span class="social social-youtube x2"></span></a>
-					<ul style="margin-left: -29px;">
-						<li style="display: inline;"><a href="/">Home</a></li>
-						<li style="display: inline;"> | </li>
-						<li style="display: inline;"><a href="/Points.html">Points</a></li>
-						<li style="display: inline;"> | </li>
-						<li style="display: inline;"><a href="/Sponsors.html">Sponsors</a></li>
-					</ul>
-					<ul style="margin-left: -15px;">
-						<li style="display: inline; margin-left: 0%;"><a href="/ContactUs.html">Contact Us</a></li>
-						<li style="display: inline;"> | </li>
-            <li style="display: inline; margin-left: 0%;"><a href="/AboutUs.html">About Us</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="footer-section">
-				<div style="position: relative; margin-top: 48px; margin-left: 70px;">
-					<img id="spin" src="/WebBanner/DragTire.png" alt="Drag Tire"/>
-					<img id="smoke" src="/WebBanner/smoke.png"  alt="Tire Smoke"/>
-				</div>
-			</div>
-		</div>
+  <div id="footerSocial">
+    <div class="footer-row">
+      <div class="footer-section">
+        <img id="SISLRALogo-Footer" src="/WebBanner/WebBanner.png" alt="SISLRA"/>
+      </div>
+      <div class="footer-section">
+        <div id="SocialMediaDiv-Footer">
+          <a id="facebook-Footer" class="buttonHyperLink" href="https://www.facebook.com/groups/327092727329942/" target="_blank"><span class="social social-facebook x2"></span></a>
+          <a class="buttonHyperLink" href="https://twitter.com/DragRaceVic" target="_blank"><span class="social social-twitter x2"></span></a>
+          <a class="buttonHyperLink" href="https://www.instagram.com/dragracevictoria/?hl=en" target="_blank"><span class="social social-instagram x2"></span></a>
+          <a class="buttonHyperLink" href="https://www.youtube.com/user/nostopinLucR" target="_blank"><span class="social social-youtube x2"></span></a>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li> | </li>
+            <li><a href="/Points.html">Points</a></li>
+            <li> | </li>
+            <li><a href="/Sponsors.html">Sponsors</a></li>
+          </ul>
+          <ul>
+            <li><a href="/ContactUs.html">Contact Us</a></li>
+            <li> | </li>
+            <li><a href="/AboutUs.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-section">
+        <div id="spiningTire">
+          <img id="spin" src="/WebBanner/DragTire.png" alt="Drag Tire"/>
+          <img id="smoke" src="/WebBanner/smoke.png"  alt="Tire Smoke"/>
+        </div>
+      </div>
+    </div>
   </div>
     
-  <div id="footer">
+  <div id="footerSponsors">
       <div class="footer-row">
         <div class="footer-section-2">
           <h3><a href="Sponsors.html"><span class="glyphicons glyphicons-group"></span> Sponsors</a></h3>
-          <a href="http://searlesauto.ca/" target="_blank"><img src="/Sponsors/Searles.jpg" alt="Searles Auto" width="200" height="110" /></a>
+          <a href="http://searlesauto.ca/" target="_blank"><img src="/Sponsors/Searles.jpg" alt="Searles Auto" width="200" height="110"></a>
         </div>
         <div class="footer-section-2">
           <h3>&nbsp;</h3>
@@ -227,43 +230,43 @@
         </div>
         <div class="footer-section-2">
           <h3>&nbsp;</h3>
-          <a href="http://bdlifttruck.ca/" target="_blank"><img src="/Sponsors/BandDForklift-300x87.jpg" alt="B&D Forklift" width="210" height="110" /></a>
+          <a href="http://bdlifttruck.ca/" target="_blank"><img src="/Sponsors/BandDForklift-300x87.jpg" alt="B&D Forklift" width="210" height="110"></a>
         </div>
         <div class="footer-section-2">
           <h3>&nbsp;</h3>
-          <a href="http://www.kmstools.com/" target="_blank"><img src="/Sponsors/KMSToolsNoBack.gif" alt="KMS Tools" width="190" height="70" /></a>
+          <a href="http://www.kmstools.com/" target="_blank"><img src="/Sponsors/KMSToolsNoBack.gif" alt="KMS Tools" width="190" height="70"></a>
         </div>
         <div class="footer-section-2">
           <h3>&nbsp;</h3>
-          <a href="http://www.382sign.com/" target="_blank"><img src="/Sponsors/GraphicFX.png" alt="Graphic FX" width="200" height="80"/></a>
+          <a href="http://www.382sign.com/" target="_blank"><img src="/Sponsors/GraphicFX.png" alt="Graphic FX" width="200" height="80"></a>
         </div>
       </div>
       <div class="footer-row">
         <div class="footer-section-2">
-          <a href="http://www.dentexpdr.com/" target="_blank"><img src="/Sponsors/DentexNoBack.png" alt="Dentex" width="210" height="100" /></a>
+          <a href="http://www.dentexpdr.com/" target="_blank"><img src="/Sponsors/DentexNoBack.png" alt="Dentex" width="210" height="100"></a>
         </div>
         <div class="footer-section-2">
-          <a href="http://www.used.ca/" target="_blank"><img src="/Sponsors/Used_Logo_Purple.png" alt="Used_Logo_Purple" width="190" height="100" /></a>
+          <a href="http://www.used.ca/" target="_blank"><img src="/Sponsors/Used_Logo_Purple.png" alt="Used_Logo_Purple" width="190" height="100"></a>
         </div>
         <div class="footer-section-2">
-          <a href="http://vicmobile.com/" target="_blank"><img id="VictoriaMobile-Footer" src="/Sponsors/VictoriaMobileRadio.JPG" alt="Victoria Mobile Radio" width="190" height="110" /></a>
+          <a href="http://vicmobile.com/" target="_blank"><img src="/Sponsors/VictoriaMobileRadio.JPG" alt="Victoria Mobile Radio" width="190" height="110"></a>
         </div>
         <div class="footer-section-2">
-          <a href="https://www.hsminsurance.com/" target="_blank"><img src="/Sponsors/HenrdrySwinton.jpg" alt="Henrdry Swinton" width="190" height="110" /></a>
+          <a href="https://www.hsminsurance.com/" target="_blank"><img src="/Sponsors/HenrdrySwinton.jpg" alt="Henrdry Swinton" width="190" height="110"></a>
         </div>
      </div>
   </div>
       
-  <div id="footer" style="margin-top: -10px;">
+  <div id="footerCopyright">
     <div class="footer-row">
       <div class="footer-section">
-        <p style="margin-left: 41%; margin-bottom: 10px; margin-top: 10px; font-size: 12px; color: fff;"> Copyright &copy; 2005<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, All rights reserved.</p>
+        <p> Copyright &copy; 2005<script src="/JavaScript/Copyright.js"></script>, All rights reserved.</p>
       </div>
     </div>
-	</div> <!-- end of footer -->
-		
+  </div> <!-- end of footer -->
+    
 </div> <!-- end of wrapper -->
-		
+    
 </body>
 
 </html>

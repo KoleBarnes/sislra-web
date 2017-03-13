@@ -1,131 +1,183 @@
 /*Web lay out*/
 
 body {
-    font-size: 13px;
-    font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
-    color:#FFF;
-    background-color: #000;
-    margin: 0;
-    padding: 0px;
-    width: 100%;
+  font-size: 13px;
+  font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
+  color:#FFF;
+  background-color: #000;
+  margin: 0;
+  padding: 0px;
+  width: 100%;
 }
 
 p {
-    font-family: "Open Sans","Trebuchet MS", Helvetica, Arial, Verdana, Geneva, sans-serif;
-	font-size: 117%;
-	margin-top: 5px;
-	margin-bottom: 15px;
+  font-family: "Open Sans","Trebuchet MS", Helvetica, Arial, Verdana, Geneva, sans-serif;
+  font-size: 117%;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 ul {
-    list-style-type: none;
-    list-style-position: outside;
-    margin:0;
-    padding:0;
+  list-style-type: none;
+  list-style-position: outside;
+  margin:0;
+  padding:0;
+}
+
+.webbanner {
+  margin-left: 36.3%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 330px;
+}
+
+#indexWebbanner {
+  margin-left: 415px;
+  margin-top: 10px;
+  margin-bottom: 0%;
+  position: absolute;
+  width: 360px;
 }
 
 #contents li {
-	font-size: 15px;
-	margin-left: 5px;
-	padding: 0px 0px 5px 5px;
+  font-size: 15px;
+  margin-left: 5px;
+  padding: 0px 0px 5px 5px;
 }
 
 #RaceList li {
-	font-size: 15px;
-	padding: 0px 5px 5px 5px;
-	color: #FFF;
+  font-size: 15px;
+  padding: 0px 5px 5px 5px;
+  color: #FFF;
 }
 
 #schedule {
-	list-style-type: decimal;
-	margin-left: 32px;	
+  list-style-type: decimal;
+  margin-left: 32px;
+}
+
+.current {
+  color: #0CF;
+}
+
+.over {
+  text-decoration: line-through;
+}
+
+.cancelled {
+  color: #F00;
+}
+
+.new {
+  color: #0F0;
+}
+
+#aboutUsli {
+  margin-left:10px;
+}
+
+#indexPointsUpdate {
+  margin: 0px;
+  margin-bottom: 5px;
+  margin-left:8px;
 }
 
 #PointsUpdate:after {
-	color: #FC0;
-	text-decoration: underline;
-	font-weight: bold;
-	content: "11/13/2016"
+  color: #FC0;
+  text-decoration: underline;
+  font-weight: bold;
+  content: "11/13/2016"
 }
 
 h1 {
-    font-size: 190%;
-    color: #FC0;
-    margin: 0;
-    padding: 0px;
-    width: 100%;
+  font-size: 190%;
+  color: #FC0;
+  margin: 0;
+  padding: 0px;
+  width: 100%;
 }
 
 h2 {
-    font-size: 18px;
-    line-height: 35px !important;
-    letter-spacing: 0px !important;
-    margin: 0px;
+  font-size: 18px;
+  line-height: 35px !important;
+  letter-spacing: 0px !important;
+  margin: 0px;
 }
 
 h2#pro {
-	color: #ff0000;
+  color: #ff0000;
+}
+
+#indexPointsList {
+  margin: 0px;
+  font-size: 15px;
+}
+
+.indexPointsWinners{
+  font-size: 18px;
 }
 
 h2#bike {
-	color: #3333ff;
+  color: #3333ff;
 }
 
 h2#street {
-	color: #00ff00;
+  color: #00ff00;
 }
 
 h3 {
-    font-size: 18px;
-	color: #FC0;
-    line-height: 30px !important;
-    letter-spacing: 0px !important;
-    margin: 0px;
+  font-size: 18px;
+  color: #FC0;
+  line-height: 30px !important;
+  letter-spacing: 0px !important;
+  margin: 0px;
 }
 
 h4 {
-    font-size: 16px;
-    line-height: 25px !important;
-    letter-spacing: 0px !important;
-    margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 25px !important;
+  letter-spacing: 0px !important;
+  margin-bottom: 20px;
 }
 
 h5 {
-    font-size: 12px;
-    line-height: 25px !important;
-    letter-spacing: 0px !important;
-    margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 25px !important;
+  letter-spacing: 0px !important;
+  margin-bottom: 15px;
 }
 
 h6 {
-    font-size: 10px;
-    line-height: 25px !important;
-    letter-spacing: 0px !important;
-    margin-bottom: 10px;
+  font-size: 10px;
+  line-height: 25px !important;
+  letter-spacing: 0px !important;
+  margin-bottom: 10px;
 }
 
 /* -------------Main Layout------------- */
 #wrapper {
-	width: 1200px;
-	margin: 0px auto;
+  width: 1200px;
+  margin: 0px auto;
 }
 
 #header {
-	padding: 0px;
+  padding: 0px;
   width: 1200px;
 }
 
 #tableHeader {
-	width: 850px; 
-	background-color: #161616;
-	border: 2px solid #FC0;
-	text-align: center;
-	margin-left: 15%;
+  width: 850px; 
+  background-color: #161616;
+  border: 2px solid #FC0;
+  text-align: center;
+  margin-left: 15%;
 }
 
-#tableHeader tr td {
-	margin: 0px;
-	padding: 0px;
+#indexTableHeader {
+  width: 850px; 
+  text-align: center;
+  margin-left: 15%;
+  margin-top:13%;
 }
 
 #mySlidesDiv{
@@ -148,25 +200,25 @@ h6 {
 }
 
 #main-section {
-	margin-top: -1%;
+  margin-top: -1%;
 }
 
 #left {
-    background-color: #191919;
-	border-radius: 3px;
-	width: 300px;
-	float: left;
-	padding: 5px 0px 5px 5px;
+  background-color: #191919;
+  border-radius: 3px;
+  width: 300px;
+  float: left;
+  padding: 5px 0px 5px 5px;
 }
 
 #right {
-    background-color: #191919;
-	border-radius: 3px;
-	width: 300px;
-	float: right;
-	padding: 5px 5px 5px 5px;
+  background-color: #191919;
+  border-radius: 3px;
+  width: 300px;
+  float: right;
+  padding: 5px 5px 5px 5px;
 }
- 
+
 #center {
   margin-left: 300px;
   margin-right: 300px;
@@ -180,31 +232,31 @@ h6 {
 }
 
 #centerSponsors {
-	background-color: #000;
+  background-color: #000;
   margin-left: 300px;
   margin-right: 300px;
-	text-align: center;
+  text-align: center;
 }
 
 #tableCenterSponsors {
-	text-align: center;
-	margin-left: -145px;
+  text-align: center;
+  margin-left: -145px;
 }
 
 #centerPoints {
-    margin-left: 125px;
-    margin-right: 300px;
+  margin-left: 125px;
+  margin-right: 300px;
 }
 
 #centerContactUs {
-	background-color: #000;
-    margin-left: 0px;
-    margin-right: 0px;
+  background-color: #000;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* --------- Nav Collapse override ----------- */
 .navbar-collapse.collapse {
-  display: block!important;
+  display: block !important;
 }
 
 .navbar-nav>li, .navbar-nav {
@@ -216,214 +268,58 @@ h6 {
 }
 
 .navbar-right {
-  float: right!important;
+  float: right !important;
 }
 
-/* ------------- Footer ------------- */
-/* ------------- http://stackoverflow.com/questions/27770310/making-a-responsive-footer-with-3-divs-inside ------------- */
-#footer {
-	display:table;
-	width:100%;
-	margin-top: 5px;
-	background-color: #202020;
-	border-radius: 3px 3px 0px 0px;
-  color: #FC0;
-	z-index: 1; 
-	position:relative
+.navbar-topMargin {
+  margin-top:19px;
 }
 
-#footer p{
-	color: #FC0;
-	font-size: 20px;
-}
-
-#footer h3{
-	margin-left: 10px;
-	margin-top: 10px;
-	font-size: 20px;
-}
-
-#footer ul {
-	padding-left: 30px;
-	padding-bottom: 5px;
-	list-style-type: none;
-}
-
-.footer-row {
-	display:table-row;
-}
-
-.footer-section {
-	display:table-cell;
-  width: 30%;
-	font-size: 20px;
-}
-
-.footer-section-2 {
-	display:table-cell;
-    width: 25%;
-	padding: 10px;
-	margin-top: 0px;
-	padding-top: 0px;
-	vertical-align: middle;
-}
-
-#Social-Media-Footer-Facebook {
-	margin-left: 47%;
-}
-
-#Social-Media-Footer-Facebook:link {
-	color: #777;
-    text-decoration: none;
-}
-
-#Social-Media-Footer-Facebook:visited {
-	color: #777;
-    text-decoration: none;
-}
-
-#Social-Media-Footer-Facebook:hover {
-	color: #FFF;
-    text-decoration: none;
-	outline: 0;
-	-webkit-transition:color .3s ease-in;
-	-moz-transition:color .3s ease-in;
-	-o-transition:color .3s ease-in;
-	transition:color .3s ease-in;
-}
-
-#Social-Media-Footer-Facebook:active {
-	color: #FFF;
-    text-decoration: none;
-}
-
-#Social-Media-Footer-Youtube {
-	margin-left: -64%;
-}
-
-#Social-Media-Footer-Youtube:link {
-	color: #777;
-    text-decoration: none;
-}
-
-#Social-Media-Footer-Youtube:visited {
-	color: #777;
-    text-decoration: none;
-}
-
-#Social-Media-Footer-Youtube:hover {
-	color: #FFF;
-    text-decoration: none;
-	outline: 0;
-	-webkit-transition:color .3s ease-in;
-	-moz-transition:color .3s ease-in;
-	-o-transition:color .3s ease-in;
-	transition:color .3s ease-in;
-}
-
-#Social-Media-Footer-Youtube:active {
-	    color: #FFF;
-    text-decoration: none;
-}
-
-#WestshoreTowing-Footer {
-	margin-left: 11%;
-}
-
-#VictoriaMobile-Footer {
-	margin-left: 4%;
-}
-
-#smoke {
-	position: absolute;
-	top: -70px;
-	left: -70px;
-}
-
-/* ------------- Spinning Tire ------------- */
-#spin {
-    margin: 0px;
-    width: 200px;
-    height: 200px;
-    background: #202020;
-    
-	-webkit-animation-name: spin;
-    -webkit-animation-duration: 4000ms;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spin;
-    -moz-animation-duration: 4000ms;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-
-    animation-name: spin;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-@-ms-keyframes spin {
-    from { -ms-transform: rotate(0deg); }
-    to { -ms-transform: rotate(360deg); }
-}
-
-@-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-
-@-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-    from { transform:rotate(0deg); }
-    to { transform:rotate(360deg); }
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 /* ------------- Contact Us Table ------------- */
 table {
-    width: 786; 
-	border: 0px; 
-	text-align: left;
-	color: #FFF;
-	padding: 4px;
-	margin: auto;
-	border-spacing: 4px; 
+  width: 786; 
+  border: 0px; 
+  text-align: left;
+  color: #FFF;
+  padding: 4px;
+  margin: auto;
+  border-spacing: 4px; 
 }
 
 table .bold {
-   font-weight: bold;
-   font-size: 14px;
-   color: #FB0
+  font-weight: bold;
+  font-size: 14px;
+  color: #FB0
 }
 
 td{
-	padding: 0px 10px 0px 0px;
+  padding: 0px 10px 0px 0px;
 }
 
 td#VolunteerNeeded {
-	background-color: #FF0000;
+  background-color: #FF0000;
 }
 
 /* ------------- Marquee ------------- */
 .marquee {
-	height: 24px;
-	width: 100%;
-	margin-top: 10px;
+  height: 24px;
+  width: 100%;
+  margin-top: 10px;
 
-	color:#FD0;
-	font: Arial Black;
-	font-weight: bold;
-	font-size: 16px;
-	
-	
-	border: 2px solid #FC0;
-	border-radius: 10px 10px 10px 10px;
+  color:#FD0;
+  font: Arial Black;
+  font-weight: bold;
+  font-size: 16px;
+  
+  border: 2px solid #FC0;
+  border-radius: 10px 10px 10px 10px;
 
-	overflow: hidden;
-	position: relative;
+  overflow: hidden;
+  position: relative;
 }
 
 .marquee div {
@@ -447,467 +343,473 @@ td#VolunteerNeeded {
   100% { left: -100%; }
 }
 
+#indexMarquee {
+  margin:0px;
+  border:none;
+  border-radius: 0px 0px 0px 0px;
+}
+
 .marqueeInfo:after {
-	text-shadow: 2px 2px #000;
-	content:"THE 2017 RACE SCHEDULE IS HERE!";
-	/*content: "THE FINAL RACE OF THE SEASON IS ON SATURDAY OCTOBER 8TH. GATES OPEN AT 9:00am. QUALIFYING STARTS AT 10:00am."*/
+  text-shadow: 2px 2px #000;
+  content:"THE 2017 RACE SCHEDULE IS HERE!";
+  /* content: "THE FINAL RACE OF THE SEASON IS ON SATURDAY OCTOBER 8TH. GATES OPEN AT 9:00am. QUALIFYING STARTS AT 10:00am."; */
 }
 
 /* ------------- Scrolling Boxes ------------- */
 .sidebarBox{
-	width: 35px; /* Replace with sidebar width */
-	float: right;
+  width: 35px; /* Replace with sidebar width */
+  float: right;
   margin-right: 15px;
-	position: relative;
+  position: relative;
 }
 
 .scrollingBox{
-	width: 35px; /* Replace with the same width as sidebar */
-	border-radius: 3px;
+  width: 35px; /* Replace with the same width as sidebar */
+  border-radius: 3px;
 }
 
 .sidebarBoxLeft{
-	width: 300px; /* Replace with sidebar width */
-	float: right;
-	position: relative;
+  width: 300px; /* Replace with sidebar width */
+  float: right;
+  position: relative;
 }
 
 .scrollingBoxLeft{
-	width: 300px; /* Replace with the same width as sidebar */
-	background-color: #191919;
-	border-radius: 3px;
-	float: left;
-	padding: 0px 0px 0px 0px;
-}
-
-
-.sidebarBoxLeftEvents{
-	width: 300px; /* Replace with sidebar width */
-	float: left;
-	position: relative;
-}
-
-.scrollingBoxLeftEvents{
-	width: 300px; /* Replace with the same width as sidebar */
-	background-color: #191919;
-	border-radius: 3px;
-	float: left;
-	padding: 0px 0px 0px 0px;
-}
-
-
-.sidebarBoxLeftSponsors{
-	width: 150px; /* Replace with sidebar width */
-	float: left;
-	position: relative;
-}
-
-.scrollingBoxLeftSponsors{
-	width: 150px; /* Replace with the same width as sidebar */
-	border-radius: 3px;
-	background-color: #191919;
-	float: left;
-	padding: 0px 0px 0px 0px;
+  width: 300px; /* Replace with the same width as sidebar */
+  background-color: #191919;
+  border-radius: 3px;
+  float: left;
+  padding: 0px 0px 0px 0px;
 }
 
 #leftScrolling {
   background-color: #191919;
-	border-radius: 3px;
-	width: 285px;
-	float: left;
+  border-radius: 3px;
+  width: 285px;
+  float: left;
   margin-left: 16px;
-	padding: 0px 0px 0px 0px;
-	Z-Index: -1;
+  padding: 0px 0px 0px 0px;
+  Z-Index: -1;
 }
 
-.scrollingBoxLeftSponsors a:link {
-    /* unvisited link */
-    color: #999;
-    text-decoration: none;
+.sidebarBoxLeftEvents{
+  width: 300px; /* Replace with sidebar width */
+  float: left;
+  position: relative;
 }
 
-.scrollingBoxLeftSponsors a:visited {
-    /* visited link */
-    color: #999;
-    text-decoration: none;
+.scrollingBoxLeftEvents{
+  width: 300px; /* Replace with the same width as sidebar */
+  background-color: #191919;
+  border-radius: 3px;
+  float: left;
+  padding: 0px 0px 0px 0px;
 }
 
-.scrollingBoxLeftSponsors a:hover {
-	/* color: #2c8bde; */
-	/* mouse over link */
-    color: #FFF;
-    text-decoration: none;
-	outline: 0;
-	-webkit-transition:color .3s ease-in;
-	-moz-transition:color .3s ease-in;
-	-o-transition:color .3s ease-in;
-	transition:color .3s ease-in;
+.sidebarBoxLeftSponsors{
+  width: 150px; /* Replace with sidebar width */
+  float: left;
+  position: relative;
 }
 
-.scrollingBoxLeftSponsors a:active {
-    /* selected link */
-    color: #Fc0;
-    text-decoration: none;
+.scrollingBoxLeftSponsors{
+  width: 150px; /* Replace with the same width as sidebar */
+  border-radius: 3px;
+  background-color: #191919;
+  float: left;
+  padding: 0px 0px 0px 0px;
 }
 
-#leftScrolling a:link {
-    /* unvisited link */
-    color: #999;
-    text-decoration: none;
+.BackToTopArrow {
+  font-size: 35px;
+  color: #999;
+  text-decoration: none;
 }
-
-#leftScrolling a:visited {
-    /* visited link */
-    color: #999;
-    text-decoration: none;
-}
-
-#leftScrolling a:hover {
-	/* color: #2c8bde; */
-	/* mouse over link */
-    color: #FFF;
-    text-decoration: none;
-	outline: 0;
-	-webkit-transition:color .3s ease-in;
-	-moz-transition:color .3s ease-in;
-	-o-transition:color .3s ease-in;
-	transition:color .3s ease-in;
-}
-
-#leftScrolling a:active {
-    /* selected link */
-    color: #666;
-    text-decoration: none;
-}
-
-#DriverInfoPDF {
-	font-size: 16px;
-	text-decoration: none;
-}
-	
-#DriverInfoPDF:link {
-    /* unvisited link */
-    color: #FC0;
-    text-decoration: none;
-}
-
-#DriverInfoPDF:visited {
-    /* visited link */
-    color: #fC0;
-    text-decoration: none;
-}
-
-#DriverInfoPDF:hover {
-	/* color: #2c8bde; */
-	/* mouse over link */
-    color: #FFF;
-    text-decoration: none;
-	outline: 0;
-	-webkit-transition:color .3s ease-in;
-	-moz-transition:color .3s ease-in;
-	-o-transition:color .3s ease-in;
-	transition:color .3s ease-in;
-}
-
-#DriverInfoPDF:active {
-    /* selected link */
-    color: #999;
-    text-decoration: none;
-}
-
 
 /* ------------- Countdown Timer ------------- */
 #SISLRARace {
-	color: #FFF;
-	font-weight: bold;
-	font-size: 15px;
-	margin-left: 3px;
-	text-shadow: 2px 2px #000;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 3px;
+  text-shadow: 2px 2px #000;
 }
 
 #PortMcNeill {
-	color: #FFF;
-	font-weight: bold;
-	font-size: 15px;
-	margin-left: 3px;
-	text-shadow: 2px 2px #000;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 3px;
+  text-shadow: 2px 2px #000;
 }
 
 #PortAlberni {
-	color: #FFF;
-	font-weight: bold;
-	font-size: 15px;
-	margin-left: 3px;
-	text-shadow: 2px 2px #000;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 3px;
+  text-shadow: 2px 2px #000;
 }
 
 #TBA {
-	color: #FFF;
-	font-weight: bold;
-	font-size: 15px;
-	margin-left: 3px;
-	text-shadow: 2px 2px #000;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 3px;
+  text-shadow: 2px 2px #000;
 }
 
 .sislraDate:after {
-	text-shadow: 2px 2px #000;
-	content: " 1st SISLRA Race is in: "
+  text-shadow: 2px 2px #000;
+  content: " 1st SISLRA Race is in: "
 }
 
 .RumbleOnTheRunwayDate:after {
-	text-shadow: 2px 2px #000;
-	content: "1st Rumble on the Runway is in:"
+  text-shadow: 2px 2px #000;
+  content: "1st Rumble on the Runway is in:"
 }
 
 .ThunderInTheValleyDate:after {
-	text-shadow: 2px 2px #000;
-	content: "Thunder in The Valley is in:"
+  text-shadow: 2px 2px #000;
+  content: "Thunder in The Valley is in:"
 }
 
 /* ------------- http://jsfiddle.net/gaby/9Ryvs/7/ ------------- */
 
 /* ------------- Hyperlink Color ------------- */
 a:link {
-    /* unvisited link */
-    color: #FC0;
-    text-decoration: none;
+  /* unvisited link */
+  color: #FC0;
+  text-decoration: none;
 }
 
 a:visited {
-    /* visited link */
-    color: #FC0;
-    text-decoration: none;
+  /* visited link */
+  color: #FC0;
+  text-decoration: none;
 }
 
 a:hover {
-	/* color: #2c8bde; */
-	/* mouse over link */
-    color: #F90;
-    text-decoration: none;
-	outline: 0;
-	-webkit-transition:color .3s ease-in;
-	-moz-transition:color .3s ease-in;
-	-o-transition:color .3s ease-in;
-	transition:color .3s ease-in;
+  /* color: #2c8bde; */
+  /* mouse over link */
+  color: #F90;
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition:color .3s ease-in;
+  -moz-transition:color .3s ease-in;
+  -o-transition:color .3s ease-in;
+  transition:color .3s ease-in;
 }
 
 a:active {
-    /* selected link */
-    color: #FC0;
-    text-decoration: none;
+  /* selected link */
+  color: #FC0;
+  text-decoration: none;
 }
 
-#BackToTopArrow {
-    font-size: 35px;
-    color: #999;
-    text-decoration: none;
+.scrollingBoxLeft a:link {
+  /* unvisited link */
+  color: #999;
+  text-decoration: none;
 }
 
-#BackToTopArrow:link {
-    /* unvisited link */
-    color: #999;
-    text-decoration: none;
+.scrollingBoxLeft a:visited {
+  /* visited link */
+  color: #999;
+  text-decoration: none;
 }
 
-#BackToTopArrow:visited {
-    /* visited link */
-    color: #999;
-    text-decoration: none;
+.scrollingBoxLeft a:hover {
+  /* mouse over link */
+  color: #FFF;
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition:color .3s ease-in;
+  -moz-transition:color .3s ease-in;
+  -o-transition:color .3s ease-in;
+  transition:color .3s ease-in;
 }
 
-#BackToTopArrow:hover {
-	/* color: #2c8bde; */
-	/* mouse over link */
-    color: #FFF;
-    text-decoration: none;
-	outline: 0;
-	-webkit-transition:color .3s ease-in;
-	-moz-transition:color .3s ease-in;
-	-o-transition:color .3s ease-in;
-	transition:color .3s ease-in;
+.scrollingBoxLeft a:active {
+  /* selected link */
+  color: #666;
+  text-decoration: none;
 }
 
-#BackToTopArrow:active {
-    /* selected link */
-    color: #666;
-    text-decoration: none;
+.scrollingBoxLeftSponsors a:link {
+  /* unvisited link */
+  color: #999;
+  text-decoration: none;
+}
+
+.scrollingBoxLeftSponsors a:visited {
+  /* visited link */
+  color: #999;
+  text-decoration: none;
+}
+
+.scrollingBoxLeftSponsors a:hover {
+  /* mouse over link */
+  color: #FFF;
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition:color .3s ease-in;
+  -moz-transition:color .3s ease-in;
+  -o-transition:color .3s ease-in;
+  transition:color .3s ease-in;
+}
+
+.scrollingBoxLeftSponsors a:active {
+  /* selected link */
+  color: #666;
+  text-decoration: none;
+}
+
+.buttonHyperLink:link {
+  /* unvisited link */
+  color: #999;
+  text-decoration: none;
+}
+
+.buttonHyperLink:visited {
+  /* visited link */
+  color: #999;
+  text-decoration: none;
+}
+
+.buttonHyperLink:hover {
+  /* mouse over link */
+  color: #FFF;
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition:color .3s ease-in;
+  -moz-transition:color .3s ease-in;
+  -o-transition:color .3s ease-in;
+  transition:color .3s ease-in;
+}
+
+.buttonHyperLink:active {
+  /* selected link */
+  color: #666;
+  text-decoration: none;
+}
+
+#DriverInfoPDF {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#DriverInfoPDF:link {
+  /* unvisited link */
+  color: #FC0;
+  text-decoration: none;
+}
+
+#DriverInfoPDF:visited {
+  /* visited link */
+  color: #fC0;
+  text-decoration: none;
+}
+
+#DriverInfoPDF:hover {
+  /* mouse over link */
+  color: #FFF;
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition:color .3s ease-in;
+  -moz-transition:color .3s ease-in;
+  -o-transition:color .3s ease-in;
+  transition:color .3s ease-in;
+}
+
+#DriverInfoPDF:active {
+  /* selected link */
+  color: #999;
+  text-decoration: none;
 }
 
 /* ------------- Images ------------- */
-a {outline : none;}
+a {
+  outline : none;
+}
 
-a img {outline : none;}
+a img {
+  outline : none;
+}
 
-img {border : 0;}
+img {
+  border : 0;
+}
 
 /* ------------- Alerts ------------- */
 .alert{
-	font-size: 15px;
-	padding:15px;
-	margin-top:0px;
-	margin-left: 2%;
-	margin-right: 2%;
-	margin-bottom: 10px;
-	border:2px solid transparent;
-	border-radius:4px
+  font-size: 15px;
+  padding:15px;
+  margin-top:0px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  border:2px solid transparent;
+  border-radius:4px
 }
 
 .alert-success{
-	color:#3c763d;
-	background-color:#dff0d8;
-	border-color:#d6e9c6;
+  color:#3c763d;
+  background-color:#dff0d8;
+  border-color:#d6e9c6;
 }
 
 .alert-success hr{
-	border-top-color:#c9e2b3
+  border-top-color:#c9e2b3
 }
 
 .alert-success .alert-link{
-	color:#2b542c
+  color:#2b542c
 }
 
 .alert-info{
-	color:#31708f;
-	background-color:#d9edf7;
-	border-color:#bce8f1;
+  color:#31708f;
+  background-color:#d9edf7;
+  border-color:#bce8f1;
 }
 
 .alert-info hr{
-	border-top-color:#a6e1ec
+  border-top-color:#a6e1ec
 }
 
 .alert-info .alert-link{
-	color:#245269
+  color:#245269
 }
 
 .alert-warning{
-	color:#8a6d3b;
-	background-color:#fcf8e3;
-	border-color:#faebcc;
+  color:#8a6d3b;
+  background-color:#fcf8e3;
+  border-color:#faebcc;
 }
 
 .alert-warning hr{
-	border-top-color:#f7e1b5
+  border-top-color:#f7e1b5
 }
 
 .alert-warning .alert-link{
-	color:#66512c
+  color:#66512c
 }
 
 .alert-danger{
-	color:#a94442;
-	background-color:#f2dede;
-	border-color:#ebccd1
+  color:#a94442;
+  background-color:#f2dede;
+  border-color:#ebccd1
 }
 
 .alert-danger hr{
-	border-top-color:#e4b9c0
+  border-top-color:#e4b9c0
 }
 
 .alert-danger .alert-link{
-	color:#843534
+  color:#843534
 }
 
 /* ------------- Modal ------------- */
 .Poster {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline;
+  vertical-align: middle;
+  margin: 0px;
 }
 
-.Poster:hover {opacity: 0.7;}
+.Poster:hover {
+  opacity: 0.7;
+}
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 10; /* Sit on top */
-    padding-top: 35px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  padding-top: 35px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  color: #fff;
 }
 
 /* Modal Content (image) */
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 100%;
-    max-width: 29%;
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 29%;
 }
 
 /* Caption of Modal Image */
 #caption {
-    margin: auto;
-    display: block;
-    width: 100%;
-    max-width: 700px;
-    text-align: center;
-    color: #fff;
-    padding: 10px 0;
-    height: 15px;
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  height: 15px;
 }
 
 /* Add Animation */
-.modal-content, #caption {    
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
 @-webkit-keyframes zoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
 }
 
 @keyframes zoom {
-    from {transform: scale(0.1)} 
-    to {transform: scale(1)}
+  from {transform: scale(0.1)}
+  to {transform: scale(1)}
 }
 
 /* Close Button */
 .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .close:hover, .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
+  .modal-content {
+     width: 100%;
+  }
 }
 
-.facebook:hover {
-	/* color: #2c8bde; */
-	/* mouse over link */
-    color: #00F;
-    text-decoration: none;
-	outline: 0;
-	-webkit-transition:color .3s ease-in;
-	-moz-transition:color .3s ease-in;
-	-o-transition:color .3s ease-in;
-	transition:color .3s ease-in;
+/* -------- Points Buttons -------- */
+.pointsButton {
+  margin-top: 1%;
+  margin-bottom: 3.5%;
+  font-size: 18px;
+  color: #FFF;
+  font-weight: bold;
 }
 
-.facebook:active {
-    /* selected link */
-    color: #00F;
-    text-decoration: none;
+#pointsButtonPro {
+  margin-left: 51%;
 }
