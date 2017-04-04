@@ -9,54 +9,53 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="/Bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css"> <!-- May not need -->
   <link rel="stylesheet" href="/Bootstrap/css/bootstrap-theme.css">
-  <link rel="stylesheet" href="/Bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="/Bootstrap/css/bootstrap-theme.min.css"> <!-- May not need -->
 
-  <link rel="stylesheet" href="/Glyphicons/glyphicons-social/web/html_css/css/glyphicons-social.css">
-  <link rel="stylesheet" href="/Glyphicons/glyphicons-filetypes/web/html_css/css/glyphicons-filetypes.css">
-  <link rel="stylesheet" href="/Glyphicons/glyphicons/web/html_css/css/glyphicons.css">
+  <link rel="stylesheet" href="/Glyphicons/glyphicons-social/css/glyphicons-social.css">
+  <link rel="stylesheet" href="/Glyphicons/glyphicons-filetypes/css/glyphicons-filetypes.css">
+  <link rel="stylesheet" href="/Glyphicons/glyphicons/css/glyphicons.css">
 
   <link rel="stylesheet" href="/CSS/SISLRA.css">
-  <link rel="stylesheet" href="/CSS/SISLRAFooter.css">
 
   <!-- JavaScript -->
-  <script src="/JavaScript/Countdown_SISLRA.js"></script>
-  <script src="/JavaScript/Countdown_PortMcNeill.js"></script>
-  <script src="/JavaScript/Countdown_PortAlberni.js"></script>
+  <script src="/JavaScript/Countdown.js"></script>
+  <script src="/JavaScript/indexSchedule.js"></script>
+  
+  <script src="/JavaScript/jquery.js"></script>
+  
+  <script src="/JavaScript/W3HTMLInclude.js"></script>
 
   <script src="/Bootstrap/js/bootstrap.js"></script>
   <script src="/Bootstrap/js/bootstrap.min.js"></script>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
-<body> <!-- Cancelled Race onload="myFunction();" -->
+<body>
 
 <div id="wrapper">
 
   <div id="header">
 
     <div id="mySlidesDiv">
-      <img class="mySlides" src="/WebBanner/Untitled-2.png">
-      <img class="mySlides" src="/WebBanner/Untitled-3.png">
-      <img class="mySlides" src="/WebBanner/Untitled-4.png">
-      <img class="mySlides" src="/WebBanner/Untitled-5.png">
-      <img class="mySlides" src="/WebBanner/Untitled-6.png">
-      <img class="mySlides" src="/WebBanner/Untitled-7.png">
-      <img class="mySlides" src="/WebBanner/Untitled-8.png">
-      <img class="mySlides" src="/WebBanner/Untitled-9.png">
-      <img class="mySlides" src="/WebBanner/Untitled-10.png">
-      <img class="mySlides" src="/WebBanner/Untitled-11.png">
-      <img class="mySlides" src="/WebBanner/Untitled-12.png">
-      <img class="mySlides" src="/WebBanner/Untitled-13.png">
-      <img class="mySlides" src="/WebBanner/Untitled-14.png">
-      <img class="mySlides" src="/WebBanner/Untitled-15.png">
-      <img class="mySlides" src="/WebBanner/Untitled-16.png">
-      <img class="mySlides" src="/WebBanner/Untitled-17.png">
-      <img class="mySlides" src="/WebBanner/Untitled-18.png">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-2.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-3.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-4.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-5.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-6.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-7.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-8.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-9.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-10.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-11.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-12.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-13.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-14.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-15.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-16.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-17.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-18.jpg">
     </div>
     
     <span id="shade"></span>
@@ -69,7 +68,7 @@
       </div>
     </div>
 
-    <a href="/"><img id="indexWebbanner" src="/WebBanner/WebBanner.png" alt="SISLRA"></a>
+    <a href="/"><img id="indexWebbanner" src="/SISLRA/WebBanner.png" alt="SISLRA"></a>
 
     <table id="indexTableHeader">
       <tr>
@@ -96,7 +95,6 @@
       </tr>
     </table>
 
-    
     <nav class="navbar navbar-inverse navbar-topMargin">
       <div class="container-fluid">
         <ul class="nav navbar-nav">
@@ -146,22 +144,22 @@
   <div id="main-section">
 
   <div id="left">
-    <h3><a href="/Points.html"><span class="glyphicons glyphicons-coins"></span>Points</a></h3>
-    <p id="indexPointsUpdate">Updated as of: <span id="PointsUpdate"></span></p>
+    <h3><a href="/Points.html"><span class="glyphicons glyphicons-coins"></span>Points: <span id="PointsUpdate"></span></a></h3>
+    <!-- <p id="indexPointsUpdate">Updated as of: <span id="PointsUpdate"></span></p> -->
 
     <h3><a href="/Events.html#RaceSchedule"><span class="glyphicons glyphicons-calendar"></span>2017 Schedule:</a></h3>
     <ul id="schedule">
-      <li class="current">Apr 23 -Points -Cars, Bikes & Students</li>
-      <li>Apr 30 -Points -Cars, Bikes & Students</li>
-      <li>May 7 -Points -Cars, Bikes & Students</li>
-      <li>May 14 -Points -Cars, Bikes & Students</li>
-      <li>June 11 -Points -Cars, Bikes & Students</li>
-      <li>June 18 -Points -Cars & Bikes</li>
-      <li>July 9 -Points -Cars & Bikes</li>
-      <li>July 30 -SHOOTOUT</li>
-      <li>Aug 20 -Points -Cars & Bikes</li>
-      <li>Sept 10 -Points -Cars & Bikes</li>
-      <li>Sept 17 -Championship Race -Cars & Bikes</li>
+      <li id="1stRace">Apr 23 -Points -Cars, Bikes & Students</li>
+      <li id="2ndRace">Apr 30 -Points -Cars, Bikes & Students</li>
+      <li id="3rdRace">May 7 -Points -Cars, Bikes & Students</li>
+      <li id="4thRace">May 14 -Points -Cars, Bikes & Students</li>
+      <li id="5thRace">June 11 -Points -Cars, Bikes & Students</li>
+      <li id="6thRace">June 18 -Points -Cars & Bikes</li>
+      <li id="7thRace">July 9 -Points -Cars & Bikes</li>
+      <li id="8thRace">July 30 -SHOOTOUT</li>
+      <li id="9thRace">Aug 20 -Points -Cars & Bikes</li>
+      <li id="10thRace">Sept 10 -Points -Cars & Bikes</li>
+      <li id="11thRace">Sept 17 -Championship Race -Cars & Bikes</li>
       <!-- Classes .current .over .cancelled .new -->
     </ul>
     <h3><a href="/RacerInfo.html#Fees"><span class="glyphicons glyphicons-money"></span>Fees</a></h3>
@@ -181,11 +179,11 @@
     <table>
       <tr>
         <td><span class="indexPointsWinners">Pro</span><br>#6011<br>Bill Nesbitt</td>
-        <td><img style="padding-bottom:10px;" src="YearWinners/1stPlaceProClass.png" alt="1st Place Pro Class" width="190" height="100" /></td>
+        <td><img style="padding-bottom:10px;" src="/SISLRA/YearWinners/1stPlaceProClass.png" alt="1st Place Pro Class" width="190" height="100" /></td>
       </tr>
       <tr>
         <td><span class="indexPointsWinners">Street</span><br>#26<br>Rob Baxter</td>
-        <td><img src="YearWinners/1stPlaceStreetClass.png" alt="1st Place Street Class" width="190" height="90" /></td>
+        <td><img src="/SISLRA/YearWinners/1stPlaceStreetClass.png" alt="1st Place Street Class" width="190" height="90" /></td>
       </tr>
       <!-- <tr>
         <td><span class="indexPointsWinners">Bike</span><br>#1198<br>Robbie Kent</td>
@@ -257,7 +255,7 @@
     <p>Thank you very much to Rob Baxter for taking on the position of Sponsorship Coordinator.</p>
     
     <h1>No Sound Restrictions</h1>
-    <p>A reminder that there are no decibel restrictions at our track so feel free to help ensure Bear Mountain residents are aware that it's race day!</p>
+    <p>A reminder that there are no decibel restrictions at our track so feel free to make some noise!</p>
 
     <h1>Class Times</h1>
     <p>A reminder that all cars in Pro Class now run 5.79 or faster, and all Street cars run 5.80 or slower.</p>
@@ -282,79 +280,13 @@
 
   </div> <!-- end of main section -->
 
-  <div id="footerSocial">
-    <div class="footer-row">
-      <div class="footer-section">
-        <img id="SISLRALogo-Footer" src="/WebBanner/WebBanner.png" alt="SISLRA"/>
-      </div>
-      <div class="footer-section">
-        <div id="SocialMediaDiv-Footer">
-          <a id="facebook-Footer" class="buttonHyperLink" href="https://www.facebook.com/groups/327092727329942/" target="_blank"><span class="social social-facebook x2"></span></a>
-          <a class="buttonHyperLink" href="https://twitter.com/DragRaceVic" target="_blank"><span class="social social-twitter x2"></span></a>
-          <a class="buttonHyperLink" href="https://www.instagram.com/dragracevictoria/?hl=en" target="_blank"><span class="social social-instagram x2"></span></a>
-          <a class="buttonHyperLink" href="https://www.youtube.com/user/nostopinLucR" target="_blank"><span class="social social-youtube x2"></span></a>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li> | </li>
-            <li><a href="/Points.html">Points</a></li>
-            <li> | </li>
-            <li><a href="/Sponsors.html">Sponsors</a></li>
-          </ul>
-          <ul>
-            <li><a href="/ContactUs.html">Contact Us</a></li>
-            <li> | </li>
-            <li><a href="/AboutUs.html">About Us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-section">
-        <div id="spiningTire">
-          <img id="spin" src="/WebBanner/DragTire.png" alt="Drag Tire"/>
-          <img id="smoke" src="/WebBanner/smoke.png"  alt="Tire Smoke"/>
-        </div>
-      </div>
-    </div>
-  </div>
-    
-  <div id="footerSponsors">
-      <div class="footer-row">
-        <div class="footer-section-2">
-          <h3><a href="Sponsors.html"><span class="glyphicons glyphicons-group"></span> Sponsors</a></h3>
-          <a href="http://searlesauto.ca/" target="_blank"><img src="/Sponsors/Searles.jpg" alt="Searles Auto" width="200" height="110"></a>
-        </div>
-        <div class="footer-section-2">
-          <h3>&nbsp;</h3>
-          <a href="http://www.lordco.com/" target="_blank"><img src="/Sponsors/Lordco.png" alt="Lordco" width="200" height="80"></a>
-        </div>
-        <div class="footer-section-2">
-          <h3>&nbsp;</h3>
-          <a href="http://bdlifttruck.ca/" target="_blank"><img src="/Sponsors/BandDForklift-300x87.jpg" alt="B&D Forklift" width="210" height="110"></a>
-        </div>
-        <div class="footer-section-2">
-          <h3>&nbsp;</h3>
-          <a href="http://www.kmstools.com/" target="_blank"><img src="/Sponsors/KMSToolsNoBack.gif" alt="KMS Tools" width="190" height="70"></a>
-        </div>
-        <div class="footer-section-2">
-          <h3>&nbsp;</h3>
-          <a href="http://www.382sign.com/" target="_blank"><img src="/Sponsors/GraphicFX.png" alt="Graphic FX" width="200" height="80"></a>
-        </div>
-      </div>
-      <div class="footer-row">
-        <div class="footer-section-2">
-          <a href="http://www.dentexpdr.com/" target="_blank"><img src="/Sponsors/DentexNoBack.png" alt="Dentex" width="210" height="100"></a>
-        </div>
-        <div class="footer-section-2">
-          <a href="http://www.used.ca/" target="_blank"><img src="/Sponsors/Used_Logo_Purple.png" alt="Used_Logo_Purple" width="190" height="100"></a>
-        </div>
-        <div class="footer-section-2">
-          <a href="http://vicmobile.com/" target="_blank"><img src="/Sponsors/VictoriaMobileRadio.JPG" alt="Victoria Mobile Radio" width="190" height="110"></a>
-        </div>
-        <div class="footer-section-2">
-          <a href="https://www.hsminsurance.com/" target="_blank"><img src="/Sponsors/HenrdrySwinton.jpg" alt="Henrdry Swinton" width="190" height="110"></a>
-        </div>
-     </div>
-  </div>
-      
+  <div w3-include-html="footerSocial.html"></div> <!-- Start Of Footer -->
+  <div w3-include-html="footerSponsors.html"></div>
+  
+  <script>
+  w3IncludeHTML();
+  </script>
+  
   <div id="footerCopyright">
     <div class="footer-row">
       <div class="footer-section">

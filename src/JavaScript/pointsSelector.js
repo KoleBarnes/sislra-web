@@ -22,5 +22,5 @@ function showDivs(n) {
    dots[i].className = dots[i].className.replace(" w3-red", "");
   }
   x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-red";
+  //dots[slideIndex-1].className += " w3-red"; // Causing error
 }

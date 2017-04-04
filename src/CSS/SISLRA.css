@@ -72,19 +72,24 @@ ul {
   color: #0F0;
 }
 
+.future {
+  color: #ff0;
+}
+
 #aboutUsli {
   margin-left:10px;
 }
 
-#indexPointsUpdate {
+/* #indexPointsUpdate {
   margin: 0px;
   margin-bottom: 5px;
   margin-left:8px;
-}
+} */
 
 #PointsUpdate:after {
   color: #FC0;
-  text-decoration: underline;
+  font-size: 17px;
+  /* text-decoration: underline; */
   font-weight: bold;
   content: "11/13/2016"
 }
@@ -236,6 +241,11 @@ h6 {
   margin-left: 300px;
   margin-right: 300px;
   text-align: center;
+}
+
+#centerSponsors img {
+  margin-top: 15px;
+  margin-bottom: 0px;
 }
 
 #tableCenterSponsors {
@@ -472,6 +482,169 @@ td#VolunteerNeeded {
 .ThunderInTheValleyDate:after {
   text-shadow: 2px 2px #000;
   content: "Thunder in The Valley is in:"
+}
+
+/* ------------- Footer ------------- */
+/* ------------- http://stackoverflow.com/questions/27770310/making-a-responsive-footer-with-3-divs-inside ------------- */
+
+#footerSocial {
+  display:table;
+  width:100%;
+  margin-top: 5px;
+  background-color: #202020;
+  border-radius: 3px 3px 0px 0px;
+  z-index: 1; 
+  position:relative;
+  margin-bottom: -8px;
+  z-index: 2;
+}
+
+#footerSocial ul {
+  list-style-type: none;
+  margin-bottom: 5px;
+  margin-left: -109px;
+  text-align: center;
+}
+
+#footerSocial li {
+  display: inline;
+}
+
+#footerSponsors {
+  display:table;
+  width:100%;
+  margin-top: 5px;
+  background-color: #202020;
+  z-index: 1; 
+  position:relative
+}
+
+#footerSponsors p {
+  color: #FC0;
+  font-size: 20px;
+}
+
+#footerSponsors h3 {
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#footerSponsors ul {
+  padding-left: 30px;
+  padding-bottom: 5px;
+  list-style-type: none;
+}
+
+#footerCopyright {
+  display:table;
+  width:100%;
+  margin-top: -10px;
+  background-color: #202020;
+  z-index: 1;
+  position:relative
+}
+
+#footerCopyright p{
+  font-size: 12px;
+  margin-left: 42%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #FC0;
+}
+
+.footer-row {
+  display:table-row;
+}
+
+.footer-section {
+  display:table-cell;
+  width: 30%;
+  font-size: 20px;
+}
+
+.footer-section-2 {
+  display:table-cell;
+  width: 25%;
+  padding: 10px;
+  margin-top: 0px;
+  padding-top: 0px;
+  vertical-align: middle;
+}
+
+.footer-section-2 img{
+  display: block;
+  margin: auto;
+}
+
+#SocialMediaDiv-Footer {
+  margin-left: 120px;
+  color: #FC0;
+}
+
+#facebook-Footer {
+  margin-left: -22px;
+}
+
+#SISLRALogo-Footer{
+  width: 280px;
+  margin-left: 100px; 
+  margin-top: 0%; 
+  margin-bottom: 0%;
+}
+
+/* ------------- Spinning Tire with Smoke ------------- */
+#spiningTire {
+  position: relative;
+  margin-top: 48px;
+  margin-left: 70px;
+}
+
+#smoke {
+  position: absolute;
+  top: -70px;
+  left: -70px;
+}
+
+#spin {
+  margin: 0px;
+  width: 200px;
+  height: 200px;
+  background: #202020;
+
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@-ms-keyframes spin {
+  from { -ms-transform: rotate(0deg); }
+  to { -ms-transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  from { transform:rotate(0deg); }
+  to { transform:rotate(360deg); }
 }
 
 /* ------------- http://jsfiddle.net/gaby/9Ryvs/7/ ------------- */
