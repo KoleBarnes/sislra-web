@@ -361,7 +361,7 @@ td#VolunteerNeeded {
 
 .marqueeInfo:after {
   text-shadow: 2px 2px #000;
-  content:"THE 2017 RACE SCHEDULE IS HERE!";
+  content:"THE FIRST RACE OF THE SEASON IS ALMOST HERE! WATCH AS WE COUNT DOWN!";
   /* content: "THE FINAL RACE OF THE SEASON IS ON SATURDAY OCTOBER 8TH. GATES OPEN AT 9:00am. QUALIFYING STARTS AT 10:00am."; */
 }
 
@@ -441,7 +441,6 @@ td#VolunteerNeeded {
   color: #FFF;
   font-weight: bold;
   font-size: 15px;
-  margin-left: 3px;
   text-shadow: 2px 2px #000;
 }
 
@@ -449,7 +448,6 @@ td#VolunteerNeeded {
   color: #FFF;
   font-weight: bold;
   font-size: 15px;
-  margin-left: 3px;
   text-shadow: 2px 2px #000;
 }
 
@@ -457,7 +455,6 @@ td#VolunteerNeeded {
   color: #FFF;
   font-weight: bold;
   font-size: 15px;
-  margin-left: 3px;
   text-shadow: 2px 2px #000;
 }
 
@@ -471,17 +468,21 @@ td#VolunteerNeeded {
 
 .sislraDate:after {
   text-shadow: 2px 2px #000;
-  content: " 1st SISLRA Race is in: "
+  padding-left: 15px;
+  padding-right: 15px;
+  content: " Next SISLRA Race is in: "
 }
 
 .RumbleOnTheRunwayDate:after {
   text-shadow: 2px 2px #000;
-  content: "1st Rumble on the Runway is in:"
+  content: "Next Rumble on the Runway is in:"
 }
 
 .ThunderInTheValleyDate:after {
   text-shadow: 2px 2px #000;
-  content: "Thunder in The Valley is in:"
+  padding-left: 5px;
+  padding-right: 5px;
+  content: " Thunder in The Valley is in: "
 }
 
 /* ------------- Footer ------------- */
@@ -983,6 +984,6 @@ img {
   font-weight: bold;
 }
 
-#pointsButtonPro {
-  margin-left: 51%;
+.mySlidesPoints {
+  margin-left: -170px;
 }

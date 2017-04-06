@@ -79,6 +79,7 @@
           <li class="dropdown"><a href="/RacerInfo.html">Racer Info <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="/RacerInfo.html#Fees">Fees</a></li>
+              <li><a href="/RacerInfo.html#Memberships">Memberships</a></li>
               <li><a href="/RacerInfo.html#DriverInformationSheet">Driver Information Sheet</a></li>
               <li><a href="/RacerInfo.html#RaceClassesAndTimes">Classes & Times</a></li>
               <li><a href="/RacerInfo.html#BracketRacingBasics">Racing Basics</a></li>
@@ -134,23 +135,21 @@
   <!--<div id="right">
    </div> <!-- end of right -->
 
-  <div id="centerPoints">
+  <div id="center">
 
-  <h1>Points Are Valid Only For Members.</h1>
+  <h1 style="text-align: center;">Points Are Valid Only For Members.</h1>
   <p>To be eligible to compete in this season's Points Competition you must be a registered SISLRA member.
   Only races raced after your membership is paid, are eligible to be counted in the competition. Please see Bill
   Jamieson on race day to purchase your membership.</p>
   <h2>Points Updated as of: <span id="PointsUpdate"></span></h2>
   
-  <div style="max-width:800px">
-    <img class="mySlidesPoints" src="Points/ProPoints.png" alt="Pro Points" width="943" height="490" />
-    <img class="mySlidesPoints" src="Points/StreetPoints.png" alt="StreetPoints" width="943" height="490" />
-  </div>
+  <!-- <div style="max-width:800px; margin-left: 180px;"> -->
+  <img class="mySlidesPoints" src="Points/ProPoints.png" alt="Pro Points" width="943" height="490" />
+  <img class="mySlidesPoints" src="Points/StreetPoints.png" alt="StreetPoints" width="943" height="490" />
+  <!-- </div> -->
 
-  <div>
-    <button id="pointsButtonPro" type="button" class="btn btn-danger pointsButton" onclick="currentDiv(1)">Pro</button>
-    <button type="button" class="btn btn-success pointsButton" onclick="currentDiv(2)">Street</button>
-  </div>
+  <button style="margin-left: 35px;" type="button" class="btn btn-danger pointsButton" onclick="currentDiv(1)">&nbsp;Pro&nbsp;</button>
+  <button type="button" class="btn btn-success pointsButton" onclick="currentDiv(2)">Street</button>
 
   <script src="/JavaScript/pointsSelector.js"></script>
 

@@ -59,7 +59,7 @@ $(function() {
 // sidebarBoxLeft
 $(function() {
 	// Set this variable with the height of your sidebar + header
-	var offsetPixels = $('.sidebarBoxLeft').outerHeight() - 35; 
+	var offsetPixels = $('.sidebarBoxLeft').outerHeight() - 62; 
 
 	$(window).scroll(function() {
 		if ($(window).scrollTop() > offsetPixels) {

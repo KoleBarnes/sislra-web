@@ -21,6 +21,7 @@
 
   <!-- JavaScript -->
   <script src="/JavaScript/Countdown.js"></script>
+  <script src="/JavaScript/indexSchedule.js"></script>
 
   <script src="/JavaScript/jquery.js"></script>
   <script src="/JavaScript/scrollingBox.js"></script>
@@ -79,6 +80,7 @@
           <li class="dropdown"><a href="/RacerInfo.html">Racer Info <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="/RacerInfo.html#Fees">Fees</a></li>
+              <li><a href="/RacerInfo.html#Memberships">Memberships</a></li>
               <li><a href="/RacerInfo.html#DriverInformationSheet">Driver Information Sheet</a></li>
               <li><a href="/RacerInfo.html#RaceClassesAndTimes">Classes & Times</a></li>
               <li><a href="/RacerInfo.html#BracketRacingBasics">Racing Basics</a></li>
@@ -147,12 +149,69 @@
   <div id="center">
 
     <h1 id="RaceSchedule">Race Schedule</h1>
-    <img src="/Events/RaceSchedule.jpg" alt="Race Schedule" width="590" height="190">
-    <p>Both the Schedule and the Poster can be printed out or picked up on race day.</p>
+    
+    <div style="border: 3px solid #FC0;" >
+    <table>
+    <tr>
+    <td>
+      <a href="/"><img style="width: 250px; margin-left: 10px;" src="/SISLRA/WebBanner.png" alt="SISLRA"></a>
+      <h1 style="margin-bottom: 10px; text-align: center; margin-left: 5px;" >2017 Race Schedule</h1>
+    </td>
+    <td>
+    
+    <p style="font-size: 15px; margin: 0px; margin-left: 20px; margin-top: 10px;" id="1stRace">Apr 23 - Points - Cars, Bikes & Students</p>
+    <p style="font-size: 15px; margin: 0px; margin-left: 47px;" id="2ndRace">30 - Points - Cars, Bikes & Students</p>
+    <p style="font-size: 15px; margin: 0px; margin-left: 15px;" id="3rdRace">May &nbsp;&nbsp;7 - Points - Cars, Bikes & Students</p>
+    <p style="font-size: 15px; margin: 0px; margin-left: 47px;" id="4thRace">14 - Points - Cars, Bikes & Students</p>
+    <p style="font-size: 15px; margin: 0px; margin-left: 10px;" id="5thRace">June 11 - Points - Cars, Bikes & Students</p>
+    <p style="font-size: 15px; margin: 0px; margin-left: 46px;" id="6thRace">18 - Points - Cars & Bikes</p>
+    <p style="font-size: 15px; margin: 0px; margin-left: 13px;" id="7thRace">July &nbsp;&nbsp;9 - Points - Cars & Bikes</p>
+    <p style="font-size: 15px; margin: 0px; margin-left: 45px;" id="8thRace">30 - SHOOTOUT</p>
+    <p style="font-size: 15px; margin: 0px; margin-left: 15px;" id="9thRace">Aug 20 - Points - Cars & Bikes</p>
+    <p style="font-size: 15px; margin: 0px; margin-left: 10px;" id="10thRace">Sept 10 - Points - Cars & Bikes</p>
+    <p style="font-size: 15px; margin: 0px; margin-left: 44px;" id="11thRace">17 - Championship Race - Cars & Bikes</p>
+        <!-- Classes .current .over .cancelled .new -->
 
-    <h1 id="Posters">Posters (Click To See)</h1>
+    <!-- <img src="/Events/RaceSchedule.jpg" alt="Race Schedule" width="590" height="190"> -->
+    
+    </td>
+    </tr>
+    </table>
+    
+    <table style="font-size: 16px; text-align: center; border-collapse: separate; border-spacing: 10px 5px;">
+      <tr>
+        <th></th>
+        <th>Gates Open/Tech.</th>
+        <th>Qualifying</th>
+        <th>Eliminations</th>
+      </tr>
+      <tr>
+        <td>Sundays*</td>
+        <td>2:00 pm</td>
+        <td>3:00 pm</td>
+        <td>6:00 pm</td>
+      </tr>
+      <tr>
+        <td>Saturdays</td>
+        <td>8:00 am</td>
+        <td>9:00 am</td>
+        <td>11:00am</td>
+      </tr>
+      <tr>
+        <td>Fridays</td>
+        <td>4:00 pm</td>
+        <td>5:30 pm</td>
+        <td>7:30 pm</td>
+      </tr>
+    </table>
+    
+    <p>* All 2017 races will be on a sunday unless otherwise posted.</p>
+    </div>
+    <!-- <p>Both the Schedule and the Poster can be printed out or picked up on race day.</p> -->
+
+    <h1 id="Posters" style="margin-top: 10px;">Posters</h1>
     <img id="YearPoster" class="Poster" src="/Events/YearPoster.jpg" width="200" height="300">
-    <img id="StreetCarShootoutPoster" class="Poster" src="/Events/StreetCarShootout.jpg" width="200" height="300">
+    <!-- <img id="StreetCarShootoutPoster" class="Poster" src="/Events/StreetCarShootout.jpg" width="200" height="300"> -->
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -162,7 +221,7 @@
     </div>
     
     <script src="/JavaScript/YearPosterModal.js"></script> <!-- Has To Be Here To Run Modal -->
-    <script src="/JavaScript/StreetCarShootoutModal.js"></script> <!-- Has To Be Here To Run Modal -->
+    <!-- <script src="/JavaScript/StreetCarShootoutModal.js"></script> <!-- Has To Be Here To Run Modal -->
 
     <br>
     <br>
