@@ -76,10 +76,6 @@ ul {
   color: #ff0;
 }
 
-#aboutUsli {
-  margin-left:10px;
-}
-
 /* #indexPointsUpdate {
   margin: 0px;
   margin-bottom: 5px;
@@ -113,7 +109,7 @@ h2#pro {
   color: #ff0000;
 }
 
-#indexPointsList {
+.indexPointsList {
   margin: 0px;
   font-size: 15px;
 }
@@ -251,6 +247,7 @@ h6 {
 #tableCenterSponsors {
   text-align: center;
   margin-left: -145px;
+  padding: 0px;
 }
 
 #centerPoints {
