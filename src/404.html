@@ -22,6 +22,8 @@
   <!-- JavaScript -->
   <script src="/JavaScript/Countdown.js"></script>
   
+  <script src="/JavaScript/CountdownRedirect.js"></script>
+  
   <script src="/JavaScript/jquery.js"></script>
   
   <script src="/JavaScript/W3HTMLInclude.js"></script>
@@ -38,9 +40,9 @@
   <div id="header">
 
     <div id="mySlidesDiv">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-2.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-3.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-4.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-2.jpg" alt="Slide2" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-3.jpg" alt="Slide3" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-4.jpg" alt="Slide4" />
     </div>
     
     <span id="shade"></span>
@@ -53,7 +55,7 @@
       </div>
     </div>
 
-    <a href="/"><img id="indexWebbanner" src="/SISLRA/WebBanner.png" alt="SISLRA"></a>
+    <a href="/"><img id="indexWebbanner" src="/SISLRA/WebBanner.png" alt="SISLRA" /></a>
 
     <table id="indexTableHeader">
       <tr>
@@ -106,9 +108,33 @@
               <li><a href="/Events.html#Posters">Posters</a></li>
             </ul>
           </li>
-          <li><a href="/Sponsors.html">Sponsors</a></li>
-          <li><a href="/ContactUs.html">Contact Us</a></li>
-          <li><a href="/AboutUs.html">About Us</a></li>
+          <li class="dropdown"><a href="/Sponsors.html">Sponsors <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/Sponsors.html#BandDForklift">B&D Forklift</a></li>
+              <li><a href="/Sponsors.html#Searles">Searles</a></li>
+              <li><a href="/Sponsors.html#GraphicFX">GraphicFX</a></li>
+              <li><a href="/Sponsors.html#Dentex">Dentex</a></li>
+              <li><a href="/Sponsors.html#Lordco">Lordco</a></li>
+              <li><a href="/Sponsors.html#Used.ca">Used.ca</a></li>
+              <li><a href="/Sponsors.html#WestBayMechanical">West Bay Mechanical</a></li>
+              <li><a href="/Sponsors.html#IslandTorque">Island Torque</a></li>
+              <li><a href="/Sponsors.html#MaMillersPub">MaMillers Pub</a></li>
+              <li><a href="/Sponsors.html#HenrdrySwinton">Henrdry Swinton</a></li>
+              <li><a href="/Sponsors.html#SponsorshipInformation">Sponsorship Info.</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="/ContactUs.html">Contact Us <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/ContactUs.html">Contact Us</a></li>
+              <li><a href="/ContactUs.html#links">Other Tracks and Clubs</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="/AboutUs.html">About Us <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/AboutUs.html">About Us</a></li>
+              <li><a href="/AboutUs.html#LOCATEDAT">Location</a></li>
+            </ul>
+          </li>
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="filetypes filetypes-pdf"></span> PDF<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="/RacersInfo/NewRacersInformation.pdf" target="_blank"><span class="filetypes filetypes-pdf"></span> Racers Information</a></li>
@@ -116,14 +142,15 @@
             </ul>
           </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <div class="nav navbar-nav navbar-right">
           <a href="https://www.facebook.com/groups/327092727329942/" target="_blank" class="btn btn-primary" role="button" data-toggle="tooltip" data-placement="bottom" title="Facebook" style="color: #FFF;  margin-top: 4%;"><span class="social social-facebook"></span></a>
           <a href="https://twitter.com/DragRaceVic" target="_blank" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="bottom" title="Twitter" style="color: #FFF;  margin-top: 4%;"><span class="social social-twitter"></span></a>
           <a href="https://www.instagram.com/dragracevictoria/?hl=en" target="_blank" class="btn btn-default" role="button" data-toggle="tooltip" data-placement="bottom" title="Instagram" style="color: #000;  margin-top: 4%;"><span class="social social-instagram"></span></a>
           <a href="https://www.youtube.com/user/nostopinLucR" target="_blank" class="btn btn-danger" role="button" data-toggle="tooltip" data-placement="bottom" title="YouTube" style="color: #FFF; margin-top: 4%;"><span class="social social-youtube"></span></a>          &nbsp;
-        </ul>
+        </div>
       </div>
     </nav>
+    
   </div> <!-- end of header-->
 
   <div id="main-section">
@@ -131,26 +158,11 @@
     <div id="center">
     <h1>Bet you haven't seen this sign on the road.</h1>
     <br>
-    <img src="/SISLRA/404.png" alt="404" width="380" height="200">
+    <img src="/SISLRA/404.png" alt="404" width="380" />
     <br>
     <br>
     <p style="font-size: 20px; margin: 0px;">The page you for looking for doesn't exist.</p>
-    <p style="font-size: 20px; margin: 0px;"><a href="/">Click here</a> to return to home page or wait <span id="time" style="display:inline">10 Seconds</span>...</p>
-    <script>
-    setTimeout(function(){document.getElementById('time').innerHTML="9 Seconds"},1000);
-    setTimeout(function(){document.getElementById('time').innerHTML="8 Seconds"},2000);
-    setTimeout(function(){document.getElementById('time').innerHTML="7 Seconds"},3000);
-    setTimeout(function(){document.getElementById('time').innerHTML="6 Seconds"},4000);
-    setTimeout(function(){document.getElementById('time').innerHTML="5 Seconds"},5000);
-    setTimeout(function(){document.getElementById('time').innerHTML="4 Seconds"},6000);
-    setTimeout(function(){document.getElementById('time').innerHTML="3 Seconds"},7000);
-    setTimeout(function(){document.getElementById('time').innerHTML="2 Seconds"},8000);
-    setTimeout(function(){document.getElementById('time').innerHTML="1 Second"},9000);
-    setTimeout(function(){document.getElementById('time').innerHTML="0 Second"},10000);
-    setTimeout(function(){window.location.href="/"},9500);
-    </script>
-    
-    <br>
+    <p style="font-size: 20px; margin: 0px; margin-bottom: 20px;"><a href="/">Click here</a> or you will be redirected in <span id="count">10</span> Second(s).</p>
 
     </div> <!-- end of center -->
 

@@ -76,10 +76,6 @@ ul {
   color: #ff0;
 }
 
-#aboutUsli {
-  margin-left:10px;
-}
-
 /* #indexPointsUpdate {
   margin: 0px;
   margin-bottom: 5px;
@@ -113,7 +109,7 @@ h2#pro {
   color: #ff0000;
 }
 
-#indexPointsList {
+.indexPointsList {
   margin: 0px;
   font-size: 15px;
 }
@@ -210,6 +206,7 @@ h6 {
 
 #left {
   background-color: #191919;
+  /* background-image: linear-gradient(rgb(60, 60, 60) 0%, rgb(34, 34, 34) 100%); */
   border-radius: 3px;
   width: 300px;
   float: left;
@@ -218,6 +215,7 @@ h6 {
 
 #right {
   background-color: #191919;
+  /* background-image: linear-gradient(rgb(60, 60, 60) 0%, rgb(34, 34, 34) 100%); */
   border-radius: 3px;
   width: 300px;
   float: right;
@@ -251,6 +249,7 @@ h6 {
 #tableCenterSponsors {
   text-align: center;
   margin-left: -145px;
+  padding: 0px;
 }
 
 #centerPoints {
@@ -287,6 +286,27 @@ h6 {
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+/* ------------- Events ----------- */
+
+.activeSchedule p {
+  font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  margin: 0px;
+}
+
+.indexSchedule {
+  margin-top: -10px;
+  margin: 0px;
+  margin-left: 14px;
+}
+
+.indexSchedule p {
+  font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
+  margin: 0px;
+  margin-left: 30px;
+  font-size: 13px;
 }
 
 /* ------------- Contact Us Table ------------- */
@@ -493,6 +513,7 @@ td#VolunteerNeeded {
   width:100%;
   margin-top: 5px;
   background-color: #202020;
+  /* background-image: linear-gradient(rgb(60, 60, 60) 0%, rgb(34, 34, 34) 100%); */
   border-radius: 3px 3px 0px 0px;
   z-index: 1; 
   position:relative;
@@ -611,7 +632,7 @@ td#VolunteerNeeded {
   margin: 0px;
   width: 200px;
   height: 200px;
-  background: #202020;
+  /* background: #202020; */
 
   -webkit-animation-name: spin;
   -webkit-animation-duration: 4000ms;

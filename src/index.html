@@ -9,9 +9,9 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="/Bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css"> <!-- May not need -->
+  <!-- <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css"> <!-- May not need -->
   <link rel="stylesheet" href="/Bootstrap/css/bootstrap-theme.css">
-  <link rel="stylesheet" href="/Bootstrap/css/bootstrap-theme.min.css"> <!-- May not need -->
+  <!-- <link rel="stylesheet" href="/Bootstrap/css/bootstrap-theme.min.css"> <!-- May not need -->
 
   <link rel="stylesheet" href="/Glyphicons/glyphicons-social/css/glyphicons-social.css">
   <link rel="stylesheet" href="/Glyphicons/glyphicons-filetypes/css/glyphicons-filetypes.css">
@@ -36,30 +36,31 @@
 
 <div id="wrapper">
 
-  <div id="header">
-
+  <div id="header" style="height: 322px;">
+    
     <div id="mySlidesDiv">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-2.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-3.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-4.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-5.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-6.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-7.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-8.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-9.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-10.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-11.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-12.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-13.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-14.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-15.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-16.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-17.jpg">
-      <img class="mySlides" src="/SISLRA/Slides/Untitled-18.jpg">
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-2.jpg" alt="Slide2" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-3.jpg" alt="Slide3" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-4.jpg" alt="Slide4" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-5.jpg" alt="Slide5" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-6.jpg" alt="Slide6" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-7.jpg" alt="Slide7" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-8.jpg" alt="Slide8" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-9.jpg" alt="Slide9" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-10.jpg" alt="Slide10" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-11.jpg" alt="Slide11" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-12.jpg" alt="Slide12" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-13.jpg" alt="Slide13" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-14.jpg" alt="Slide14" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-15.jpg" alt="Slide15" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-16.jpg" alt="Slide16" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-17.jpg" alt="Slide17" />
+      <img class="mySlides" src="/SISLRA/Slides/Untitled-18.jpg" alt="Slide18" />
     </div>
     
-    <span id="shade"></span>
     <script src="/JavaScript/indexSlides.js"></script>
+    
+    <span id="shade"></span>
     
     <div class="marquee" id="indexMarquee">
       <div>
@@ -68,7 +69,7 @@
       </div>
     </div>
 
-    <a href="/"><img id="indexWebbanner" src="/SISLRA/WebBanner.png" alt="SISLRA"></a>
+    <a href="/"><img id="indexWebbanner" src="/SISLRA/WebBanner.png" alt="SISLRA" /></a>
 
     <table id="indexTableHeader">
       <tr>
@@ -99,7 +100,7 @@
       <div class="container-fluid">
         <ul class="nav navbar-nav">
           <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
-          <li class="dropdown"><a href="/RacerInfo.html">Racer Info <span class="caret"></span></a> <!-- & General  -->
+          <li class="dropdown"><a href="/RacerInfo.html">Racer Info <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="/RacerInfo.html#Fees">Fees</a></li>
               <li><a href="/RacerInfo.html#Memberships">Memberships</a></li>
@@ -121,9 +122,33 @@
               <li><a href="/Events.html#Posters">Posters</a></li>
             </ul>
           </li>
-          <li><a href="/Sponsors.html">Sponsors</a></li>
-          <li><a href="/ContactUs.html">Contact Us</a></li>
-          <li><a href="/AboutUs.html">About Us</a></li>
+          <li class="dropdown"><a href="/Sponsors.html">Sponsors <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/Sponsors.html#BandDForklift">B&D Forklift</a></li>
+              <li><a href="/Sponsors.html#Searles">Searles</a></li>
+              <li><a href="/Sponsors.html#GraphicFX">GraphicFX</a></li>
+              <li><a href="/Sponsors.html#Dentex">Dentex</a></li>
+              <li><a href="/Sponsors.html#Lordco">Lordco</a></li>
+              <li><a href="/Sponsors.html#Used.ca">Used.ca</a></li>
+              <li><a href="/Sponsors.html#WestBayMechanical">West Bay Mechanical</a></li>
+              <li><a href="/Sponsors.html#IslandTorque">Island Torque</a></li>
+              <li><a href="/Sponsors.html#MaMillersPub">MaMillers Pub</a></li>
+              <li><a href="/Sponsors.html#HenrdrySwinton">Henrdry Swinton</a></li>
+              <li><a href="/Sponsors.html#SponsorshipInformation">Sponsorship Info.</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="/ContactUs.html">Contact Us <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/ContactUs.html">Contact Us</a></li>
+              <li><a href="/ContactUs.html#links">Other Tracks and Clubs</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="/AboutUs.html">About Us <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/AboutUs.html">About Us</a></li>
+              <li><a href="/AboutUs.html#LOCATEDAT">Location</a></li>
+            </ul>
+          </li>
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="filetypes filetypes-pdf"></span> PDF<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="/RacersInfo/NewRacersInformation.pdf" target="_blank"><span class="filetypes filetypes-pdf"></span> Racers Information</a></li>
@@ -131,12 +156,12 @@
             </ul>
           </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <div class="nav navbar-nav navbar-right">
           <a href="https://www.facebook.com/groups/327092727329942/" target="_blank" class="btn btn-primary" role="button" data-toggle="tooltip" data-placement="bottom" title="Facebook" style="color: #FFF;  margin-top: 4%;"><span class="social social-facebook"></span></a>
           <a href="https://twitter.com/DragRaceVic" target="_blank" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="bottom" title="Twitter" style="color: #FFF;  margin-top: 4%;"><span class="social social-twitter"></span></a>
           <a href="https://www.instagram.com/dragracevictoria/?hl=en" target="_blank" class="btn btn-default" role="button" data-toggle="tooltip" data-placement="bottom" title="Instagram" style="color: #000;  margin-top: 4%;"><span class="social social-instagram"></span></a>
           <a href="https://www.youtube.com/user/nostopinLucR" target="_blank" class="btn btn-danger" role="button" data-toggle="tooltip" data-placement="bottom" title="YouTube" style="color: #FFF; margin-top: 4%;"><span class="social social-youtube"></span></a>          &nbsp;
-        </ul>
+        </div>
       </div>
     </nav>
 
@@ -149,7 +174,7 @@
     <!-- <p id="indexPointsUpdate">Updated as of: <span id="PointsUpdate"></span></p> -->
 
     <h3><a href="/Events.html#RaceSchedule"><span class="glyphicons glyphicons-calendar"></span>2017 Schedule:</a></h3>
-    <ul id="schedule">
+<!--      <ul id="schedule">
       <li id="1stRace">Apr 23 -Points -Cars, Bikes & Students</li>
       <li id="2ndRace">Apr 30 -Points -Cars, Bikes & Students</li>
       <li id="3rdRace">May 7 -Points -Cars, Bikes & Students</li>
@@ -161,8 +186,21 @@
       <li id="9thRace">Aug 20 -Points -Cars & Bikes</li>
       <li id="10thRace">Sept 10 -Points -Cars & Bikes</li>
       <li id="11thRace">Sept 17 -Championship Race -Cars & Bikes</li>
-      <!-- Classes .current .over .cancelled .new -->
-    </ul>
+      <!-- Classes .current .over .cancelled .new 
+    </ul> -->
+    <div class="indexSchedule">
+      <p style="margin-left: 7px;"  id="1stRace">Apr 23 - Points - Cars, Bikes & Students</p>
+      <p style="margin-left: 31px;" id="2ndRace">30 - Points - Cars, Bikes & Students</p>
+      <p style="margin-left: 3px;"  id="3rdRace">May &nbsp;&nbsp;7 - Points - Cars, Bikes & Students</p>
+      <p style="margin-left: 31px;" id="4thRace">14 - Points - Cars, Bikes & Students</p>
+      <p style="margin-left: 0px;"  id="5thRace">June 11 - Points - Cars, Bikes & Students</p>
+      <p style="margin-left: 31px;" id="6thRace">18 - Points - Cars & Bikes</p>
+      <p style="margin-left: 4px;"  id="7thRace">July &nbsp;&nbsp;9 - Points - Cars & Bikes</p>
+      <p style="margin-left: 31px;" id="8thRace">30 - SHOOTOUT</p>
+      <p style="margin-left: 4px;"  id="9thRace">Aug 20 - Points - Cars & Bikes</p>
+      <p style="margin-left: 0px;"  id="10thRace">Sept 10 - Points - Cars & Bikes</p>
+      <p style="margin-left: 30px;" id="11thRace">17 - Championship Race - Cars & Bikes</p>
+    </div>
     <h3><a href="/RacerInfo.html#Fees"><span class="glyphicons glyphicons-money"></span>Fees</a></h3>
     <h3><a href="/AboutUs.html#LOCATEDAT"><span class="glyphicons glyphicons-map-marker"></span>Location</a></h3>
     <h3><a href="/Sponsors.html"><span class="glyphicons glyphicons-group"></span>Sponsors</a></h3>
@@ -172,7 +210,7 @@
   </div> <!-- end of left -->
   
   <div id="right">
-    <a class="twitter-timeline" data-width="290" data-height="228" data-theme="dark" data-link-color="#FAB81E" href="https://twitter.com/DragRaceVic">Tweets by DragRaceVic</a> 
+    <a class="twitter-timeline" data-width="290" data-height="228" data-theme="dark" data-link-color="#FAB81E" href="https://twitter.com/DragRaceVic"> </a> 
     <script async charset="utf-8" src="/JavaScript/twitterCode.js"></script>
 
     <h3 style="text-align: center;">2016 1st Place Points Winners.</h3>
@@ -195,14 +233,14 @@
     <h3 style="text-align: center;">Congratulations to all Racers.</h3>
 
     <h2 id="pro">Pro Class</h2>
-    <ol id="indexPointsList">
+    <ol class="indexPointsList">
       <li>#6011 Bill Nesbitt &nbsp;&nbsp;- 5827 Points.</li>
       <li>#B408 Blake Miller - 4721 Points.</li>
       <li>#263 Bill Jamieson - 4420 Points.</li>
     </ol>
 
     <h2 id="street">Street Class</h2>
-    <ol id="indexPointsList">
+    <ol class="indexPointsList">
       <li>#26 Rob Baxter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 5626 Points.</li>
       <li>#50 Clint Neargarth &nbsp;&nbsp;&nbsp;&nbsp;- 5021 Points.</li>
       <li>#55 Jason Hutchinson - 4116 Points.</li>
@@ -247,7 +285,7 @@
     <p>Recertification is scheduled for April 22nd at Western Speedway. Anyone needing to certify/recertify their ride please contact Bill Jamieson at 250-888-0053. Cost and time depends on the number of cars recertified.</p>
     
     <h1><a href="/Sponsors.html">Welcome 2017 Sponsors</a></h1>
-    <p>We are lucky enough to be suported by our <a href="/Sponsors.html">sponsors</a> so go support them and check them out the <a href="/Sponsors.html">sponsors</a> page.</p>
+    <p>We appreciate our <a href="/Sponsors.html">sponsors</a> supporting us. So please return the favor and support them.</p>
     
     <h1><a href="/RacersInfo/DriverInformationSlip.pdf" target="_blank">All Drivers!</a></h1>
     <p>If you are new to the track or made any changes to you ride please print and complete the <a href="/RacersInfo/DriverInformationSlip.pdf" target="_blank"><span class="filetypes filetypes-pdf"></span> Driver Information Sheet</a>
