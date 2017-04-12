@@ -1,7 +1,7 @@
-http://sislra.ca/index.html
-http://sislra.ca/RacerInfo.html
-http://sislra.ca/Events.html
+http://sislra.ca
+http://sislra.ca/RacerInfo
+http://sislra.ca/Events
 http://sislra.ca/Points.html
 http://sislra.ca/Sponsors.html
-http://sislra.ca/ContactUs.html
-http://sislra.ca/AboutUs.html
+http://sislra.ca/ContactUs
+http://sislra.ca/AboutUs
