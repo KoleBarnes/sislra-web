@@ -38,23 +38,23 @@ $(function() {
 });
 
 // sidebarBox
-$(function() {
-	// Set this variable with the height of your sidebar + header
-	var offsetPixels = $('.sidebarBox').outerHeight() + 248; 
+// $(function() {
+	// // Set this variable with the height of your sidebar + header
+	// var offsetPixels = $('.sidebarBox').outerHeight() + 248; 
 
-	$(window).scroll(function() {
-		if ($(window).scrollTop() > offsetPixels) {
-			$( ".scrollingBox" ).css({
-				"position": "fixed",
-				"top": "15px"
-			});
-		} else {
-			$( ".scrollingBox" ).css({
-			"position": "static"
-			});
-		}
-	});
-});
+	// $(window).scroll(function() {
+		// if ($(window).scrollTop() > offsetPixels) {
+			// $( ".scrollingBox" ).css({
+				// "position": "fixed",
+				// "top": "15px"
+			// });
+		// } else {
+			// $( ".scrollingBox" ).css({
+			// "position": "static"
+			// });
+		// }
+	// });
+// });
 
 // sidebarBoxLeft
 $(function() {

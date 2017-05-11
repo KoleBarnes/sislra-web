@@ -1,7 +1,8 @@
 function countdown() {
     var i = document.getElementById('count');
     if (parseInt(i.innerHTML)<=1) {
-        location.href = 'index.html';
+        //location.href = 'http://sislra.ca/';
+        window.location = '/';
     }
     i.innerHTML = parseInt(i.innerHTML)-1;
 }

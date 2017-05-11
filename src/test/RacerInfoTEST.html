@@ -1,84 +1,48 @@
 <!doctype html>
 
 <html lang="en">
-
+<html>
 <head>
-
-  <title>SISLRA/Racer Info</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SISLRA</title>
   <link rel="icon" href="/SISLRA/Favicon/16ChristmasTree.ico">
 
   <!-- CSS -->
   <link rel="stylesheet" href="/Bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/Bootstrap/css/bootstrap-theme.css">
-  <link rel="stylesheet" href="/Bootstrap/css/bootstrap-theme.min.css">
 
   <link rel="stylesheet" href="/Glyphicons/glyphicons-social/css/glyphicons-social.css">
   <link rel="stylesheet" href="/Glyphicons/glyphicons-filetypes/css/glyphicons-filetypes.css">
   <link rel="stylesheet" href="/Glyphicons/glyphicons/css/glyphicons.css">
-  
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="/CSS/SISLRA.css">
+  <!-- <link rel="stylesheet" href="/CSS/SISLRA.css"> -->
+  <link rel="stylesheet" href="/CSS/SISLRATEST.css">
 
   <!-- JavaScript -->
   <script src="/JavaScript/Countdown.js"></script>
-
+  
   <script src="/JavaScript/jquery.js"></script>
-  <script src="/JavaScript/scrollingBox.js"></script>
   
   <script src="/JavaScript/W3HTMLInclude.js"></script>
 
   <script src="/Bootstrap/js/bootstrap.js"></script>
   <script src="/Bootstrap/js/bootstrap.min.js"></script>
-
 </head>
-
 <body>
 
-<div id="wrapper">
-
-  <div id="header">
-
-    <div class="marquee">
-      <div>
-        <span class="marqueeInfo"></span>
-        <span class="marqueeInfo"></span>
+  <nav class="navbar navbar-inverse navbar-topMargin navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
       </div>
-    </div>
-
-    <a href="/"><img class="webbanner" src="/SISLRA/WebBanner.png" alt="SISLRA" /></a>
-
-    <table id="tableHeader">
-      <tr>
-        <td>
-          <h3><a href="/Events#RaceSchedule"><span class="sislraDate"></span></a></h3>
-        </td>
-        <td>
-          <h3><a href="http://www.northislandtimingassociation.com/" target="_blank"><span class="RumbleOnTheRunwayDate"></span></a></h3>
-        </td>
-        <td>
-          <h3><a href="http://www.albernidragracing.com/" target="_blank"><span class="ThunderInTheValleyDate"></span></a></h3>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div id="SISLRARace">&nbsp;</div>
-        </td>
-        <td>
-          <div id="PortMcNeill">&nbsp;</div>
-        </td>
-        <td>
-          <div id="PortAlberni">&nbsp;</div>
-        </td>
-      </tr>
-    </table>
-
-    <nav class="navbar navbar-inverse navbar-topMargin">
-      <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
-          <li class="dropdown active"><a href="/RacerInfo">Racer Info <span class="caret"></span></a>
+          <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
+          <li class="dropdown"><a href="/RacerInfo">Racer Info <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="/RacerInfo#Fees">Fees</a></li>
               <li><a href="/RacerInfo#Memberships">Memberships</a></li>
@@ -141,97 +105,86 @@
           <a href="https://www.youtube.com/user/nostopinLucR" target="_blank" class="btn btn-danger" role="button" data-toggle="tooltip" data-placement="bottom" title="YouTube" style="color: #FFF; margin-top: 4%;"><span class="social social-youtube"></span></a>          &nbsp;
         </div>
       </div>
-    </nav>
-    
-  </div> <!-- end of header-->
-
-  <div id="main-section">
-
-  <!-- returnToTopArrow -->
-  <a id="return-to-top" data-toggle="tooltip" data-placement="bottom" title="Back To Top"><i class="icon-chevron-up"></i></a>
-  <script src="/JavaScript/returnToTopArrow.js"></script>
-  
-  <!-- This div is run by Java Script -->
-<!--   <div class="sidebarBox">
-    <div class="scrollingBox">
-      <a class="BackToTopArrow buttonHyperLink" href="#" data-toggle="tooltip" data-placement="bottom" title="Back To Top"><span class="glyphicons glyphicons-circle-arrow-top"></span></a>
     </div>
-  </div> -->
+  </nav>
 
-  <div id="leftScrolling">
-    <!-- This div is run by Java Script -->
-    <div class="sidebarBoxLeft">
-      <div class="scrollingBoxLeft">
-        <ul id="contents">
-          <li><h3 style="color: #999; margin-top: 10px;"><span class="glyphicons glyphicons-notes"></span> Contents:</h3></li>
-          <li><a href="#Fees">Fees</a></li>
-          <li><a href="#Memberships">Memberships</a></li>
-          <li><a href="#DriverInformationSheet">Driver Infomation Sheet</a></li>
-          <li><a href="#RaceClassesAndTimes">Race Classes And Times</a></li>
-          <li><a href="#BracketRacingBasics">Bracket Racing Basics</a></li>
-          <li><a href="#OutSideTrackLineUp">Outside Track Line Up</a></li>
-          <li><a href="#Tech.Inspection">Tech. Inspection</a></li>
-          <li><a href="#TheTrack">The Track</a></li>
-          <li><a href="#Qualifying&Eliminations">Qualifying & Eliminations</a></li>
-          <li><a href="#Disqualifications">Disqualification</a></li>
-          <li><a href="#Tree">Tree</a></li>
-          <li>Also available in <a href="/SISLRA/RacersInfo/NewRacersInformation.pdf" target="_blank"><span class="filetypes filetypes-pdf"></span> PDF</a></li>
-        </ul>
+<div class="header shade">
+  <div id="mySlidesDiv">
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-2.jpg" alt="Slide2" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-3.jpg" alt="Slide3" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-4.jpg" alt="Slide4" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-5.jpg" alt="Slide5" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-6.jpg" alt="Slide6" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-7.jpg" alt="Slide7" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-8.jpg" alt="Slide8" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-9.jpg" alt="Slide9" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-10.jpg" alt="Slide10" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-11.jpg" alt="Slide11" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-12.jpg" alt="Slide12" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-13.jpg" alt="Slide13" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-14.jpg" alt="Slide14" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-15.jpg" alt="Slide15" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-16.jpg" alt="Slide16" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-17.jpg" alt="Slide17" />
+    <img class="mySlides" src="/SISLRA/Slides/Untitled-18.jpg" alt="Slide18" />
+  </div>
+  
+  <script src="/JavaScript/indexSlides.js"></script>
+  
+  <div class="marquee" id="indexMarquee">
+    <div>
+      <span class="marqueeInfo"></span>
+      <span class="marqueeInfo"></span>
+    </div>
+  </div>
+
+  <a href="/"><img id="indexWebbanner" src="/SISLRA/WebBanner.png" alt="SISLRA" /></a>
+  
+  <div class="indexTableHeader">
+    <div class="indexTableHeader-row">
+      <div class="indexTableHeader-section">
+        <h3><a href="/Events#RaceSchedule"><span class="sislraDate"></span></a></h3>
+        <div id="SISLRARace">&nbsp;</div>
+      </div>
+      <div class="indexTableHeader-section">
+        <h3><a href="http://www.northislandtimingassociation.com/" target="_blank"><span class="RumbleOnTheRunwayDate"></span></a></h3>
+        <div id="PortMcNeill">&nbsp;</div>
+      </div>
+      <div class="indexTableHeader-section">
+        <h3><a href="http://www.albernidragracing.com/" target="_blank"><span class="ThunderInTheValleyDate"></span></a></h3>
+        <div id="PortAlberni">&nbsp;</div>
       </div>
     </div>
-  </div> <!-- end of left -->
-   
-  <div id="centerRacerInfo">
+  </div>
+    
+</div>
+
+<div class="row center">
+
+  <div class="col-7 col-m-7 main mainRacerInfo">
   
     <h1 id="Fees">FEES</h1>
-    <p style="text-align: left; margin-left: 90px;">Members Entry Fees Per Race</p>
-    <table>
-      <tr>
-        <td colspan="2">
-          <p>Street Class<br /> 
-            Bike Class<br /> 
-            Pro Class<br /> 
-            Pit Passes</p>
-        </td>
-        <td><p>$30.00 for vehicle and member*<br /> 
-                  $30.00 for bike and member*<br /> 
-                  $35.00 for vehicle and member*<br /> 
-                  $10.00 per member*</p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="3"><p> Non-members add $5.00 Interested in becoming a <a href="/RacerInfo#Memberships">member?</a> Detials below.<br />
-                  Please note that you must be a paid member to participate in the season's<br />
-                  points standings competition.</p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2" style="vertical-align: text-top;">
-          <p>Student Class<br />
-            Student Pit Pass<br />
-            First Time Racers</p>
-        </td>
-        <td>
-          <p>$20.00 for vehicle and Driver.<br />
-            $10.00 per student.<br />
-            $20.00 for vehicle and driver for first<br />
-            race day, then above pricing.</p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="3">
-          <p><strong>Grandstands $5.00 per person. 13 and under are free with an adult!</strong></p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="3">
-          <p>Individual <a href="/RacerInfo#Memberships">memberships</a> fees are $30.00<br>
-            Family <a href="/RacerInfo#Memberships">membership</a> fees are $60.00 (includes two adults and two children under 16)<br />
-            and run from April 1st to March 31st annually. </p>
-        </td>
-      </tr>
-    </table>
-
+    <div id="Fees">
+      <p>Members Entry Fees Per Race</p>
+      <br>
+      <p><strong>Street Class</strong> - $30.00 for vehicle and member*</p>
+      <p><strong>Bike Class</strong> - $30.00 for bike and member*</p>
+      <p><strong>Pro Class</strong> - $35.00 for vehicle and member*</p>
+      <p><strong>Pit Passes</strong> - $10.00 per member*</p>
+      <br>
+      <p>Non-members add $5.00 Interested in becoming a <a href="/RacerInfo#Memberships">member?</a> Detials below.</p>
+      <p>Please note that you must be a paid member to participate in the season's points standings competition.</p>
+      <br>     
+      <p><strong>Student Class</strong> - $20.00 for vehicle and Driver.
+      <p><strong>Student Pit Pass</strong> - $10.00 per student.
+      <p><strong>First Time Racers</strong> - $20.00 for vehicle and driver for first race day, then above pricing.</p>
+      <br>
+      <p><strong>Grandstands $5.00 per person. 13 and under are free with an adult!</strong></p>
+      <br>
+      <p>Individual <a href="/RacerInfo#Memberships">memberships</a> fees are $30.00</p>
+      <p>Family <a href="/RacerInfo#Memberships">membership</a> fees are $60.00 (includes two adults and two children under 16) and run from April 1st to March 31st annually.</p>
+    </div>
+    
     <h1 id="Memberships">Memberships</h1>
     <p>By having a membership, both racers and non-racers have access to discounts on race days. Benefits include; a discount on car and driver fees
       for racers, a discount on pit entry fees, voting rights at meetings, receive club emails of events & updates, participation in the
@@ -253,20 +206,16 @@
     <br>
 
     <h1 id="RaceClassesAndTimes">RACE CLASSES AND TIMES</h1>
-    <table>
-      <tr>
-        <td>
-          <p>NEW: Pro Class times are now 5.79 seconds or faster and Street Class is now 5.80 seconds or slower.</p>
-          <ul style="list-style-type: disc;">
-            <li>Pro Class: Cars that race the track in 5.79 seconds or faster with No electronics and No Delay Boxes.</li>
-            <li>Street Class: Street legal cars that race the track in 5.80 seconds or slower.</li>
-            <li>Bike Class: A variety of street bikes, sport bikes, race bikes and drag race bikes.</li>
-            <li>Student Class: High school students who build the cars at school, then race them at the track.</li>
-            <li>Exhibition: Incredible rides who come out not to compete but to show what their vehicle can do.</li>
-          </ul>
-        </td>
-      </tr>
-    </table>
+    <div class="alignLeft">
+      <p>NEW: Pro Class times are now 5.79 seconds or faster and Street Class is now 5.80 seconds or slower.</p>
+      <ul style="list-style-type: disc;">
+        <li>Pro Class: Cars that race the track in 5.79 seconds or faster with No electronics and No Delay Boxes.</li>
+        <li>Street Class: Street legal cars that race the track in 5.80 seconds or slower.</li>
+        <li>Bike Class: A variety of street bikes, sport bikes, race bikes and drag race bikes.</li>
+        <li>Student Class: High school students who build the cars at school, then race them at the track.</li>
+        <li>Exhibition: Incredible rides who come out not to compete but to show what their vehicle can do.</li>
+      </ul>
+    </div>
 
     <br>
 
@@ -283,7 +232,7 @@
     <p>Any vehicles parked in the fire lane will not be Teched until they are moved. For safety reasons, this lane must be clear at all times.</p>
 
     <h1 id="Tech.Inspection">Tech. Inspection</h1>
-    <div style="text-align: left;">
+    <div class="alignLeft">
       <p><strong>SISLRA follows all NHRA rules.  The following information includes some  highlights and important things we look for;</strong></p>
       <p><strong><u>TECHNICAL INSPECTION</u></strong></p>
       <p><strong>Technical/Safety inspection: You must have;</strong></p>
@@ -312,42 +261,37 @@
     </div>
 
     <h1 id="TheTrack">THE TRACK</h1>
-    <img src="/SISLRA/RacersInfo/TheTrack.png" alt="The Track" width="550" height="400" />
-    <br>
-    <table>
-      <tr>
-        <td>
-          <ul style="list-style-type: disc;">
-            <li>SHUT DOWN AREA: This is the area of track after the finish line when you slow your car down prior to returning to the pit area. THIS IS A SAFETY RULE: The PIT lane vehicle after every run turns off the end of the track surface <u>first</u>. The TOWER lane vehicle must ALWAYS yield to the pit lane.</li>
-            <li>Stop at the back of the track area to get time slips. (<strong>No burnouts in this area</strong>.) </li>
-            <li>DO NOT test your car in the staging lanes. </li>
-            <li>NO burnouts in the pits...the speed limit in the pits is <strong><u>5 MPH or 8KMS</u></strong>. </li>
-            <li>Signed driver ONLY allowed to drive the car. (Maximum 2 signed drivers per car and <em>both</em> must meet the tech./safety requirements and pay driver fees before getting behind the wheel.)</li>
-            <li>All drivers MUST attend the drivers meeting  which occurs just before Eliminations. </li>
-            <li>Drivers <em>must</em> have helmet on, seatbelt on, windows up, and be race ready for staging lane official prior to being waved to the burnout box.</li>
-            <li>Windows must be rolled up at all times after leaving the staging lanes and entering the  burnout area and starting line.</li>
-            <li>Drivers may not move into the burnout area until instructed to by the staging lane  official. </li>
-            <li>Before all burnouts, wait until you are directed into the water box by the track official/Starter.</li>
-            <li>Once you are set up in the box, look up to the  starter for the go ahead to proceed with your burnout.</li>
-            <li>Burnouts are to be done in a safe and  controlled manner in the burnout area. </li>
-          </ul>
-          <p>ONLY PRO, SUPER PRO AND EXHIBITION CARS MAY CONTINUE THROUGH THE STARTING  LIGHTS WHEN DOING A BURNOUT ((IF NECESSARY)) STREET CLASS AND STUDENT CLASS MAY NOT CROSS THE STARTING LINE</p>
-          <p><strong>A</strong>. Your driver number and class must be on both the driver's side window and the right hand side  of your windshield before entering the track area. They must be 6 inches in height and clearly visible.</p>
-          <p><strong>B</strong>. Dial-in times must be <strong>6 inches in height</strong> and <strong>clearly visible</strong> on <strong>both</strong> the driver's side window and the passenger side of your windshield to be easily seen by the  officials in the tower.</p>
-          <p><em>White shoe polish or <strong>Dial-in</strong> from Lordco works well for writing your dial-in on your windows and easily wipes off.</em></p>
-          <ul style="list-style-type: disc;">
-            <li>Any driver planning on deep staging must ensure that they have a "<strong>D</strong>" posted  clearly on both their driver side window and on the right hand side of their windshield.  Any driver that does not do this will be disqualified from the day's event. </li>
-            <li>The practice of transbrake, converter stall, line loc testing, and/or transmission warming is prohibited in all classes unless the vehicle is on approved jackstands. Non-compliance is grounds for disqualification from the day's event.</li>
-            <li>Anytime a vehicle is to be raised off the ground for access, it must be supported by TWO jackstands with a minimum ground clearance of SEVEN inches. Non-compliance is grounds for disqualification from the day's event.  As this is a safety infraction, a second  incident will face a $50.00 fine as well as a two-event penalty. </li>
-            <li>To avoid staging lane congestion, it is asked that you <u>do not</u> enter the staging lanes or leave the pit area <strong>until your race class has been called</strong>. Unsure if your class has been called? Please see the lights on the tower with red meaning Pro, first yellow is Bikes, green is Street and second yellow is students.  If your class has not been called, please remain in the pit area. *<em>Time Only Runs are done after the second round of eliminations has been fully completed or when the Race Director permits.</em></li>
-          </ul>
-          <p>Additionally, if you have any problems or questions about your time at  the track, please see one of the officials at track level.</p>
-        </td>
-      </tr>
-    </table>
+    <img src="/SISLRA/RacersInfo/TheTrack.png" alt="The Track" style="width: 75%;" />
+    <div class="alignLeft" style="margin-top: 15px;">
+      <ul style="list-style-type: disc;">
+        <li>SHUT DOWN AREA: This is the area of track after the finish line when you slow your car down prior to returning to the pit area. THIS IS A SAFETY RULE: The PIT lane vehicle after every run turns off the end of the track surface <u>first</u>. The TOWER lane vehicle must ALWAYS yield to the pit lane.</li>
+        <li>Stop at the back of the track area to get time slips. (<strong>No burnouts in this area</strong>.) </li>
+        <li>DO NOT test your car in the staging lanes. </li>
+        <li>NO burnouts in the pits...the speed limit in the pits is <strong><u>5 MPH or 8KMS</u></strong>. </li>
+        <li>Signed driver ONLY allowed to drive the car. (Maximum 2 signed drivers per car and <em>both</em> must meet the tech./safety requirements and pay driver fees before getting behind the wheel.)</li>
+        <li>All drivers MUST attend the drivers meeting  which occurs just before Eliminations. </li>
+        <li>Drivers <em>must</em> have helmet on, seatbelt on, windows up, and be race ready for staging lane official prior to being waved to the burnout box.</li>
+        <li>Windows must be rolled up at all times after leaving the staging lanes and entering the  burnout area and starting line.</li>
+        <li>Drivers may not move into the burnout area until instructed to by the staging lane  official. </li>
+        <li>Before all burnouts, wait until you are directed into the water box by the track official/Starter.</li>
+        <li>Once you are set up in the box, look up to the  starter for the go ahead to proceed with your burnout.</li>
+        <li>Burnouts are to be done in a safe and  controlled manner in the burnout area. </li>
+      </ul>
+      <p>ONLY PRO, SUPER PRO AND EXHIBITION CARS MAY CONTINUE THROUGH THE STARTING  LIGHTS WHEN DOING A BURNOUT ((IF NECESSARY)) STREET CLASS AND STUDENT CLASS MAY NOT CROSS THE STARTING LINE</p>
+      <p><strong>A</strong>. Your driver number and class must be on both the driver's side window and the right hand side  of your windshield before entering the track area. They must be 6 inches in height and clearly visible.</p>
+      <p><strong>B</strong>. Dial-in times must be <strong>6 inches in height</strong> and <strong>clearly visible</strong> on <strong>both</strong> the driver's side window and the passenger side of your windshield to be easily seen by the  officials in the tower.</p>
+      <p><em>White shoe polish or <strong>Dial-in</strong> from Lordco works well for writing your dial-in on your windows and easily wipes off.</em></p>
+      <ul style="list-style-type: disc;">
+        <li>Any driver planning on deep staging must ensure that they have a "<strong>D</strong>" posted  clearly on both their driver side window and on the right hand side of their windshield.  Any driver that does not do this will be disqualified from the day's event. </li>
+        <li>The practice of transbrake, converter stall, line loc testing, and/or transmission warming is prohibited in all classes unless the vehicle is on approved jackstands. Non-compliance is grounds for disqualification from the day's event.</li>
+        <li>Anytime a vehicle is to be raised off the ground for access, it must be supported by TWO jackstands with a minimum ground clearance of SEVEN inches. Non-compliance is grounds for disqualification from the day's event.  As this is a safety infraction, a second  incident will face a $50.00 fine as well as a two-event penalty. </li>
+        <li>To avoid staging lane congestion, it is asked that you <u>do not</u> enter the staging lanes or leave the pit area <strong>until your race class has been called</strong>. Unsure if your class has been called? Please see the lights on the tower with red meaning Pro, first yellow is Bikes, green is Street and second yellow is students.  If your class has not been called, please remain in the pit area. *<em>Time Only Runs are done after the second round of eliminations has been fully completed or when the Race Director permits.</em></li>
+      </ul>
+      <p>Additionally, if you have any problems or questions about your time at  the track, please see one of the officials at track level.</p>
+    </div>
 
     <h1 id="Qualifying&Eliminations">QUALIFYING & ELIMINATIONS</h1>
-      <div style="text-align: left;">
+      <div class="alignLeft">
         <p><strong><u>QUALIFYING PASSES</u></strong></p>
         <ul style="list-style-type: square;">
           <li>At  our events we first have qualifying passes; a pass is a run down the track to  test your vehicle for speed, your reaction to the lights, and for you to get a feel for the track conditions. The day's car count, weather and other track occurrences determine the number of qualifying passes permitted at each race. </li>
@@ -399,38 +343,35 @@
     <br>
     
     <h1 id="Disqualifications">DISQUALIFICATIONS</h1>
-    <table>
-      <tr>
-        <td><p><strong>GROUNDS FOR DISQUALIFICATION DURING  ELIMINATIONS</strong></p>
-          <p><strong><u>A driver may be disqualified for the following;</u></strong></p>
-          <p>1) Failure to stage on the starter's  instruction.</p>
-          <p>2) Illegally crossing the starting line during a burnout.</p>
-          <p>3) Crossing the centerline during  any elimination run.</p>
-          <p>4) If found to be under the influence of alcohol or illegal drugs.  (An incident of this magnitude may result in  a full year track suspension.)  A driver  is responsible for the actions of their pit crew; the above rules apply to all  pit crew as well.</p>
-          <p>5) Excessive braking which causes an accident or contact with the wall  or tires.</p>
-          <p>6) Disregarding instruction from any S.I.S.L.R.A. official or track  crew.</p>
-          <p>7) Blatant disregard for obvious safe track driving protocol.</p>
-          <p>8) Lack of respect for the safety of others.</p>
-          <p>All race day questions or concerns should be  taken to the Race Director.</p>
-          <p><strong>Please remember that it is strictly enforced that there is absolutely NO ALCOHOL or ILLEGAL DRUGS permitted at the track on race days.</strong></p>
-          <p><strong>Racing don'ts...</strong></p>
-          <ul style="list-style-type: disc;">
-            <li>If you pick up your time slip and your reaction time has a ( - )  in front of it, you have possibly lost. Why you ask? Because it means that you left before the light actually turned green. This is an easy way to say "red light".</li>
-            <li>Getting a 'red light' is not relevant during qualifying; in fact some drivers do it  just to see how close they can cut the lights.</li>
-            <li>The object of winning the race is to have a perfect reaction time to the light as  well as crossing the finish line exactly on your dial in. Go faster than your dial in you'll break out, too slow and chances are you will be so far away from your "dial-in" that your opponent will cross the finish line first.</li>
-            <li>Break-Outs; this infraction is caused by you running faster than your "dial-in", if you  both break-out then the win will go to the one who broke out least.</li>
-            <li>Crossing the centerline is immediate grounds for you to lose a race, again although not  a smart move it doesn't count during qualifying.</li>
-            <li>Deep staging is a process of staging where after turning on both the "pre-stage  bulb" and the "staged" bulb you roll forward; this causes the top set of "pre-stage  bulbs" in your lane to turn back off. Although deep staging in racing is allowed, if you do not have a large <strong>D</strong> clearly visible on both the windshield and drivers side window you will be disqualified.</li>
-          </ul>
-        </td>
-      </tr>
-    </table>
+    <div class="alignLeft">
+      <p><strong>GROUNDS FOR DISQUALIFICATION DURING  ELIMINATIONS</strong></p>
+      <p><strong><u>A driver may be disqualified for the following;</u></strong></p>
+      <p>1) Failure to stage on the starter's  instruction.</p>
+      <p>2) Illegally crossing the starting line during a burnout.</p>
+      <p>3) Crossing the centerline during  any elimination run.</p>
+      <p>4) If found to be under the influence of alcohol or illegal drugs.  (An incident of this magnitude may result in  a full year track suspension.)  A driver  is responsible for the actions of their pit crew; the above rules apply to all  pit crew as well.</p>
+      <p>5) Excessive braking which causes an accident or contact with the wall  or tires.</p>
+      <p>6) Disregarding instruction from any SISLRA official or track  crew.</p>
+      <p>7) Blatant disregard for obvious safe track driving protocol.</p>
+      <p>8) Lack of respect for the safety of others.</p>
+      <p>All race day questions or concerns should be  taken to the Race Director.</p>
+      <p><strong>Please remember that it is strictly enforced that there is absolutely NO ALCOHOL or ILLEGAL DRUGS permitted at the track on race days.</strong></p>
+      <p><strong>Racing don'ts...</strong></p>
+      <ul style="list-style-type: disc;">
+        <li>If you pick up your time slip and your reaction time has a ( - )  in front of it, you have possibly lost. Why you ask? Because it means that you left before the light actually turned green. This is an easy way to say "red light".</li>
+        <li>Getting a 'red light' is not relevant during qualifying; in fact some drivers do it  just to see how close they can cut the lights.</li>
+        <li>The object of winning the race is to have a perfect reaction time to the light as  well as crossing the finish line exactly on your dial in. Go faster than your dial in you'll break out, too slow and chances are you will be so far away from your "dial-in" that your opponent will cross the finish line first.</li>
+        <li>Break-Outs; this infraction is caused by you running faster than your "dial-in", if you  both break-out then the win will go to the one who broke out least.</li>
+        <li>Crossing the centerline is immediate grounds for you to lose a race, again although not  a smart move it doesn't count during qualifying.</li>
+        <li>Deep staging is a process of staging where after turning on both the "pre-stage  bulb" and the "staged" bulb you roll forward; this causes the top set of "pre-stage  bulbs" in your lane to turn back off. Although deep staging in racing is allowed, if you do not have a large <strong>D</strong> clearly visible on both the windshield and drivers side window you will be disqualified.</li>
+      </ul>
+    </div>
     
     <br>
     
     <h1 id="Tree">Tree</h1>
-    <img src="/SISLRA/RacersInfo/Tree.png" alt="Tree" width="530" />
-    <p style="text-align: left;"><strong>FULL TREE:</strong> Used in Competition, Stock, and Super Stock, for which a handicap starting system is
+    <img src="/SISLRA/RacersInfo/Tree.png" alt="Tree" style="width: 75%;" />
+    <p class="alignLeft"><strong>FULL TREE:</strong> Used in Competition, Stock, and Super Stock, for which a handicap starting system is
       used to equalize competition. The three amber bulbs on the Christmas Tree flash consecutively fivetenths
       of a second apart, followed five-tenths later by the green starting light. A perfect reaction time
       on a full Tree is .000 or .500 depending on the timing system used.
@@ -462,27 +403,81 @@
       that lane has been disqualified. During competition, only one red light will illuminate, thus eliminating
       only the first offender.</p>
     
-  </div> <!-- end of center -->
-
-  </div> <!-- end of main section -->
-
-  <div w3-include-html="/footerSocial.html"></div> <!-- Start Of Footer -->
-  <div w3-include-html="/footerSponsors.html"></div>
-  
-  <script>
-  w3IncludeHTML();
-  </script>
+  </div>
       
-  <div id="footerCopyright">
+</div>
+
+<div class="footer sideBarColor">
+  <div id="footerSocial">
     <div class="footer-row">
       <div class="footer-section">
-        <p> Copyright &copy; 2005<script src="/JavaScript/Copyright.js"></script>, All rights reserved.</p>
+        <img id="SISLRALogo-Footer" src="/SISLRA/WebBanner.png" alt="SISLRA" />
+      </div>
+      <div class="footer-section">
+        <div id="SocialMediaDiv-Footer">
+          <a class="buttonHyperLink" href="https://www.facebook.com/groups/327092727329942/" target="_blank"><span class="social social-facebook x2"></span></a>
+          <a class="buttonHyperLink" href="https://twitter.com/DragRaceVic" target="_blank"><span class="social social-twitter x2"></span></a>
+          <a class="buttonHyperLink" href="https://www.instagram.com/dragracevictoria/?hl=en" target="_blank"><span class="social social-instagram x2"></span></a>
+          <a class="buttonHyperLink" href="https://www.youtube.com/user/nostopinLucR" target="_blank"><span class="social social-youtube x2"></span></a>
+          <p><a href="/">Home </a>| <a href="/Points.html">Points </a>| <a href="/Sponsors.html">Sponsors</a></p>
+          <p><a href="/ContactUs">Contact Us </a>| <a href="/AboutUs">About Us</a></p>
+        </div>
+      </div>
+      <div class="footer-section">
+        <div id="spiningTire">
+          <img class="spin" src="/SISLRA/DragTire.png" alt="Drag Tire" />
+          <img id="smoke" src="/SISLRA/smoke.png"  alt="Tire Smoke" />
+        </div>
       </div>
     </div>
-  </div> <!-- end of footer -->
+  </div>
 
-</div> <!-- end of wrapper -->
+  <div id="footerSponsors">
+      <div class="footer-row">
+        <div class="footer-section-2">
+          <h3><a href="Sponsors.html"><span class="glyphicons glyphicons-group"></span> Sponsors</a></h3>
+          <a href="http://bdlifttruck.ca/" target="_blank"><img src="/SISLRA/YearSponsors/BandDForklift-300x87.jpg" alt="B&D Forklift" width="210" height="110" /></a>
+        </div>
+        <div class="footer-section-2">
+          <h3>&nbsp;</h3>
+          <a href="http://searlesauto.ca/" target="_blank"><img src="/SISLRA/YearSponsors/Searles.jpg" alt="Searles Auto" width="200" /></a>
+        </div>
+        <div class="footer-section-2">
+          <h3>&nbsp;</h3>
+          <a href="http://www.382sign.com/" target="_blank"><img src="/SISLRA/YearSponsors/GraphicFX.png" alt="Graphic FX" width="200" /></a>
+        </div>
+        <div class="footer-section-2">
+          <h3>&nbsp;</h3>
+          <a href="http://www.dentexpdr.com/" target="_blank"><img src="/SISLRA/YearSponsors/DentexNoBack.png" alt="Dentex" width="210" height="80" /></a>
+        </div>
+        <div class="footer-section-2">
+          <h3>&nbsp;</h3>
+          <a href="http://www.lordco.com/" target="_blank"><img src="/SISLRA/YearSponsors/Lordco.png" alt="Lordco" width="200" /></a>
+        </div>
+      </div>
+      <div class="footer-row">
+        <div class="footer-section-2">
+          <a href="http://www.used.ca/" target="_blank"><img src="/SISLRA/YearSponsors/Used_Logo_Purple.png" alt="Used_Logo_Purple" width="190" /></a>
+        </div>
+        <div class="footer-section-2">
+          <a href="http://westbaymechanical.com/" target="_blank"><img id="WestBayMechanical" src="/SISLRA/YearSponsors/WestBayMechanical.png" alt="WestBayMechanical" width="170" /></a>
+        </div>
+        <div class="footer-section-2">
+          <a href="http://islandtorque.com/" target="_blank"><img id="IslandTorque" src="/SISLRA/YearSponsors/IslandTorqueConverter.png" alt="IslandTorque" width="180" /></a>
+        </div>
+        <div class="footer-section-2">
+          <a href="http://www.mamillerspub.com/" target="_blank"><img id="MaMillersPub" src="/SISLRA/YearSponsors/MaMillersPub.png" alt="MaMillersPub" width="210" /></a>
+        </div>
+        <div class="footer-section-2">
+          <a href="https://www.hsminsurance.com/" target="_blank"><img src="/SISLRA/YearSponsors/HenrdrySwinton.jpg" alt="Henrdry Swinton" width="190" /></a>
+        </div>
+     </div>
+  </div>
+  
+  <div id="footerCopyright">
+    <p> Copyright &copy; 2005<script src="/JavaScript/Copyright.js"></script>, All rights reserved.</p>
+  </div> <!-- end of footer -->
+</div>
 
 </body>
-
 </html>

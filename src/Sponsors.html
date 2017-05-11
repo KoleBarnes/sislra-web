@@ -5,7 +5,7 @@
 <head>
 
   <title>SISLRA/Sponsors</title>
-  <link rel="icon" href="/Favicon/16ChristmasTree.ico">
+  <link rel="icon" href="/SISLRA/Favicon/16ChristmasTree.ico">
 
   <!-- CSS -->
   <link rel="stylesheet" href="/Bootstrap/css/bootstrap.css">
@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="/Glyphicons/glyphicons-social/css/glyphicons-social.css">
   <link rel="stylesheet" href="/Glyphicons/glyphicons-filetypes/css/glyphicons-filetypes.css">
   <link rel="stylesheet" href="/Glyphicons/glyphicons/css/glyphicons.css">
+  
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
   <link rel="stylesheet" href="/CSS/SISLRA.css">
 
@@ -91,26 +93,26 @@
               <li><a href="/RacerInfo#Tree">Tree</a></li>
             </ul>
           </li>
-          <li><a href="/Points.html">Points</a></li>
+          <li><a href="/Points">Points</a></li>
           <li class="dropdown"><a href="/Events">Events <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="/Events#RaceSchedule">Race Schedule</a></li>
               <li><a href="/Events#Posters">Posters</a></li>
             </ul>
           </li>
-          <li class="dropdown active"><a href="/Sponsors.html">Sponsors <span class="caret"></span></a>
+          <li class="dropdown active"><a href="/Sponsors">Sponsors <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="/Sponsors.html#BandDForklift">B&D Forklift</a></li>
-              <li><a href="/Sponsors.html#Searles">Searles</a></li>
-              <li><a href="/Sponsors.html#GraphicFX">GraphicFX</a></li>
-              <li><a href="/Sponsors.html#Dentex">Dentex</a></li>
-              <li><a href="/Sponsors.html#Lordco">Lordco</a></li>
-              <li><a href="/Sponsors.html#Used.ca">Used.ca</a></li>
-              <li><a href="/Sponsors.html#WestBayMechanical">West Bay Mechanical</a></li>
-              <li><a href="/Sponsors.html#IslandTorque">Island Torque</a></li>
-              <li><a href="/Sponsors.html#MaMillersPub">MaMillers Pub</a></li>
-              <li><a href="/Sponsors.html#HenrdrySwinton">Henrdry Swinton</a></li>
-              <li><a href="/Sponsors.html#SponsorshipInformation">Sponsorship Info.</a></li>
+              <li><a href="/Sponsors#BandDForklift">B&D Forklift</a></li>
+              <li><a href="/Sponsors#Searles">Searles</a></li>
+              <li><a href="/Sponsors#GraphicFX">GraphicFX</a></li>
+              <li><a href="/Sponsors#Dentex">Dentex</a></li>
+              <li><a href="/Sponsors#Lordco">Lordco</a></li>
+              <li><a href="/Sponsors#Used.ca">Used.ca</a></li>
+              <li><a href="/Sponsors#WestBayMechanical">West Bay Mechanical</a></li>
+              <li><a href="/Sponsors#IslandTorque">Island Torque</a></li>
+              <li><a href="/Sponsors#MaMillersPub">MaMillers Pub</a></li>
+              <li><a href="/Sponsors#HenrdrySwinton">Henrdry Swinton</a></li>
+              <li><a href="/Sponsors#SponsorshipInformation">Sponsorship Info.</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="/ContactUs">Contact Us <span class="caret"></span></a>
@@ -145,12 +147,9 @@
 
   <div id="main-section">
 
-  <!-- This div is run by Java Script -->
-  <div class="sidebarBox">
-    <div class="scrollingBox">
-      <a class="BackToTopArrow buttonHyperLink" href="#" data-toggle="tooltip" data-placement="bottom" title="Back To Top"><span class="glyphicons glyphicons-circle-arrow-top"></span></a>
-    </div>
-  </div>
+  <!-- returnToTopArrow -->
+  <a id="return-to-top"><i class="icon-chevron-up"></i></a>
+  <script src="/JavaScript/returnToTopArrow.js"></script>
   
     <!-- This div is run by Java Script -->
     <div class="sidebarBoxLeftSponsors">
@@ -292,8 +291,8 @@
 
   </div> <!-- end of main section -->
 
-  <div w3-include-html="footerSocial.html"></div> <!-- Start Of Footer -->
-  <div w3-include-html="footerSponsors.html"></div>
+  <div w3-include-html="/footerSocial.html"></div> <!-- Start Of Footer -->
+  <div w3-include-html="/footerSponsors.html"></div>
   
   <script>
   w3IncludeHTML();

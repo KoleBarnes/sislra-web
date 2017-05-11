@@ -5,7 +5,7 @@
 <head>
 
   <title>SISLRA/Events</title>
-  <link rel="icon" href="/Favicon/16ChristmasTree.ico">
+  <link rel="icon" href="/SISLRA/Favicon/16ChristmasTree.ico">
 
   <!-- CSS -->
   <link rel="stylesheet" href="/Bootstrap/css/bootstrap.css">
@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="/Glyphicons/glyphicons-social/css/glyphicons-social.css">
   <link rel="stylesheet" href="/Glyphicons/glyphicons-filetypes/css/glyphicons-filetypes.css">
   <link rel="stylesheet" href="/Glyphicons/glyphicons/css/glyphicons.css">
+  
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
   <link rel="stylesheet" href="/CSS/SISLRA.css">
 
@@ -92,26 +94,26 @@
               <li><a href="/RacerInfo#Tree">Tree</a></li>
             </ul>
           </li>
-          <li><a href="/Points.html">Points</a></li>
+          <li><a href="/Points">Points</a></li>
           <li class="dropdown active"><a href="/Events">Events <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="/Events#RaceSchedule">Race Schedule</a></li>
               <li><a href="/Events#Posters">Posters</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="/Sponsors.html">Sponsors <span class="caret"></span></a>
+          <li class="dropdown"><a href="/Sponsors">Sponsors <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="/Sponsors.html#BandDForklift">B&D Forklift</a></li>
-              <li><a href="/Sponsors.html#Searles">Searles</a></li>
-              <li><a href="/Sponsors.html#GraphicFX">GraphicFX</a></li>
-              <li><a href="/Sponsors.html#Dentex">Dentex</a></li>
-              <li><a href="/Sponsors.html#Lordco">Lordco</a></li>
-              <li><a href="/Sponsors.html#Used.ca">Used.ca</a></li>
-              <li><a href="/Sponsors.html#WestBayMechanical">West Bay Mechanical</a></li>
-              <li><a href="/Sponsors.html#IslandTorque">Island Torque</a></li>
-              <li><a href="/Sponsors.html#MaMillersPub">MaMillers Pub</a></li>
-              <li><a href="/Sponsors.html#HenrdrySwinton">Henrdry Swinton</a></li>
-              <li><a href="/Sponsors.html#SponsorshipInformation">Sponsorship Info.</a></li>
+              <li><a href="/Sponsors#BandDForklift">B&D Forklift</a></li>
+              <li><a href="/Sponsors#Searles">Searles</a></li>
+              <li><a href="/Sponsors#GraphicFX">GraphicFX</a></li>
+              <li><a href="/Sponsors#Dentex">Dentex</a></li>
+              <li><a href="/Sponsors#Lordco">Lordco</a></li>
+              <li><a href="/Sponsors#Used.ca">Used.ca</a></li>
+              <li><a href="/Sponsors#WestBayMechanical">West Bay Mechanical</a></li>
+              <li><a href="/Sponsors#IslandTorque">Island Torque</a></li>
+              <li><a href="/Sponsors#MaMillersPub">MaMillers Pub</a></li>
+              <li><a href="/Sponsors#HenrdrySwinton">Henrdry Swinton</a></li>
+              <li><a href="/Sponsors#SponsorshipInformation">Sponsorship Info.</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="/ContactUs">Contact Us <span class="caret"></span></a>
@@ -146,12 +148,9 @@
 
   <div id="main-section">
 
-  <!-- This div is run by Java Script -->
-  <div class="sidebarBox">
-    <div class="scrollingBox">
-      <a class="BackToTopArrow buttonHyperLink" href="#" data-toggle="tooltip" data-placement="bottom" title="Back To Top"><span class="glyphicons glyphicons-circle-arrow-top"></span></a>
-    </div>
-  </div>
+  <!-- returnToTopArrow -->
+  <a id="return-to-top"><i class="icon-chevron-up"></i></a>
+  <script src="/JavaScript/returnToTopArrow.js"></script>
   
 <!--
   <div id="leftScrolling">
@@ -174,7 +173,7 @@
 
     <h1 id="RaceSchedule">Race Schedule</h1>
     
-    <div style="border: 4px solid #FC0;" >
+    <div style="border: 4px solid #FC0; cursor:default;" >
       <table>
         <tr>
           <td>
@@ -182,17 +181,18 @@
             <h1 style="margin-bottom: 10px; text-align: center; margin-left: 5px;" >2017 Race Schedule</h1>
           </td>
           <td class="activeSchedule">
-            <p style="margin-left: 20px; margin-top: 10px;" id="1stRace">Apr 23 - Points - Cars, Bikes & Students</p>
+            <p style="margin-left: 20px; margin-top: 10px;" id="1stRace">Apr 23 - Rained Out</p>
             <p style="margin-left: 47px;" id="2ndRace">30 - Points - Cars, Bikes & Students</p>
             <p style="margin-left: 15px;" id="3rdRace">May &nbsp;&nbsp;7 - Points - Cars, Bikes & Students</p>
             <p style="margin-left: 47px;" id="4thRace">14 - Points - Cars, Bikes & Students</p>
             <p style="margin-left: 11px;" id="5thRace">June 11 - Points - Cars, Bikes & Students</p>
-            <p style="margin-left: 46px;" id="6thRace">18 - Points - Cars & Bikes</p>
-            <p style="margin-left: 15px;" id="7thRace">July &nbsp;&nbsp;9 - Points - Cars & Bikes</p>
-            <p style="margin-left: 46px;" id="8thRace">30 - SHOOTOUT</p>
-            <p style="margin-left: 15px;" id="9thRace">Aug 20 - Points - Cars & Bikes</p>
-            <p style="margin-left: 11px;" id="10thRace">Sept 10 - Points - Cars & Bikes</p>
-            <p style="margin-left: 45px; margin-bottom: 5px;" id="11thRace">17 - Championship Race - Cars & Bikes</p>
+            <p style="margin-left: 46px;" id="6thRace" class="new">17 - Rain Date - Saturday Race</p> 
+            <p style="margin-left: 46px;" id="7thRace">18 - Points - Cars & Bikes</p> 
+            <p style="margin-left: 15px;" id="8thRace">July &nbsp;&nbsp;9 - Points - Cars & Bikes</p>
+            <p style="margin-left: 46px;" id="9thRace">30 - SHOOTOUT</p>
+            <p style="margin-left: 15px;" id="10thRace">Aug 20 - Points - Cars & Bikes</p>
+            <p style="margin-left: 11px;" id="11thRace">Sept 10 - Points - Cars & Bikes</p>
+            <p style="margin-left: 45px; margin-bottom: 5px;" id="12thRace">17 - Championship Race - Cars & Bikes</p>
             <!-- Classes .current .over .cancelled .new -->
             <!-- <img src="/Events/RaceSchedule.jpg" alt="Race Schedule" width="590" height="190" /> -->
           </td>
@@ -249,8 +249,8 @@
     
   </div> <!-- end of main section -->
 
-  <div w3-include-html="footerSocial.html"></div> <!-- Start Of Footer -->
-  <div w3-include-html="footerSponsors.html"></div>
+  <div w3-include-html="/footerSocial.html"></div> <!-- Start Of Footer -->
+  <div w3-include-html="/footerSponsors.html"></div>
   
   <script>
   w3IncludeHTML();

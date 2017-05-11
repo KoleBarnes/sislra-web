@@ -1,10 +1,11 @@
 // SISLRA Race Schedule
 var sislraRaceSchedule = {
-  '04/23/2017 12:00 AM': 'SISLRARace',
+  '04/22/2017 12:00 AM': 'SISLRARace',
   '04/30/2017 12:00 AM': 'SISLRARace',
   '05/07/2017 12:00 AM': 'SISLRARace',
   '05/14/2017 12:00 AM': 'SISLRARace',
   '06/11/2017 12:00 AM': 'SISLRARace',
+  '06/17/2017 12:00 AM': 'SISLRARace',
   '06/18/2017 12:00 AM': 'SISLRARace',
   '07/09/2017 12:00 AM': 'SISLRARace',
   '07/30/2017 12:00 AM': 'SISLRARace',
