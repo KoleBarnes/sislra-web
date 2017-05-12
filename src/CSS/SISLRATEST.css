@@ -2,12 +2,15 @@
 body {
   font-size: 13px;
   font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
-  color:#FFF;
+  font-weight: normal;
+  color: #FFF;
   background-color: #111;
 }
 p {
   font-family: "Open Sans","Trebuchet MS", Helvetica, Arial, Verdana, Geneva, sans-serif;
   font-size: 130%;
+  font-weight: normal;
+  margin: 0px;
   margin-top: 5px;
   margin-bottom: 15px;
 }
@@ -20,26 +23,30 @@ ul {
 h1 {
   font-size: 200%;
   color: #FC0;
-  margin: 0;
   padding: 0px;
   width: 100%;
   cursor: default;
+  margin: 0px;
 }
 h2 {
   font-size: 18px;
   line-height: 35px;
   letter-spacing: 0px;
   margin: 0px;
+  margin-top: 15px;
   cursor: default;
 }
 h2#pro {
   color: #ff0000;
+  margin: 0px;
 }
 h2#street {
   color: #00ff00;
+  margin: 0px;
 }
 h2#bike {
   color: #3333ff;
+  margin: 0px;
 }
 h3 {
   font-size: 18px;
@@ -72,6 +79,14 @@ h6 {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
 
 /* ------------- IndexCountDown ------------ */
 .indexTableHeader {
@@ -83,10 +98,10 @@ h6 {
   text-align: center;
 }
 .indexTableHeader-row {
-  display:table-row;
+  display: table-row;
 }
 .indexTableHeader-section {
-  display:table-cell;
+  display: table-cell;
   width: 30%;
   font-size: 20px;
 }
@@ -161,25 +176,25 @@ h6 {
   100% { left: -100%; }
 }
 #indexMarquee {
-  margin:0px;
-  border:none;
+  margin: 0px;
+  border: none;
   border-radius: 0px 0px 0px 0px;
 }
 .marqueeInfo:after {
   text-shadow: 2px 2px #000;
-  content:"THE FIRST RACE OF THE SEASON IS ON SUNDAY APRIL 30th! GATES OPEN AT 2:00pm!";
-  /* content: "THE FINAL RACE OF THE SEASON IS ON SATURDAY OCTOBER 8TH. GATES OPEN AT 9:00am. QUALIFYING STARTS AT 10:00am."; */
+  content: "THE THIRD RACE OF THE SEASON IS ON SUNDAY MAY 14TH! GATES OPEN AT 2:00PM! FREE ADMISSION FOR MOM'S!";
+/*  content: "THE ... RACE OF THE SEASON IS ON SATURDAY ... ... . GATES OPEN AT 2:00PM, QUALIFYING AT 3:00PM & ELIMINATIONS AT 6:00PM."; */
 }
 
 /* ------------- Slides and Banner --------------- */
 #indexWebbanner {
-  margin:auto;
-  width:25%;
-  display:block;
+  margin: auto;
+  width: 25%;
+  display: block;
   margin-top: 2%;
   margin-bottom: 0%;
 }
-#mySlidesDiv{
+#mySlidesDiv {
   display: block;
   z-index: -2;
   width: 100%;
@@ -198,12 +213,8 @@ h6 {
 
 
 /* -------------- Index --------------- */
-.indexPointsWinners{
+.indexPointsWinners {
   font-size: 18px;
-}
-.DriverInfoPDF {
-  font-size: 16px;
-  text-decoration: none;
 }
 
 /* --------------- indexSchedule ------------ */
@@ -238,6 +249,9 @@ h6 {
 }
 
 /* -------------- RacerInfo -------------- */
+.mainRacerInfo {
+  margin-left: 22%;
+}
 .alignLeft {
   text-align: left;
 }
@@ -248,12 +262,14 @@ h6 {
   margin: 0px;
   text-align: left;
 }
+.DriverInfoPDF {
+  font-size: 16px;
+}
 
 /* -------------- Points ------------- */
 #PointsUpdate:after {
   color: #FC0;
   font-size: 17px;
-  /* text-decoration: underline; */
   font-weight: bold;
   content: "7/5/2017"
 }
@@ -280,21 +296,18 @@ h6 {
   width: 38%;
   margin: auto;
   border: 4px solid #FC0; 
-  cursor:default;
+  cursor: default;
 }
 .activeSchedule img {
   width: 60%;
-  display:block;
+  display: block;
+  text-align: center;
   margin: auto;
   margin-left: 10px;
 }
-.activeSchedule h1 {
-  margin-bottom: 10px;
-  text-align: center;
-  margin-left: 5px;
-}
 .activeSchedule p {
   font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
+  text-align: left;
   font-size: 15px;
   margin: 0px;
   width: 280px;
@@ -307,18 +320,24 @@ h6 {
   border-collapse: separate;
   border-spacing: 10px 5px;
 }
-
-/* ------------- Modal ------------- */
-.Poster {
+#eventsComment {
+	width: 100%;
+	text-align: center;
+}
+/* Modal */
+.poster {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
   display: inline;
   vertical-align: middle;
-  margin: 0px;
+  text-align: center;
+  width: 200px;
+  margin: auto;
+  margin-bottom: 15px;
 }
 
-.Poster:hover {
+.poster:hover {
   opacity: 0.7;
 }
 
@@ -326,7 +345,7 @@ h6 {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 10; /* Sit on top */
+  z-index: 2000; /* Sit on top */
   padding-top: 35px; /* Location of the box */
   left: 0;
   top: 0;
@@ -342,8 +361,8 @@ h6 {
 .modal-content {
   margin: auto;
   display: block;
-  width: 100%;
-  max-width: 29%;
+  width: auto;
+  max-height: 95%;
 }
 
 /* Caption of Modal Image */
@@ -379,9 +398,9 @@ h6 {
 /* Close Button */
 .close {
   position: absolute;
-  top: 15px;
+  top: 50px;
   right: 35px;
-  color: #f1f1f1;
+  color: #FFF;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -400,7 +419,57 @@ h6 {
   }
 }
 
+/* ------------- Sponsors -------------- */
+.mainSponsors {
+  margin-left: 22%;
+}
+.TableSponsors {
+  display: table;
+  margin-top: 35px;
+  margin-left: -14%;
+  text-align: center;
+}
+.TableSponsors h3 {
+  margin-top: -25px;
+}
+.TableSponsors-row {
+  display: table-row;
+}
+.TableSponsors-section {
+  display: table-cell;
+  width: 10%;
+  font-size: 13px;
+}
+.SponsorsChristmastree {
+  width: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
+/* ------------- Contact Us ------------- */
+table {
+  width: 786; 
+  border: 0px; 
+  text-align: left;
+  color: #FFF;
+  padding: 4px;
+  margin: auto;
+  border-spacing: 4px; 
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 14px;
+  color: #FB0
+}
+
+td {
+  padding: 0px 10px 0px 0px;
+}
+
+#VolunteerNeeded {
+  color: #FF0000;
+}
 
 /* ------------- Hyperlink Color ------------- */
 a:link {
@@ -419,10 +488,10 @@ a:hover {
   color: #F90;
   text-decoration: none;
   outline: 0;
-  -webkit-transition:color .3s ease-in;
-  -moz-transition:color .3s ease-in;
-  -o-transition:color .3s ease-in;
-  transition:color .3s ease-in;
+  -webkit-transition: color .3s ease-in;
+  -moz-transition: color .3s ease-in;
+  -o-transition: color .3s ease-in;
+  transition: color .3s ease-in;
 }
 a:active {
   /* selected link */
@@ -456,81 +525,81 @@ a:active {
 }
 
 /* ------------- Alerts ------------- */
-.alert{
+.alert {
   font-size: 15px;
-  padding:15px;
-  margin-top:0px;
+  padding: 15px;
+  margin-top :0px;
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 10px;
-  border:2px solid transparent;
-  border-radius:4px;
+  border: 2px solid transparent;
+  border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
-.alert-success{
-  color:#3c763d;
-  background-color:#dff0d8;
-  border-color:#d6e9c6;
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
 }
-.alert-success hr{
-  border-top-color:#c9e2b3;
+.alert-success hr {
+  border-top-color: #c9e2b3;
 }
-.alert-success .alert-link{
-  color:#2b542c;
+.alert-success .alert-link {
+  color: #2b542c;
 }
-.alert-info{
-  color:#31708f;
-  background-color:#d9edf7;
-  border-color:#bce8f1;
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
 }
-.alert-info hr{
-  border-top-color:#a6e1ec;
+.alert-info hr {
+  border-top-color: #a6e1ec;
 }
-.alert-info .alert-link{
-  color:#245269;
+.alert-info .alert-link {
+  color: #245269;
 }
-.alert-warning{
-  color:#8a6d3b;
-  background-color:#fcf8e3;
-  border-color:#faebcc;
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
 }
-.alert-warning hr{
-  border-top-color:#f7e1b5;
+.alert-warning hr {
+  border-top-color: #f7e1b5;
 }
-.alert-warning .alert-link{
-  color:#66512c;
+.alert-warning .alert-link {
+  color: #66512c;
 }
-.alert-danger{
-  color:#a94442;
-  background-color:#f2dede;
-  border-color:#ebccd1;
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
 }
-.alert-danger hr{
-  border-top-color:#e4b9c0;
+.alert-danger hr {
+  border-top-color: #e4b9c0;
 }
-.alert-danger .alert-link{
-  color:#843534;
+.alert-danger .alert-link {
+  color: #843534;
 }
 
 /* ------------- Images ------------- */
 a {
-  outline : none;
+  outline: none;
 }
 a img {
-  outline : none;
+  outline: none;
 }
 img {
-  border : 0;
+  border: 0;
 }
 
 /* ------------- Footer ------------- */
 /* ------------- http://stackoverflow.com/questions/27770310/making-a-responsive-footer-with-3-divs-inside ------------- */
 #footerSocial {
-  display:table;
-  width:100%;
+  display: table;
+  width: 100%;
   margin: 0 auto;
   margin-top: 5px;
-  position:relative;
+  position: relative;
   z-index: 2;
 }
 #footerSocial p {
@@ -538,10 +607,10 @@ img {
   font-size: 24px;
 }
 #footerSponsors {
-  display:table;
-  width:100%;
+  display: table;
+  width: 100%;
   z-index: 1; 
-  position:relative
+  position: relative
 }
 #footerSponsors p {
   color: #FC0;
@@ -558,7 +627,7 @@ img {
   text-align: center;
   margin-top: -10px;
   z-index: 1;
-  position:relative;
+  position: relative;
   cursor: default;
 }
 #footerCopyright p {
@@ -568,18 +637,18 @@ img {
   color: #FC0;
 }
 .footer-row {
-  display:table-row;
+  display: table-row;
   margin: auto;
 }
 .footer-section {
-  display:table-cell;
+  display: table-cell;
   text-align: center;
   width: 30%;
   font-size: 20px;
   margin: auto;
 }
 .footer-section-2 {
-  display:table-cell;
+  display: table-cell;
   width: 20%;
   vertical-align: middle;
 }
@@ -592,7 +661,7 @@ img {
   color: #FC0;
 }
 #SISLRALogo-Footer {
-  width: 350px;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -655,7 +724,7 @@ img {
 }
 .row {
   margin: 0px;
-  background-color: #111;
+  background-color: #141414;
 }
 .row::after {
   content: "";
@@ -694,26 +763,23 @@ img {
 .main {
   text-align: center;
 }
-.mainRacerInfo {
-  margin-left: 22%;
-}
 .footer {
   padding: 15px;
 }
 
 @media (min-width: 768px) and (max-width: 890px) {
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
-    .navbar-collapse.collapse.in {
-        display: block !important;
-    }
-    .navbar-header .collapse, .navbar-toggle {
-        display:block !important;
-    }
-    .navbar-header {
-        float:none;
-    }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .navbar-header .collapse, .navbar-toggle {
+    display:block !important;
+  }
+  .navbar-header {
+    float:none;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -723,13 +789,13 @@ img {
   #spiningTire {
     display: none;
   }
-  #footerSponsors{
+  #footerSponsors {
     display: none;
   }
   #SocialMediaDiv-Footer {
     margin-top: 15px;
   }
-  #SISLRALogo-Footer{
+  #SISLRALogo-Footer {
     width: 30%;
     display: block;
     margin: auto;
@@ -742,17 +808,23 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+  background-color: #141414
+  }
+  .shade {
+    background: none;
+  }
   #indexWebbanner {
     width:60%;
     margin-top: 14%;
   }
-  #SISLRALogo-Footer{
+  #SISLRALogo-Footer {
     width: 60%;
   }
   .marquee {
     display: none;
   }
-  #mySlidesDiv{
+  #mySlidesDiv {
     display: none;
   }
   .indexTableHeader {
@@ -763,17 +835,17 @@ img {
     text-align: center;
   }
   .indexTableHeader-section {
-    display:table-row;
+    display: table-row;
     margin: auto;
     font-size: 20px;
-  }
-  .shade {
-    background: none;
   }
 }
 
 @media only screen and (max-width: 650px) {
   .mainRacerInfo {
+    margin-left: 0%;
+  }
+  .mainSponsors {
     margin-left: 0%;
   }
 }
@@ -782,6 +854,7 @@ img {
 [class*="col-"] {
     width: 100%;
 }
+
 @media only screen and (min-width: 650px) {
   /* For tablets: */
   .col-m-1 {width: 8.33%;}
