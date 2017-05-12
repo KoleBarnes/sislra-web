@@ -73,6 +73,20 @@ h6 {
   letter-spacing: 0px;
   margin-bottom: 10px;
 }
+.alignCenter {
+  text-align: center;
+}
+.alignLeft {
+  text-align: left;
+}
+::-moz-selection { /* Code for Firefox */
+    color: #FFF;
+    background: #999;
+}
+::selection {
+    color: #FFF;
+    background: #999;
+}
 
 /* ------------- Header Content --------------- */
 /* --------------- Nav Bar ------------- */
@@ -249,12 +263,6 @@ h6 {
 }
 
 /* -------------- RacerInfo -------------- */
-.mainRacerInfo {
-  margin-left: 22%;
-}
-.alignLeft {
-  text-align: left;
-}
 #Fees {
   margin-bottom: 20px;
 }
@@ -420,9 +428,6 @@ h6 {
 }
 
 /* ------------- Sponsors -------------- */
-.mainSponsors {
-  margin-left: 22%;
-}
 .TableSponsors {
   display: table;
   margin-top: 35px;
@@ -470,6 +475,15 @@ td {
 #VolunteerNeeded {
   color: #FF0000;
 }
+
+/* ------------- About Us ------------- */
+#aboutUsImg {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
 
 /* ------------- Hyperlink Color ------------- */
 a:link {
@@ -763,11 +777,14 @@ img {
 .main {
   text-align: center;
 }
+.mainCenter {
+  margin-left: 22%;
+}  
 .footer {
   padding: 15px;
 }
 
-@media (min-width: 768px) and (max-width: 890px) {
+@media (min-width: 768px) and (max-width: 1010px) {
   .navbar-collapse.collapse {
     display: none !important;
   }
@@ -809,14 +826,13 @@ img {
 
 @media only screen and (max-width: 768px) {
   body {
-  background-color: #141414
+  background-color: #000
   }
   .shade {
     background: none;
   }
   #indexWebbanner {
-    width:60%;
-    margin-top: 14%;
+    display: none;
   }
   #SISLRALogo-Footer {
     width: 60%;
@@ -831,7 +847,8 @@ img {
     display: table;
     width: auto;
     margin: auto;
-    margin-top: 2%;
+    margin-top: 60px;
+    margin-bottom: 15px;
     text-align: center;
   }
   .indexTableHeader-section {
@@ -842,10 +859,7 @@ img {
 }
 
 @media only screen and (max-width: 650px) {
-  .mainRacerInfo {
-    margin-left: 0%;
-  }
-  .mainSponsors {
+  .mainCenter {
     margin-left: 0%;
   }
 }
