@@ -107,7 +107,7 @@ h6 {
   display: table;
   width: 100%;
   margin: auto;
-  margin-top: 2%;
+  margin-top: 0%;
   margin-bottom: 2.8%;
   text-align: center;
 }
@@ -203,10 +203,10 @@ h6 {
 /* ------------- Slides and Banner --------------- */
 #indexWebbanner {
   margin: auto;
-  width: 25%;
+  width: 26%;
   display: block;
-  margin-top: 2%;
-  margin-bottom: 0%;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
 }
 #mySlidesDiv {
   display: block;
@@ -301,24 +301,28 @@ h6 {
 
 /* ------------- Events ----------- */
 .activeSchedule {
-  width: 38%;
+  width: 40%;
   margin: auto;
   border: 4px solid #FC0; 
   cursor: default;
 }
 .activeSchedule img {
   width: 60%;
-  display: block;
   text-align: center;
   margin: auto;
-  margin-left: 10px;
+  margin-top: 15px;
 }
-.activeSchedule p {
+.activeSchedule ul {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.activeSchedule li {
   font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
   text-align: left;
   font-size: 15px;
-  margin: 0px;
-  width: 280px;
+  margin: auto;
+  width: 100%;
 }
 .eventsTableTimes {
   width: 100%;
@@ -330,7 +334,12 @@ h6 {
 }
 #eventsComment {
 	width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
 	text-align: center;
+}
+#Posters {
+  margin-top: 15px;
 }
 /* Modal */
 .poster {
@@ -430,8 +439,8 @@ h6 {
 /* ------------- Sponsors -------------- */
 .TableSponsors {
   display: table;
-  margin-top: 35px;
-  margin-left: -14%;
+  width: 100%;
+  margin: auto;
   text-align: center;
 }
 .TableSponsors h3 {
@@ -442,13 +451,18 @@ h6 {
 }
 .TableSponsors-section {
   display: table-cell;
-  width: 10%;
+  width: 30%;
+  font-size: 13px;
+}
+.TableSponsors-section-Tree {
+  display: table-cell;
+  width: 30%;
   font-size: 13px;
 }
 .SponsorsChristmastree {
-  width: 200px;
-  margin-left: 50px;
-  margin-right: 50px;
+  width: 195px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /* ------------- Contact Us ------------- */
@@ -675,7 +689,7 @@ img {
   color: #FC0;
 }
 #SISLRALogo-Footer {
-  width: 320px;
+  width: 310px;
   margin: 0 auto;
 }
 
@@ -801,7 +815,7 @@ img {
 
 @media only screen and (max-width: 1200px) {
   .footer-section {
-    display:table-row;
+    display: table-row;
   }
   #spiningTire {
     display: none;
@@ -821,6 +835,21 @@ img {
     margin: 0px;
     margin-bottom: 1%;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .TableSponsors h3 {
+    margin-top: 10px;
+  }
+  .TableSponsors-section {
+    display: table-row;
+  }
+  .TableSponsors-section-Tree {
+    display: none;
+  }
+  .SponsorsChristmastree {
+    display: none;
   }
 }
 
