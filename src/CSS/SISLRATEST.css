@@ -2,7 +2,6 @@
 body {
   font-size: 13px;
   font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
-  font-weight: normal;
   color: #FFF;
   background-color: #111;
 }
@@ -29,11 +28,12 @@ h1 {
   margin: 0px;
 }
 h2 {
-  font-size: 18px;
+  font-size: 160%;
+  color: #FC0;
   line-height: 35px;
   letter-spacing: 0px;
   margin: 0px;
-  margin-top: 15px;
+  margin-top: 0px;
   cursor: default;
 }
 h2#pro {
@@ -196,8 +196,8 @@ h6 {
 }
 .marqueeInfo:after {
   text-shadow: 2px 2px #000;
-  content: "THE THIRD RACE OF THE SEASON IS ON SUNDAY MAY 14TH! GATES OPEN AT 2:00PM! FREE ADMISSION FOR MOM'S!";
-/*  content: "THE ... RACE OF THE SEASON IS ON SATURDAY ... ... . GATES OPEN AT 2:00PM, QUALIFYING AT 3:00PM & ELIMINATIONS AT 6:00PM."; */
+  content: "THE FORTH RACE OF THE SEASON IS ON SUNDAY JUNE 11TH! GATES OPEN AT 2:00PM!";
+/*content: "THE ..... RACE OF THE SEASON IS ON SUNDAY .... ....! GATES OPEN AT 2:00PM, QUALIFYING AT 3:00PM & ELIMINATIONS AT 6:00PM."; */
 }
 
 /* ------------- Slides and Banner --------------- */
@@ -229,6 +229,16 @@ h6 {
 /* -------------- Index --------------- */
 .indexPointsWinners {
   font-size: 18px;
+}
+.indexWinnersTable {
+  margin: auto;
+  text-align: left;
+}
+.indexWinnersTable img {
+  width: 190px;
+}
+.indexWinnersTable td{
+  padding: 0px 5px 0px 0px;
 }
 
 /* --------------- indexSchedule ------------ */
@@ -279,7 +289,7 @@ h6 {
   color: #FC0;
   font-size: 17px;
   font-weight: bold;
-  content: "7/5/2017"
+  content: "14/5/2017"
 }
 .mySlidesPoints {
   margin: auto;
@@ -454,6 +464,10 @@ h6 {
   width: 30%;
   font-size: 13px;
 }
+.TableSponsors-section p {
+  margin: 0px;
+  margin-top: 10px;
+}
 .TableSponsors-section-Tree {
   display: table-cell;
   width: 30%;
@@ -466,26 +480,29 @@ h6 {
 }
 
 /* ------------- Contact Us ------------- */
-table {
-  width: 786; 
-  border: 0px; 
-  text-align: left;
+.contactUsTable {
+  width: 100%;
   color: #FFF;
-  padding: 4px;
-  margin: auto;
-  border-spacing: 4px; 
+  margin: 0px;
+  border: 2px solid #222;
+  border-spacing: 4px;
 }
-
-.bold {
+.contactUsTable th {
+  cursor: default;
+  height: 30px;
   font-weight: bold;
   font-size: 14px;
-  color: #FB0
+  color: #000;
+  text-align: center;
+  background-color: #FC0;
 }
-
-td {
+.contactUsTable td {
+  cursor: default;
   padding: 0px 10px 0px 0px;
+  text-align: center;
 }
-
+.contactUsTable tr:nth-child(even) {background-color: #222;}
+.contactUsTable tr:hover {background-color: #333}
 #VolunteerNeeded {
   color: #FF0000;
 }
@@ -792,7 +809,7 @@ img {
   text-align: center;
 }
 .mainCenter {
-  margin-left: 22%;
+  margin-left: 20.5%;
 }  
 .footer {
   padding: 15px;
@@ -836,9 +853,15 @@ img {
     margin-bottom: 1%;
     width: 100%;
   }
+  .col-m-0 {
+    margin: -15px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
+  .TableSponsors {
+    margin-top: -35px;
+  }
   .TableSponsors h3 {
     margin-top: 10px;
   }
@@ -891,6 +914,9 @@ img {
   .mainCenter {
     margin-left: 0%;
   }
+  .contactUsTable {
+    width: 600px;
+  }
 }
 
 /* For mobile phones: */
@@ -900,6 +926,7 @@ img {
 
 @media only screen and (min-width: 650px) {
   /* For tablets: */
+  .col-m-0 {width: 0%;}
   .col-m-1 {width: 8.33%;}
   .col-m-2 {width: 16.66%;}
   .col-m-3 {width: 25%;}
@@ -915,6 +942,7 @@ img {
 }
 @media only screen and (min-width: 1200px) { /* 768px */
   /* For desktop: */
+  .col-0 {width: 0%;}
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
