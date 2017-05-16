@@ -10,7 +10,7 @@ p {
   font-size: 130%;
   font-weight: normal;
   margin: 0px;
-  margin-top: 5px;
+  margin-top: 0px;
   margin-bottom: 15px;
 }
 ul {
@@ -141,17 +141,17 @@ h6 {
   text-shadow: 2px 2px #000;
   padding-left: 15px;
   padding-right: 15px;
-  content: " Next SISLRA Race is in: "
+  content: " Next SISLRA Race "
 }
 .RumbleOnTheRunwayDate:after {
   text-shadow: 2px 2px #000;
-  content: "Next Rumble on the Runway is in:"
+  content: "Next Rumble on the Runway"
 }
 .ThunderInTheValleyDate:after {
   text-shadow: 2px 2px #000;
   padding-left: 5px;
   padding-right: 5px;
-  content: " Thunder in The Valley is in: "
+  content: " Thunder in The Valley "
 }
 
 /* ------------- Marquee ------------- */
@@ -225,14 +225,13 @@ h6 {
 }
 /* -------------- End of header content ------------- */
 
-
 /* -------------- Index --------------- */
 .indexPointsWinners {
   font-size: 18px;
 }
 .indexWinnersTable {
   margin: auto;
-  text-align: left;
+  text-align: center;
 }
 .indexWinnersTable img {
   width: 190px;
@@ -273,15 +272,18 @@ h6 {
 }
 
 /* -------------- RacerInfo -------------- */
-#Fees {
+#feesDiv {
   margin-bottom: 20px;
 }
-#Fees p {
+#feesDiv p {
   margin: 0px;
   text-align: left;
 }
 .DriverInfoPDF {
   font-size: 16px;
+}
+.listStyleDisc ul {
+  list-style-type: disc;
 }
 
 /* -------------- Points ------------- */
@@ -290,6 +292,10 @@ h6 {
   font-size: 17px;
   font-weight: bold;
   content: "14/5/2017"
+}
+#pMembers {
+  width: 80%;
+  margin: auto;
 }
 .mySlidesPoints {
   margin: auto;
@@ -334,9 +340,17 @@ h6 {
   margin: auto;
   width: 100%;
 }
+#activeDates {
+  width: 100%;
+  margin: 0 auto;
+}
+#activeDates ul {
+  width: 275px;
+}
 .eventsTableTimes {
   width: 100%;
   margin: auto;
+  padding: 5px;
   font-size: 16px;
   text-align: center;
   border-collapse: separate;
@@ -344,12 +358,15 @@ h6 {
 }
 #eventsComment {
 	width: 100%;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  padding: 5px;
+  margin-bottom: 10px;
 	text-align: center;
 }
 #Posters {
   margin-top: 15px;
+}
+.posterMobile {
+    display: none;
 }
 /* Modal */
 .poster {
@@ -363,11 +380,9 @@ h6 {
   margin: auto;
   margin-bottom: 15px;
 }
-
 .poster:hover {
   opacity: 0.7;
 }
-
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -383,7 +398,6 @@ h6 {
   background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
   color: #fff;
 }
-
 /* Modal Content (image) */
 .modal-content {
   margin: auto;
@@ -391,7 +405,6 @@ h6 {
   width: auto;
   max-height: 95%;
 }
-
 /* Caption of Modal Image */
 #caption {
   margin: auto;
@@ -403,7 +416,6 @@ h6 {
   padding: 10px 0;
   height: 15px;
 }
-
 /* Add Animation */
 .modal-content, #caption {
   -webkit-animation-name: zoom;
@@ -411,28 +423,24 @@ h6 {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
-
 @-webkit-keyframes zoom {
   from {-webkit-transform: scale(0)}
   to {-webkit-transform: scale(1)}
 }
-
 @keyframes zoom {
   from {transform: scale(0.1)}
   to {transform: scale(1)}
 }
-
 /* Close Button */
 .close {
   position: absolute;
   top: 50px;
-  right: 35px;
+  right: 15px;
   color: #FFF;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
 }
-
 .close:hover, .close:focus {
   color: #bbb;
   text-decoration: none;
@@ -498,11 +506,15 @@ h6 {
 }
 .contactUsTable td {
   cursor: default;
+  height: 20px;
   padding: 0px 10px 0px 0px;
   text-align: left;
 }
 .contactUsTable tr:nth-child(even) {background-color: #222;}
 .contactUsTable tr:hover {background-color: #333}
+#contactPhone {
+  width: 95px;
+}
 #VolunteerNeeded {
   color: #FF0000;
 }
@@ -528,7 +540,6 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  /* color: #2c8bde; */
   /* mouse over link */
   color: #F90;
   text-decoration: none;
@@ -626,19 +637,8 @@ a:active {
   color: #843534;
 }
 
-/* ------------- Images ------------- */
-a {
-  outline: none;
-}
-a img {
-  outline: none;
-}
-img {
-  border: 0;
-}
-
 /* ------------- Footer ------------- */
-/* ------------- http://stackoverflow.com/questions/27770310/making-a-responsive-footer-with-3-divs-inside ------------- */
+/* http://stackoverflow.com/questions/27770310/making-a-responsive-footer-with-3-divs-inside */
 #footerSocial {
   display: table;
   width: 100%;
@@ -680,6 +680,9 @@ img {
   margin-top: 15px;
   margin-bottom: 0px;
   color: #FC0;
+}
+.defaultCursor {
+  cursor: default;
 }
 .footer-row {
   display: table-row;
@@ -730,7 +733,7 @@ img {
   margin: 0px;
   width: 200px;
   height: 200px;
-  /* background: #202020; */
+  background: #1C1C1C;
 
   -webkit-animation-name: spin;
   -webkit-animation-duration: 4000ms;
@@ -763,6 +766,17 @@ img {
   to { transform:rotate(360deg); }
 }
 
+/* ------------- Images ------------- */
+a {
+  outline: none;
+}
+a img {
+  outline: none;
+}
+img {
+  border: 0;
+}
+
 /* -------------- W3C Code ----------------- */
 * {
   box-sizing: border-box;
@@ -785,7 +799,7 @@ img {
   height: 100%;
 }
 .sideBarColor {
-  background-color: #1C1C1C; /* 33b5e5 1C1C1C background-color: #202020; */
+  background-color: #1C1C1C;
 }
 .menu {
   border-radius: 3px;
@@ -815,7 +829,8 @@ img {
   padding: 15px;
 }
 
-@media (min-width: 768px) and (max-width: 1010px) {
+@media (min-width: 768px) and (max-width: 1010px) { 
+  /* Collapse Nav Bar To avoid ugliness */
   .navbar-collapse.collapse {
     display: none !important;
   }
@@ -830,7 +845,8 @@ img {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) { 
+  /* Collapse Footer */
   .footer-section {
     display: table-row;
   }
@@ -858,7 +874,24 @@ img {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1040px) { 
+  /* To avoid the eventsTableTimes coming out of div activeSchedule */
+  .activeSchedule {
+    width: 100%;
+  }
+  .activeSchedule img {
+    width: 50%;
+  }
+  .eventsTableTimes {
+    padding: 0px;
+  }
+  #eventsComment {
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 1000px) { 
+  /* To avoid TableSponsors going out a screen */
   .TableSponsors {
     margin-top: -35px;
   }
@@ -876,7 +909,8 @@ img {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { 
+  /* Collapse Header */
   body {
   background-color: #000
   }
@@ -908,9 +942,22 @@ img {
     margin: auto;
     font-size: 20px;
   }
+  #pMembers {
+    width: 100%;
+  }
+  .poster {
+    display: none;
+  }
+  .posterMobile {
+    display: initial;
+    width: 80%;
+    height: auto;
+  }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 650px) { 
+  /* Set Margin to 0 and contactUsTable when on smaller
+  /*screens to stop content from going out of page*/
   .mainCenter {
     margin-left: 0%;
   }
@@ -940,7 +987,7 @@ img {
   .col-m-11 {width: 91.66%;}
   .col-m-12 {width: 100%;}
 }
-@media only screen and (min-width: 1200px) { /* 768px */
+@media only screen and (min-width: 1200px) {
   /* For desktop: */
   .col-0 {width: 0%;}
   .col-1 {width: 8.33%;}

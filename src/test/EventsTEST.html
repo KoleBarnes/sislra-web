@@ -109,7 +109,7 @@
         </div>
       </div>
     </nav>
-
+          
     <div class="header shade">
       <div id="mySlidesDiv">
         <img class="mySlides" src="/SISLRA/Slides/Untitled-2.jpg" alt="Slide2" />
@@ -171,49 +171,54 @@
           <img src="/SISLRA/WebBanner.png" alt="SISLRA" />
           
           <h1>2017 Race Schedule</h1>
+
+          <div id="activeDates">
+            <ul>
+              <li style="margin-left: 10px; margin-top: 10px;" id="1stRace">Apr 23 - Rained Out</li>
+              <li style="margin-left: 37px;" id="2ndRace">30 - Points - Cars, Bikes & Students</li>
+              <li style="margin-left: 5px;" id="3rdRace">May &nbsp;&nbsp;7 - Points - Cars, Bikes & Students</li>
+              <li style="margin-left: 37px;" id="4thRace">14 - Points - Cars, Bikes & Students</li>
+              <li style="margin-left: 1px;" id="5thRace">June 11 - Points - Cars, Bikes & Students</li>
+              <li style="margin-left: 36px;" id="6thRace" class="new">17 - Rain Date - Saturday Race</li> 
+              <li style="margin-left: 36px;" id="7thRace">18 - Points - Cars & Bikes</li> 
+              <li style="margin-left: 5px;" id="8thRace">July &nbsp;&nbsp;9 - Points - Cars & Bikes</li>
+              <li style="margin-left: 36px;" id="9thRace">30 - SHOOTOUT</li>
+              <li style="margin-left: 5px;" id="10thRace">Aug 20 - Points - Cars & Bikes</li>
+              <li style="margin-left: 1px;" id="11thRace">Sept 10 - Points - Cars & Bikes</li>
+              <li style="margin-left: 35px; margin-bottom: 5px;" id="12thRace">17 - Championship Race</li>
+              <!-- Classes .current .over .cancelled .new -->
+            </ul>
+          </div>
           
-          <ul>
-            <li style="margin-left: 20px; margin-top: 10px;" id="1stRace">Apr 23 - Rained Out</li>
-            <li style="margin-left: 47px;" id="2ndRace">30 - Points - Cars, Bikes & Students</li>
-            <li style="margin-left: 15px;" id="3rdRace">May &nbsp;&nbsp;7 - Points - Cars, Bikes & Students</li>
-            <li style="margin-left: 47px;" id="4thRace">14 - Points - Cars, Bikes & Students</li>
-            <li style="margin-left: 11px;" id="5thRace">June 11 - Points - Cars, Bikes & Students</li>
-            <li style="margin-left: 46px;" id="6thRace" class="new">17 - Rain Date - Saturday Race</li> 
-            <li style="margin-left: 46px;" id="7thRace">18 - Points - Cars & Bikes</li> 
-            <li style="margin-left: 15px;" id="8thRace">July &nbsp;&nbsp;9 - Points - Cars & Bikes</li>
-            <li style="margin-left: 46px;" id="9thRace">30 - SHOOTOUT</li>
-            <li style="margin-left: 15px;" id="10thRace">Aug 20 - Points - Cars & Bikes</li>
-            <li style="margin-left: 11px;" id="11thRace">Sept 10 - Points - Cars & Bikes</li>
-            <li style="margin-left: 45px; margin-bottom: 5px;" id="12thRace">17 - Championship Race</li>
-            <!-- Classes .current .over .cancelled .new -->
-          </ul>
-            
-          <table class="eventsTableTimes">
-            <tr>
-              <th></th>
-              <th>Gates Open/Tech.</th>
-              <th>Qualifying</th>
-              <th>Eliminations</th>
-            </tr>
-            <tr>
-              <td>Sundays*</td>
-              <td>2:00 pm</td>
-              <td>3:00 pm</td>
-              <td>6:00 pm</td>
-            </tr>
-            <tr>
-              <td>Saturdays</td>
-              <td>8:00 am</td>
-              <td>9:00 am</td>
-              <td>11:00 am</td>
-            </tr>
-            <tr>
-              <td>Fridays</td>
-              <td>4:00 pm</td>
-              <td>5:30 pm</td>
-              <td>7:30 pm</td>
-            </tr>
-          </table>
+          <div style="overflow-x:auto;">
+            <table class="eventsTableTimes">
+              <tr>
+                <th></th>
+                <th>Gates Open/Tech.</th>
+                <th>Qualifying</th>
+                <th>Eliminations</th>
+              </tr>
+              <tr>
+                <td>Sundays*</td>
+                <td>2:00 pm</td>
+                <td>3:00 pm</td>
+                <td>6:00 pm</td>
+              </tr>
+              <tr>
+                <td>Saturdays</td>
+                <td>8:00 am</td>
+                <td>9:00 am</td>
+                <td>11:00 am</td>
+              </tr>
+              <tr>
+                <td>Fridays</td>
+                <td>4:00 pm</td>
+                <td>5:30 pm</td>
+                <td>7:30 pm</td>
+              </tr>
+            </table>
+          </div>
+          
           <p id="eventsComment">* All 2017 races will be on a sunday unless otherwise posted.</p>
         </div>
 
@@ -234,6 +239,8 @@
         <script src="/JavaScript/YearPosterModal.js"></script> <!-- Here To Run Modal -->
         <!-- <script src="/JavaScript/StreetCarShootoutModal.js"></script> -->
         
+        <img id="YearPoster" class="posterMobile" src="/SISLRA/Events/YearPoster.jpg" />
+
       </div>
     </div> <!-- End of row -->
 
@@ -249,8 +256,8 @@
               <a class="buttonHyperLink" href="https://twitter.com/DragRaceVic" target="_blank"><span class="social social-twitter x2"></span></a>
               <a class="buttonHyperLink" href="https://www.instagram.com/dragracevictoria/?hl=en" target="_blank"><span class="social social-instagram x2"></span></a>
               <a class="buttonHyperLink" href="https://www.youtube.com/user/nostopinLucR" target="_blank"><span class="social social-youtube x2"></span></a>
-              <p><a href="/">Home </a>| <a href="/Points.html">Points </a>| <a href="/Sponsors.html">Sponsors</a></p>
-              <p><a href="/ContactUs">Contact Us </a>| <a href="/AboutUs">About Us</a></p>
+              <p><a href="/">Home </a><span class="defaultCursor">| </span><a href="/Points.html">Points </a><span class="defaultCursor">| </span><a href="/Sponsors.html">Sponsors</a></p>
+              <p><a href="/ContactUs">Contact Us </a><span class="defaultCursor">| </span><a href="/AboutUs">About Us</a></p>
             </div>
           </div>
           <div class="footer-section">
@@ -305,9 +312,9 @@
       </div>
       
       <div id="footerCopyright">
-        <p> Copyright &copy; 2005<script src="/JavaScript/Copyright.js"></script>, All rights reserved.</p>
-      </div> <!-- end of footer -->
-    </div>
+        <p> Copyright &copy; <script src="/JavaScript/Copyright.js"></script>. All Rights Reserved.</p>
+      </div>
+    </div> <!-- end of footer -->
 
   </body>
 </html>
