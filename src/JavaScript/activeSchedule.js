@@ -16,8 +16,7 @@ var sislraRaceDates = {
 CountDownTimer(sislraRaceDates);
 
 function CountDownTimer(raceDates) {
-  
-  timer = setInterval(ShowRemaining, 1000, raceDates);
+  setInterval(ShowRemaining, 1000, raceDates);
 }
 
 function ShowRemaining(raceDates) {
@@ -28,10 +27,16 @@ function ShowRemaining(raceDates) {
     var distance = end - now;
 
     if (distance < 0) {
-      document.getElementById(id).className += " over";
+      if (!hasClass(document.getElementById(id), 'over')) {
+        document.getElementById(id).className += " over";
+      }
     } else {
       document.getElementById(id).className = "current";
       return;
     }    
   }  
+}
+
+function hasClass(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
 }

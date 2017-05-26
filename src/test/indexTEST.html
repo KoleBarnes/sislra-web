@@ -17,10 +17,11 @@
 
     <!-- <link rel="stylesheet" href="/CSS/SISLRA.css"> -->
     <link rel="stylesheet" href="/CSS/SISLRATEST.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <!-- JavaScript -->
-    <script src="/JavaScript/Countdown.js"></script>
-    <script src="/JavaScript/indexSchedule.js"></script>
+    <script src="/JavaScript/nextRaceCountdown.js"></script>
+    <script src="/JavaScript/activeSchedule.js"></script>
     
     <script src="/JavaScript/jquery.js"></script>
     
@@ -28,11 +29,14 @@
 
     <script src="/Bootstrap/js/bootstrap.js"></script>
     <script src="/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
   </head>
   
   <body>
-
-    <nav class="navbar navbar-inverse navbar-topMargin navbar-fixed-top">
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -45,8 +49,8 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
-            <li class="dropdown"><a href="/RacerInfo">Racer Info <span class="caret"></span></a>
-              <ul class="dropdown-menu">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Racer Info <span class="caret"></span></a>
+              <ul class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                 <li><a href="/RacerInfo#Fees">Fees</a></li>
                 <li><a href="/RacerInfo#Memberships">Memberships</a></li>
                 <li><a href="/RacerInfo#DriverInformationSheet">Driver Information Sheet</a></li>
@@ -61,14 +65,14 @@
               </ul>
             </li>
             <li><a href="/Points">Points</a></li>
-            <li class="dropdown"><a href="/Events">Events <span class="caret"></span></a>
-              <ul class="dropdown-menu">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
+              <ul class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                 <li><a href="/Events#RaceSchedule">Race Schedule</a></li>
                 <li><a href="/Events#Posters">Posters</a></li>
               </ul>
             </li>
-            <li class="dropdown"><a href="/Sponsors">Sponsors <span class="caret"></span></a>
-              <ul class="dropdown-menu">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sponsors <span class="caret"></span></a>
+              <ul class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                 <li><a href="/Sponsors#BandDForklift">B&D Forklift</a></li>
                 <li><a href="/Sponsors#Searles">Searles</a></li>
                 <li><a href="/Sponsors#GraphicFX">GraphicFX</a></li>
@@ -82,20 +86,20 @@
                 <li><a href="/Sponsors#SponsorshipInformation">Sponsorship Info.</a></li>
               </ul>
             </li>
-            <li class="dropdown"><a href="/ContactUs">Contact Us <span class="caret"></span></a>
-              <ul class="dropdown-menu">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact Us <span class="caret"></span></a>
+              <ul class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                 <li><a href="/ContactUs">Contact Us</a></li>
                 <li><a href="/ContactUs#links">Other Tracks and Clubs</a></li>
               </ul>
             </li>
-            <li class="dropdown"><a href="/AboutUs">About Us <span class="caret"></span></a>
-              <ul class="dropdown-menu">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
+              <ul class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                 <li><a href="/AboutUs">About Us</a></li>
                 <li><a href="/AboutUs#LOCATEDAT">Location</a></li>
               </ul>
             </li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="filetypes filetypes-pdf"></span> PDF<span class="caret"></span></a>
-              <ul class="dropdown-menu">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="filetypes filetypes-pdf"></span> PDF<span class="caret"></span></a>
+              <ul class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                 <li><a href="/SISLRA/RacersInfo/NewRacersInformation.pdf" target="_blank"><span class="filetypes filetypes-pdf"></span> Racers Information</a></li>
                 <li><a href="/SISLRA/RacersInfo/DriverInformationSlip.pdf" target="_blank"><span class="filetypes filetypes-pdf"></span> Driver Information Slip</a></li>
               </ul>
@@ -112,38 +116,28 @@
     </nav>
 
     <div class="header shade">
-      <div id="mySlidesDiv">
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-2.jpg" alt="Slide2" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-3.jpg" alt="Slide3" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-4.jpg" alt="Slide4" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-5.jpg" alt="Slide5" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-6.jpg" alt="Slide6" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-7.jpg" alt="Slide7" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-8.jpg" alt="Slide8" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-9.jpg" alt="Slide9" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-10.jpg" alt="Slide10" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-11.jpg" alt="Slide11" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-12.jpg" alt="Slide12" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-13.jpg" alt="Slide13" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-14.jpg" alt="Slide14" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-15.jpg" alt="Slide15" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-16.jpg" alt="Slide16" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-17.jpg" alt="Slide17" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-18.jpg" alt="Slide18" />
+      <!-- Slide show from here https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ -->
+      <div class="slideshow">
+        <img src="/SISLRA/Slides/Untitled-2.jpg"/>
+        <img src="/SISLRA/Slides/Untitled-3.jpg"/>
+        <img src="/SISLRA/Slides/Untitled-4.jpg"/>
+        <img src="/SISLRA/Slides/Untitled-5.jpg"/>
+        <img src="/SISLRA/Slides/Untitled-6.jpg"/>
+        <img src="/SISLRA/Slides/Untitled-7.jpg"/>
+        <img src="/SISLRA/Slides/Untitled-8.jpg"/>
       </div>
+      <script src="/JavaScript/headerSlideShow.js"></script>
       
-      <script src="/JavaScript/indexSlides.js"></script>
-      
-      <div class="marquee" id="indexMarquee">
+      <div class="animated fadeIn marquee" id="indexMarquee">
         <div>
           <span class="marqueeInfo"></span>
           <span class="marqueeInfo"></span>
         </div>
       </div>
 
-      <a href="/"><img id="indexWebbanner" src="/SISLRA/WebBanner.png" alt="SISLRA" /></a>
+      <a href="/"><img class="animated flipInX Webbanner" src="/SISLRA/WebBanner.png" alt="SISLRA" /></a>
       
-      <div class="indexTableHeader">
+      <div class="animated fadeIn indexTableHeader">
         <div class="indexTableHeader-row">
           <div class="indexTableHeader-section">
             <h3><a href="/Events#RaceSchedule"><span class="sislraDate"></span></a></h3>
@@ -168,7 +162,7 @@
           <h3><a href="/Points"><span class="glyphicons glyphicons-coins"></span>Points: <span id="PointsUpdate"></span></a></h3>
           <h3><a href="/Events#RaceSchedule"><span class="glyphicons glyphicons-calendar"></span>2017 Schedule:</a></h3>
           
-          <div class="indexSchedule">
+          <div class="animated fadeInLeft indexSchedule">
             <p style="margin-left: 7px;"  id="1stRace">Apr 23 - Rained Out</p>
             <p style="margin-left: 31px;" id="2ndRace">30 - Points - Cars, Bikes & Students</p>
             <p style="margin-left: 3px;"  id="3rdRace">May &nbsp;&nbsp;7 - Points - Cars, Bikes & Students</p>
@@ -350,6 +344,6 @@
         <p> Copyright &copy; <script src="/JavaScript/Copyright.js"></script>. All Rights Reserved.</p>
       </div>
     </div> <!-- end of footer -->
-
+    <script src="http://bootbites.com/demos/dropdown-effects/js/tutorial.js"></script>
   </body>
 </html>

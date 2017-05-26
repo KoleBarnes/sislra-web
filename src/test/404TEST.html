@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="/CSS/SISLRATEST.css">
 
     <!-- JavaScript -->
-    <script src="/JavaScript/Countdown.js"></script>
+    <script src="/JavaScript/nextRaceCountdown.js"></script>
     
     <script src="/JavaScript/CountdownRedirect.js"></script>
     
@@ -113,38 +113,28 @@
     </nav>
 
     <div class="header shade">
-      <div id="mySlidesDiv">
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-2.jpg" alt="Slide2" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-3.jpg" alt="Slide3" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-4.jpg" alt="Slide4" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-5.jpg" alt="Slide5" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-6.jpg" alt="Slide6" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-7.jpg" alt="Slide7" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-8.jpg" alt="Slide8" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-9.jpg" alt="Slide9" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-10.jpg" alt="Slide10" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-11.jpg" alt="Slide11" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-12.jpg" alt="Slide12" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-13.jpg" alt="Slide13" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-14.jpg" alt="Slide14" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-15.jpg" alt="Slide15" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-16.jpg" alt="Slide16" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-17.jpg" alt="Slide17" />
-        <img class="mySlides" src="/SISLRA/Slides/Untitled-18.jpg" alt="Slide18" />
+      <!-- Slide show from here https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ -->
+      <div class="slideshow">
+        <img src="/SISLRA/Slides/Untitled-2.jpg"/>
+        <img src="/SISLRA/Slides/Untitled-3.jpg"/>
+        <img src="/SISLRA/Slides/Untitled-4.jpg"/>
+        <img src="/SISLRA/Slides/Untitled-5.jpg"/>
+        <img src="/SISLRA/Slides/Untitled-6.jpg"/>
+        <img src="/SISLRA/Slides/Untitled-7.jpg"/>
+        <img src="/SISLRA/Slides/Untitled-8.jpg"/>
       </div>
+      <script src="/JavaScript/headerSlideShow.js"></script>
       
-      <script src="/JavaScript/indexSlides.js"></script>
-      
-      <div class="marquee" id="indexMarquee">
+      <div class="animated fadeIn marquee" id="indexMarquee">
         <div>
           <span class="marqueeInfo"></span>
           <span class="marqueeInfo"></span>
         </div>
       </div>
 
-      <a href="/"><img id="indexWebbanner" src="/SISLRA/WebBanner.png" alt="SISLRA" /></a>
+      <a href="/"><img class="animated flipInX Webbanner" src="/SISLRA/WebBanner.png" alt="SISLRA" /></a>
       
-      <div class="indexTableHeader">
+      <div class="animated fadeIn indexTableHeader">
         <div class="indexTableHeader-row">
           <div class="indexTableHeader-section">
             <h3><a href="/Events#RaceSchedule"><span class="sislraDate"></span></a></h3>
