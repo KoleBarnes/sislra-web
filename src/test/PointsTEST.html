@@ -17,17 +17,23 @@
 
     <!-- <link rel="stylesheet" href="/CSS/SISLRA.css"> -->
     <link rel="stylesheet" href="/CSS/SISLRATEST.css">
+    
+    <link rel="stylesheet" href="/CSS/animate.css">
 
     <!-- JavaScript -->
     <script src="/JavaScript/nextRaceCountdown.js"></script>
     
-    <script src="/JavaScript/jquery.js"></script>
+    <!-- <script src="/JavaScript/jquery.js"></script> -->
     
     <script src="/JavaScript/W3HTMLInclude.js"></script>
 
-    <script src="/Bootstrap/js/bootstrap.js"></script>
-    <script src="/Bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="/Bootstrap/js/bootstrap.js"></script> -->
+    <!-- <script src="/Bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
   </head>
+  
   <body>
 
     <nav class="navbar navbar-inverse navbar-topMargin navbar-fixed-top">
@@ -112,41 +118,26 @@
     <div class="header shade">
       <!-- Slide show from here https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ -->
       <div class="slideshow">
-        <img src="/SISLRA/Slides/Untitled-2.jpg"/>
-        <img src="/SISLRA/Slides/Untitled-3.jpg"/>
-        <img src="/SISLRA/Slides/Untitled-4.jpg"/>
-        <img src="/SISLRA/Slides/Untitled-5.jpg"/>
-        <img src="/SISLRA/Slides/Untitled-6.jpg"/>
-        <img src="/SISLRA/Slides/Untitled-7.jpg"/>
-        <img src="/SISLRA/Slides/Untitled-8.jpg"/>
+        <img src="/SISLRA/Slides/Untitled-2.jpg" alt="Slide2"/>
+        <img src="/SISLRA/Slides/Untitled-3.jpg" alt="Slide3"/>
+        <img src="/SISLRA/Slides/Untitled-4.jpg" alt="Slide4"/>
+        <img src="/SISLRA/Slides/Untitled-5.jpg" alt="Slide5"/>
+        <img src="/SISLRA/Slides/Untitled-6.jpg" alt="Slide6"/>
+        <img src="/SISLRA/Slides/Untitled-7.jpg" alt="Slide7"/>
+        <img src="/SISLRA/Slides/Untitled-8.jpg" alt="Slide8"/>
+        <img src="/SISLRA/Slides/Untitled-9.jpg" alt="Slide9"/>
+        <img src="/SISLRA/Slides/Untitled-10.jpg" alt="Slide10"/>
+        <img src="/SISLRA/Slides/Untitled-11.jpg" alt="Slide11"/>
+        <img src="/SISLRA/Slides/Untitled-12.jpg" alt="Slide12"/>
+        <img src="/SISLRA/Slides/Untitled-13.jpg" alt="Slide13"/>
+        <img src="/SISLRA/Slides/Untitled-14.jpg" alt="Slide14"/>
+        <img src="/SISLRA/Slides/Untitled-15.jpg" alt="Slide15"/>
+        <img src="/SISLRA/Slides/Untitled-16.jpg" alt="Slide16"/>
+        <img src="/SISLRA/Slides/Untitled-17.jpg" alt="Slide17"/>
+        <img src="/SISLRA/Slides/Untitled-18.jpg" alt="Slide18"/>
       </div>
       <script src="/JavaScript/headerSlideShow.js"></script>
-      
-      <div class="animated fadeIn marquee" id="indexMarquee">
-        <div>
-          <span class="marqueeInfo"></span>
-          <span class="marqueeInfo"></span>
-        </div>
-      </div>
-
-      <a href="/"><img class="animated flipInX Webbanner" src="/SISLRA/WebBanner.png" alt="SISLRA" /></a>
-      
-      <div class="animated fadeIn indexTableHeader">
-        <div class="indexTableHeader-row">
-          <div class="indexTableHeader-section">
-            <h3><a href="/Events#RaceSchedule"><span class="sislraDate"></span></a></h3>
-            <div id="SISLRARace">&nbsp;</div>
-          </div>
-          <div class="indexTableHeader-section">
-            <h3><a href="http://www.northislandtimingassociation.com/" target="_blank"><span class="RumbleOnTheRunwayDate"></span></a></h3>
-            <div id="PortMcNeill">&nbsp;</div>
-          </div>
-          <div class="indexTableHeader-section">
-            <h3><a href="http://www.albernidragracing.com/" target="_blank"><span class="ThunderInTheValleyDate"></span></a></h3>
-            <div id="PortAlberni">&nbsp;</div>
-          </div>
-        </div>
-      </div>
+      <div w3-include-html="/test/header.html"></div>
     </div>
 
     <div class="row">
@@ -172,76 +163,21 @@
     </div> <!-- End of row -->
 
     <div class="footer themeColor">
-      <div id="footerSocial">
-        <div class="footer-row">
-          <div class="footer-section">
-            <img id="SISLRALogo-Footer" src="/SISLRA/WebBanner.png" alt="SISLRA" />
-          </div>
-          <div class="footer-section">
-            <div id="SocialMediaDiv-Footer">
-              <a class="buttonHyperLink" href="https://www.facebook.com/groups/327092727329942/" target="_blank"><span class="social social-facebook x2"></span></a>
-              <a class="buttonHyperLink" href="https://twitter.com/DragRaceVic" target="_blank"><span class="social social-twitter x2"></span></a>
-              <a class="buttonHyperLink" href="https://www.instagram.com/dragracevictoria/?hl=en" target="_blank"><span class="social social-instagram x2"></span></a>
-              <a class="buttonHyperLink" href="https://www.youtube.com/user/nostopinLucR" target="_blank"><span class="social social-youtube x2"></span></a>
-              <p><a href="/">Home </a><span class="defaultCursor">| </span><a href="/Points.html">Points </a><span class="defaultCursor">| </span><a href="/Sponsors.html">Sponsors</a></p>
-              <p><a href="/ContactUs">Contact Us </a><span class="defaultCursor">| </span><a href="/AboutUs">About Us</a></p>
-            </div>
-          </div>
-          <div class="footer-section">
-            <div id="spiningTire">
-              <img class="spin" src="/SISLRA/DragTire.png" alt="Drag Tire" />
-              <img id="smoke" src="/SISLRA/smoke.png"  alt="Tire Smoke" />
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div id="footerSponsors">
-          <div class="footer-row">
-            <div class="footer-section-2">
-              <h3><a href="Sponsors.html"><span class="glyphicons glyphicons-group"></span> Sponsors</a></h3>
-              <a href="http://bdlifttruck.ca/" target="_blank"><img src="/SISLRA/YearSponsors/BandDForklift-300x87.jpg" alt="B&D Forklift" width="210" height="110" /></a>
-            </div>
-            <div class="footer-section-2">
-              <h3>&nbsp;</h3>
-              <a href="http://searlesauto.ca/" target="_blank"><img src="/SISLRA/YearSponsors/Searles.jpg" alt="Searles Auto" width="200" /></a>
-            </div>
-            <div class="footer-section-2">
-              <h3>&nbsp;</h3>
-              <a href="http://www.382sign.com/" target="_blank"><img src="/SISLRA/YearSponsors/GraphicFX.png" alt="Graphic FX" width="200" /></a>
-            </div>
-            <div class="footer-section-2">
-              <h3>&nbsp;</h3>
-              <a href="http://www.dentexpdr.com/" target="_blank"><img src="/SISLRA/YearSponsors/DentexNoBack.png" alt="Dentex" width="210" height="80" /></a>
-            </div>
-            <div class="footer-section-2">
-              <h3>&nbsp;</h3>
-              <a href="http://www.lordco.com/" target="_blank"><img src="/SISLRA/YearSponsors/Lordco.png" alt="Lordco" width="200" /></a>
-            </div>
-          </div>
-          <div class="footer-row">
-            <div class="footer-section-2">
-              <a href="http://www.used.ca/" target="_blank"><img src="/SISLRA/YearSponsors/Used_Logo_Purple.png" alt="Used_Logo_Purple" width="190" /></a>
-            </div>
-            <div class="footer-section-2">
-              <a href="http://westbaymechanical.com/" target="_blank"><img id="WestBayMechanical" src="/SISLRA/YearSponsors/WestBayMechanical.png" alt="WestBayMechanical" width="170" /></a>
-            </div>
-            <div class="footer-section-2">
-              <a href="http://islandtorque.com/" target="_blank"><img id="IslandTorque" src="/SISLRA/YearSponsors/IslandTorqueConverter.png" alt="IslandTorque" width="180" /></a>
-            </div>
-            <div class="footer-section-2">
-              <a href="http://www.mamillerspub.com/" target="_blank"><img id="MaMillersPub" src="/SISLRA/YearSponsors/MaMillersPub.png" alt="MaMillersPub" width="210" /></a>
-            </div>
-            <div class="footer-section-2">
-              <a href="https://www.hsminsurance.com/" target="_blank"><img src="/SISLRA/YearSponsors/HenrdrySwinton.jpg" alt="Henrdry Swinton" width="190" /></a>
-            </div>
-         </div>
-      </div>
+      <div w3-include-html="/test/footerSocial.html"></div> <!-- Start Of Footer -->
+      <div w3-include-html="/test/footerSponsors.html"></div>
+  
+      <script>
+        w3IncludeHTML();
+      </script>
       
       <div id="footerCopyright">
         <p> Copyright &copy; <script src="/JavaScript/Copyright.js"></script>. All Rights Reserved.</p>
       </div>
+      
     </div> <!-- end of footer -->
-
+    
+    <script src="/JavaScript/bootStrapNavBarAnimate.js"></script> <!-- Unsure -->
+    
   </body>
 </html>
