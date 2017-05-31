@@ -23,6 +23,7 @@
     <!-- JavaScript -->
     <script src="/JavaScript/nextRaceCountdown.js"></script>
     <script src="/JavaScript/activeSchedule.js"></script>
+    <script src="/JavaScript/ETConverter.js"></script>
     
     <!-- <script src="/JavaScript/jquery.js"></script> -->
     
@@ -35,7 +36,9 @@
     
   </head>
   
-  <body <!--onload="startSlideShow();-->">
+  <body>
+    
+    <div w3-include-html="/inc/ETConverterModal.html"></div>
     
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -99,6 +102,11 @@
                 <li><a href="/AboutUs#LOCATEDAT">Location</a></li>
               </ul>
             </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calculators <span class="caret"></span></a>
+              <ul class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                <li><a href="#" data-toggle="modal" data-target="#ETConverterModal">ET Converter</a></li>
+              </ul>
+            </li>
             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="filetypes filetypes-pdf"></span> PDF<span class="caret"></span></a>
               <ul class="dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                 <li><a href="/SISLRA/RacersInfo/NewRacersInformation.pdf" target="_blank"><span class="filetypes filetypes-pdf"></span> Racers Information</a></li>
@@ -138,7 +146,7 @@
         <img src="/SISLRA/Slides/Untitled-18.jpg" alt="Slide18"/>
       </div>
       <script src="/JavaScript/headerSlideShow.js"></script>
-      <div w3-include-html="/test/header.html"></div>
+      <div w3-include-html="/inc/header.html"></div>
     </div>
 
     <div class="row">
@@ -257,8 +265,8 @@
 
     <div class="footer themeColor">
 
-      <div w3-include-html="/test/footerSocial.html"></div> <!-- Start Of Footer -->
-      <div w3-include-html="/test/footerSponsors.html"></div>
+      <div w3-include-html="/inc/footerSocial.html"></div> <!-- Start Of Footer -->
+      <div w3-include-html="/inc/footerSponsors.html"></div>
   
       <script>
         w3IncludeHTML();
@@ -270,7 +278,7 @@
       
     </div> <!-- end of footer -->
     
-    <script src="/JavaScript/bootStrapNavBarAnimate.js"></script> <!-- Unsure -->
+    <!-- <script src="/JavaScript/bootStrapNavBarAnimate.js"></script> <!-- Unsure -->
     
   </body>
 </html>

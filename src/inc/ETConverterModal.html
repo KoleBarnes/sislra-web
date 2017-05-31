@@ -1,0 +1,30 @@
+<div class="modal fade" id="ETConverterModal" role="dialog">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Track Time Converter</h4>
+      </div>
+      <div class="modal-body">
+        <div>
+          <p style="text-align: center;">This calculator gives you an idea of what you might run.</p>
+          <div>
+            <label>1/4 Mile</label>
+            <input id="inputQuarterMile" type="number" placeholder="1/4 Mile" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+          </div>
+          <div>
+            <label>1/8 Mile</label>
+            <input id="inputEighthMile" type="number" placeholder="1/8 Mile" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+          </div>
+          <div>
+            <label>384 Feet (Our Track)</label>
+            <input id="input384Feet" type="number" placeholder="384 Feet" oninput="speedConverter(this.id,this.value)" onchange="speedConverter(this.id,this.value)">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,342 +1,187 @@
-/*Web lay out*/
-
+/*------------- Main ------------ */
 body {
   font-size: 13px;
   font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
-  color:#FFF;
-  background-color: #000;
-  margin: 0;
-  padding: 0px;
-  width: 100%;
+  color: #FFF;
+  background-color: #111;
 }
-
 p {
   font-family: "Open Sans","Trebuchet MS", Helvetica, Arial, Verdana, Geneva, sans-serif;
-  font-size: 117%;
-  margin-top: 5px;
+  font-size: 130%;
+  font-weight: normal;
+  margin: 0px;
+  margin-top: 0px;
   margin-bottom: 15px;
 }
-
 ul {
   list-style-type: none;
   list-style-position: outside;
   margin:0;
   padding:0;
 }
-
-.webbanner {
-  margin-left: 36.3%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  width: 330px;
-}
-
-#indexWebbanner {
-  margin-left: 415px;
-  margin-top: 10px;
-  margin-bottom: 0%;
-  position: absolute;
-  width: 360px;
-}
-
-#contents li {
-  font-size: 15px;
-  margin-left: 5px;
-  padding: 0px 0px 5px 5px;
-}
-
-#RaceList li {
-  font-size: 15px;
-  padding: 0px 5px 5px 5px;
-  color: #FFF;
-}
-
-#schedule {
-  list-style-type: decimal;
-  margin-left: 32px;
-}
-
-.current {
-  color: #0CF;
-}
-
-.over {
-  text-decoration: line-through;
-  color: #888;
-}
-
-.cancelled {
-  color: #F00;
-}
-
-.new {
-  color: #0F0;
-}
-
-.future {
-  color: #ff0;
-}
-
-/* #indexPointsUpdate {
-  margin: 0px;
-  margin-bottom: 5px;
-  margin-left:8px;
-} */
-
-#PointsUpdate:after {
-  color: #FC0;
-  font-size: 17px;
-  /* text-decoration: underline; */
-  font-weight: bold;
-  content: "14/5/2017"
-}
-
 h1 {
-  font-size: 190%;
+  font-size: 200%;
   color: #FC0;
-  margin: 0;
   padding: 0px;
   width: 100%;
   cursor: default;
-}
-
-h2 {
-  font-size: 18px;
-  line-height: 35px !important;
-  letter-spacing: 0px !important;
   margin: 0px;
+}
+h2 {
+  font-size: 160%;
+  color: #FC0;
+  line-height: 35px;
+  letter-spacing: 0px;
+  margin: 0px;
+  margin-top: 0px;
   cursor: default;
 }
-
-h2#pro {
-  color: #ff0000;
-}
-
-.indexPointsList {
-  margin: 0px;
-  font-size: 15px;
-}
-
-.indexPointsWinners{
-  font-size: 18px;
-}
-
-h2#bike {
-  color: #3333ff;
-}
-
-h2#street {
-  color: #00ff00;
-}
-
+h2.pro {color: #ff0000;}
+h2.street {color: #00ff00;}
+h2.bike {color: #3333ff;}
 h3 {
   font-size: 18px;
   color: #FC0;
-  line-height: 30px !important;
-  letter-spacing: 0px !important;
+  line-height: 30px;
+  letter-spacing: 0px;
   margin: 0px;
 }
-
 h4 {
   font-size: 16px;
-  line-height: 25px !important;
-  letter-spacing: 0px !important;
+  line-height: 25px;
+  letter-spacing: 0px;
   margin-bottom: 20px;
 }
-
 h5 {
   font-size: 12px;
-  line-height: 25px !important;
-  letter-spacing: 0px !important;
+  line-height: 25px;
+  letter-spacing: 0px;
   margin-bottom: 15px;
 }
-
 h6 {
   font-size: 10px;
-  line-height: 25px !important;
-  letter-spacing: 0px !important;
+  line-height: 25px;
+  letter-spacing: 0px;
   margin-bottom: 10px;
 }
-
-/* -------------Main Layout------------- */
-#wrapper {
-  width: 1200px;
-  margin: 0px auto;
+.alignCenter {text-align: center;}
+.alignLeft {text-align: left;}
+::-moz-selection { /* Code for Firefox */
+    color: #FFF;
+    background: #BBB;
+}
+::selection {
+    color: #FFF;
+    background: #BBB;
 }
 
-#header {
-  padding: 0px;
-  width: 1200px;
-}
+.modal-content {background-color: #141414;}
 
-#tableHeader {
-  width: 850px; 
-  background-color: #161616;
-  border: 2px solid #FC0;
+.modal-title {
+  color: #FC0;
   text-align: center;
-  margin-left: 15%;
+  font-size: 22px;
 }
-
-#indexTableHeader {
-  width: 850px; 
+.modal-header {border-bottom: 1px solid #555;}
+.modal-body {text-align: left; width: 100%; margin: auto;}
+.modal-footer {
   text-align: center;
-  margin-left: 15%;
-  margin-top:13%;
+  border-top: none;
 }
-
-#mySlidesDiv{
-  z-index: -2;
-  position: absolute;
-  text-align: center;
-}
-
-.mySlides {
-  width: 1200px;
-  height: 250px;
-}
-
-#shade {
-  width: 1200px;
-  height: 250px;
-  z-index: -1;
-  position: absolute;
-  background: rgba(22, 22, 22, 0.5);
-}
-
-#main-section {
-  margin-top: -1%;
-}
-
-#left {
-  background-color: #191919;
-  /* background-image: linear-gradient(rgb(60, 60, 60) 0%, rgb(34, 34, 34) 100%); */
-  border-radius: 3px;
-  width: 300px;
-  float: left;
-  padding: 5px 0px 5px 5px;
-}
-
-#right {
-  background-color: #191919;
-  margin-bottom: 10px;
-  /* background-image: linear-gradient(rgb(60, 60, 60) 0%, rgb(34, 34, 34) 100%); */
-  border-radius: 3px;
-  width: 300px;
-  float: right;
-  padding: 5px 5px 5px 5px;
-}
-
-#center {
-  margin-left: 300px;
-  margin-right: 300px;
-  text-align: center;
-}
-
-#centerRacerInfo {
-  margin-left: 350px;
-  margin-right: 80px;
-  text-align: center;
-}
-
-#centerSponsors {
-  background-color: #000;
-  margin-left: 300px;
-  margin-right: 300px;
-  text-align: center;
-}
-
-#centerSponsors img {
-  margin-top: 15px;
-  margin-bottom: 0px;
-}
-
-#tableCenterSponsors {
-  text-align: center;
-  margin-left: -145px;
-  padding: 0px;
-}
-
-#centerPoints {
-  margin-left: 125px;
-  margin-right: 300px;
-}
-
-#centerContactUs {
-  background-color: #000;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-/* --------- Nav Collapse override ----------- */
-.navbar-collapse.collapse {
-  display: block !important;
-}
-
-.navbar-nav>li, .navbar-nav {
-  float: left !important;
-}
-
-.navbar-nav.navbar-right:last-child {
-  margin-right: -15px !important;
-}
-
-.navbar-right {
-  float: right !important;
-}
-
-.navbar-topMargin {
-  margin-top:19px;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-/* ------------- Events ----------- */
-
-.activeSchedule p {
-  font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
-  font-size: 15px;
+.close, .close:hover {color: #FFF;}
+label {
+  font-size: 18px;
   margin: 0px;
+  margin-top: 10px;
 }
-
-.indexSchedule {
-  margin-top: -10px;
-  margin: 0px;
-  margin-left: 14px;
-  cursor: default;
-}
-
-.indexSchedule p {
-  font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
-  margin: 0px;
-  margin-left: 30px;
-  font-size: 13px;
-}
-
-/* ------------- Contact Us Table ------------- */
-table {
-  width: 786; 
-  border: 0px; 
-  text-align: left;
+input {
   color: #FFF;
-  padding: 4px;
+  width: 100%;
+  border: 2px solid #141414;
+  border-radius: 4px;
+  background-color: #555;
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* ------------- Header Content --------------- */
+/* --------------- Nav Bar ------------- */
+.navbar-brand {padding: 0px; margin: auto;}
+.navbar-brand>img {height: 100%; padding: 15px; width: auto;}
+.navbar-inverse {background-color: #222222;}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {background-color: #333333;}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {background-color: #080808;}
+.dropdown-menu {background-color: #222222;}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {background-color: #222222;}
+.navbar-inverse {background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {background-image: none;}
+.navbar-inverse {border-color: #080808;}
+.navbar-inverse .navbar-brand {color: #999999;}
+.navbar-inverse .navbar-brand:hover {color: #FFFFFF;}
+.navbar-inverse .navbar-nav>li>a {color: #999999;}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {color: #FFFFFF;}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {color: #FFFFFF;}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {color: #FFFFFF;}
+.dropdown-menu>li>a {color: #999999;}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {color: #FFFFFF;}
+.navbar-inverse .navbar-nav>.dropdown>a .caret {border-top-color: #999999;}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {border-top-color: #FFFFFF;}
+.navbar-inverse .navbar-nav>.dropdown>a .caret {border-bottom-color: #999999;}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {border-bottom-color: #FFFFFF;}
+.fadeIn {-webkit-animation-duration: 0.1s;}
+  
+/* ------------- IndexCountDown ------------ */
+.indexTableHeader {
+  display: table;
+  width: 100%;
   margin: auto;
-  border-spacing: 4px; 
+  margin-top: 0%;
+  margin-bottom: 2.8%;
+  text-align: center;
+  -webkit-animation-delay: 1s;
 }
-
-table .bold {
+.indexTableHeader-row {
+  display: table-row;
+}
+.indexTableHeader-section {
+  display: table-cell;
+  width: 30%;
+  font-size: 20px;
+}
+#SISLRARace {
+  color: #FFF;
   font-weight: bold;
-  font-size: 14px;
-  color: #FB0
+  font-size: 15px;
+  text-shadow: 2px 2px #000;
 }
-
-td{
-  padding: 0px 10px 0px 0px;
+#PortMcNeill {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 15px;
+  text-shadow: 2px 2px #000;
 }
-
-td#VolunteerNeeded {
-  background-color: #FF0000;
+#PortAlberni {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 15px;
+  text-shadow: 2px 2px #000;
+}
+.sislraDate:after {
+  text-shadow: 2px 2px #000;
+  padding-left: 15px;
+  padding-right: 15px;
+  content: " Next SISLRA Race "
+}
+.RumbleOnTheRunwayDate:after {
+  text-shadow: 2px 2px #000;
+  content: "Next Rumble on the Runway"
+}
+.ThunderInTheValleyDate:after {
+  text-shadow: 2px 2px #000;
+  padding-left: 5px;
+  padding-right: 5px;
+  content: " Thunder in The Valley "
 }
 
 /* ------------- Marquee ------------- */
@@ -355,8 +200,9 @@ td#VolunteerNeeded {
 
   overflow: hidden;
   position: relative;
+  
+  -webkit-animation-delay: 1s;
 }
-
 .marquee div {
   display: block;
   width: 200%;
@@ -367,332 +213,464 @@ td#VolunteerNeeded {
 
   animation: marquee 13s linear infinite;
 }
-
 .marquee span {
   float: left;
   width: 50%;
 }
-
 @keyframes marquee {
   0% { left: 0; }
   100% { left: -100%; }
 }
-
 #indexMarquee {
-  margin:0px;
-  border:none;
+  margin: 0px;
+  border: none;
   border-radius: 0px 0px 0px 0px;
 }
-
 .marqueeInfo:after {
   text-shadow: 2px 2px #000;
-  content:"THE FORTH RACE OF THE SEASON IS ON SUNDAY JUNE 11TH! GATES OPEN AT 2:00PM!";
-  /* content: "THE FINAL RACE OF THE SEASON IS ON SATURDAY OCTOBER 8TH. GATES OPEN AT 9:00am. QUALIFYING STARTS AT 10:00am."; */
+  content: "THE FORTH RACE OF THE SEASON IS ON SUNDAY JUNE 11TH! GATES OPEN AT 2:00PM!";
+/*content: "THE ..... RACE OF THE SEASON IS ON SUNDAY .... ....! GATES OPEN AT 2:00PM, QUALIFYING AT 3:00PM & ELIMINATIONS AT 6:00PM."; */
 }
 
-/* ------------- ReturnToTopArrow ------------- */
-#return-to-top {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #999;
-  /* background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.7); */
-  width: 40px;
-  height: 40px;
+/* ------------- Slides and Banner --------------- */
+.Webbanner {
+  margin: auto;
+  width: 26%;
   display: block;
-  text-decoration: none;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  border-radius: 40px;
-  display: none;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  cursor:pointer
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+  -webkit-animation-delay: 0.5s;
+}
+.slideshow {
+  z-index: -2;
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.slideshow > img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.shade {background: rgba(22, 22, 22, 0.5);}
+/* -------------- End of header content ------------- */
+
+/* -------------- Index --------------- */
+.indexPointsWinners {
+  font-size: 18px;
+}
+.indexWinnersTable {
+  margin: auto;
+  text-align: center;
+}
+.indexWinnersTable img {
+  width: 190px;
+}
+.indexWinnersTable td{
+  padding: 0px 5px 0px 0px;
 }
 
-#return-to-top i {
+/* --------------- indexSchedule ------------ */
+.current {color: #0CF;}
+.over {text-decoration: line-through; color: #888;}
+.cancelled {color: #F00;}
+.new {color: #0F0;}
+.future {color: #ff0;}
+.indexSchedule {
+  margin-top: -10px;
+  margin: 0px;
+  margin-left: 10px;
+  cursor: default;
+  width: 260px;
+  -webkit-animation-delay: 1s;
+}
+.indexSchedule p {
+  font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
+  margin: 0px;
+  margin-left: 30px;
+  font-size: 13px;
+}
+
+/* -------------- RacerInfo -------------- */
+#feesDiv {margin-bottom: 20px;}
+#feesDiv p {margin: 0px; text-align: left;}
+.DriverInfoPDF {font-size: 16px;}
+.listStyleDisc ul {list-style-type: disc;}
+
+/* -------------- Points ------------- */
+#PointsUpdate:after {
+  color: #FC0;
+  font-size: 17px;
+  font-weight: bold;
+  content: "14/5/2017"
+}
+#pMembers {
+  width: 80%;
+  margin: auto;
+}
+.mySlidesPoints {
+  margin: auto;
+  margin-bottom: 1%;
+  width: 80%;
+}
+.proButton {
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.pointsButtons {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 18px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+/* ------------- Events ----------- */
+.activeSchedule {
+  width: 40%;
+  margin: auto;
+  border: 4px solid #FC0; 
+  cursor: default;
+}
+.activeSchedule img {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+.activeSchedule ul {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.activeSchedule li {
+  font-family: Arial, Helvetica, Verdana, Geneva, sans-serif;
+  text-align: left;
+  font-size: 15px;
+  margin: auto;
+  width: 100%;
+}
+.activeSchedule>div {
+  width: 100%;
+  margin: 0 auto;
+  -webkit-animation-delay: 1s;
+}
+.activeSchedule>div>ul {width: 275px;}
+.eventsTableTimes {
+  width: 100%;
+  margin: auto;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 10px 5px;
+}
+#eventsComment {
+	width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+	text-align: center;
+}
+#Posters {margin-top: 15px;}
+.posterMobile {display: none;}
+
+/* Modal */
+.poster {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline;
+  vertical-align: middle;
+  text-align: center;
+  width: 200px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.poster:hover {opacity: 0.7;}
+/* /* The Modal (background) */ 
+/* .modal { */
+  /* display: none; /* Hidden by default */ 
+  /* position: fixed; /* Stay in place */ 
+  /* z-index: 2000; /* Sit on top */ 
+  /* padding-top: 35px; /* Location of the box */ 
+  /* left: 0; */
+  /* top: 0; */
+  /* width: 100%; /* Full width */ 
+  /* height: 100%; /* Full height */ 
+  /* overflow: auto; /* Enable scroll if needed */ 
+  /* background-color: rgb(0,0,0); /* Fallback color */ 
+  /* background-color: rgba(0,0,0,0.8); /* Black w/ opacity */ 
+  /* color: #fff; */
+/* } */
+/* /* Modal Content (image) */ 
+/* .modal-content { */
+  /* margin: auto; */
+  /* display: block; */
+  /* width: auto; */
+  /* max-height: 95%; */
+/* } */
+/* /* Caption of Modal Image */ 
+/* #caption { */
+  /* margin: auto; */
+  /* display: block; */
+  /* width: 100%; */
+  /* max-width: 700px; */
+  /* text-align: center; */
+  /* color: #fff; */
+  /* padding: 10px 0; */
+  /* height: 15px; */
+/* } */
+/* /* Add Animation */ 
+/* .modal-content, #caption { */
+  /* -webkit-animation-name: zoom; */
+  /* -webkit-animation-duration: 0.6s; */
+  /* animation-name: zoom; */
+  /* animation-duration: 0.6s; */
+/* } */
+/* @-webkit-keyframes zoom { */
+  /* from {-webkit-transform: scale(0)} */
+  /* to {-webkit-transform: scale(1)} */
+/* } */
+/* @keyframes zoom { */
+  /* from {transform: scale(0.1)} */
+  /* to {transform: scale(1)} */
+/* } */
+/* /* Close Button */ 
+/* .close { */
+  /* position: absolute; */
+  /* top: 50px; */
+  /* right: 15px; */
+  /* color: #FFF; */
+  /* font-size: 40px; */
+  /* font-weight: bold; */
+  /* transition: 0.3s; */
+/* } */
+/* .close:hover, .close:focus { */
+  /* color: #bbb; */
+  /* text-decoration: none; */
+  /* cursor: pointer; */
+/* } */
+/* /* 100% Image Width on Smaller Screens */
+/* @media only screen and (max-width: 700px){ */
+  /* .modal-content {width: 100%;} */
+/* } */
+
+/* ------------- Sponsors -------------- */
+.TableSponsors {
+  display: table;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.TableSponsors h3 {margin-top: -25px;}
+.TableSponsors-row {display: table-row;}
+.TableSponsors-section {
+  display: table-cell;
+  width: 30%;
+  font-size: 13px;
+}
+.TableSponsors-section p {
+  margin: 0px;
+  margin-top: 10px;
+}
+.TableSponsors-section-Tree {
+  display: table-cell;
+  width: 30%;
+  font-size: 13px;
+}
+.SponsorsChristmastree {
+  width: 195px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* ------------- Contact Us ------------- */
+.contactUsTable {
+  width: 100%;
+  color: #FFF;
+  margin: 0px;
+  border: 2px solid #222;
+  border-spacing: 4px;
+}
+.contactUsTable th {
+  cursor: default;
+  height: 30px;
+  font-weight: bold;
+  font-size: 14px;
   color: #000;
-  margin: 0;
-  position: relative;
-  left: 11.5px;
-  top: 9px;
-  font-size: 19px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  cursor:pointer
+  text-align: center;
+  background-color: #e6b800;
 }
-
-#return-to-top:hover {
-  background-color: #FFF;
-  cursor:pointer
+.contactUsTable td {
+  cursor: default;
+  height: 20px;
+  padding: 0px 10px 0px 0px;
+  text-align: left;
 }
+.contactUsTable tr:nth-child(even) {background-color: #222;}
+.contactUsTable tr:hover {background-color: #333}
+#contactPhone {width: 95px;}
+#VolunteerNeeded {color: #FF0000;}
 
-#return-to-top:hover i {
-  top: 2px;
-  cursor:pointer
-}
-
-#return-to-top:active {
-  background-color: #666;
-  cursor:pointer
-}
-
-/* ------------- Scrolling Boxes ------------- */
-.sidebarBox{
-  width: 35px; /* Replace with sidebar width */
-  float: right;
-  margin-right: 15px;
-  position: relative;
-}
-
-.scrollingBox{
-  width: 35px; /* Replace with the same width as sidebar */
-  border-radius: 3px;
-}
-
-.sidebarBoxLeft{
-  width: 300px; /* Replace with sidebar width */
-  float: right;
-  position: relative;
-}
-
-.scrollingBoxLeft{
-  width: 300px; /* Replace with the same width as sidebar */
-  background-color: #191919;
-  border-radius: 3px;
-  float: left;
-  padding: 0px 0px 0px 0px;
-}
-
-#leftScrolling {
-  background-color: #191919;
-  border-radius: 3px;
-  width: 285px;
-  float: left;
-  margin-left: 16px;
-  padding: 0px 0px 0px 0px;
-  Z-Index: -1;
-}
-
-.sidebarBoxLeftEvents{
-  width: 300px; /* Replace with sidebar width */
-  float: left;
-  position: relative;
-}
-
-.scrollingBoxLeftEvents{
-  width: 300px; /* Replace with the same width as sidebar */
-  background-color: #191919;
-  border-radius: 3px;
-  float: left;
-  padding: 0px 0px 0px 0px;
-}
-
-.sidebarBoxLeftSponsors{
-  width: 150px; /* Replace with sidebar width */
-  float: left;
-  position: relative;
-}
-
-.scrollingBoxLeftSponsors{
-  width: 150px; /* Replace with the same width as sidebar */
-  border-radius: 3px;
-  background-color: #191919;
-  float: left;
-  padding: 0px 0px 0px 0px;
-}
-
-/* .BackToTopArrow {
-  font-size: 35px;
-  color: #999;
-  text-decoration: none;
-} */
-
-/* ------------- Countdown Timer ------------- */
-#SISLRARace {
-  color: #FFF;
-  font-weight: bold;
-  font-size: 15px;
-  text-shadow: 2px 2px #000;
-}
-
-#PortMcNeill {
-  color: #FFF;
-  font-weight: bold;
-  font-size: 15px;
-  text-shadow: 2px 2px #000;
-}
-
-#PortAlberni {
-  color: #FFF;
-  font-weight: bold;
-  font-size: 15px;
-  text-shadow: 2px 2px #000;
-}
-
-#TBA {
-  color: #FFF;
-  font-weight: bold;
-  font-size: 15px;
-  margin-left: 3px;
-  text-shadow: 2px 2px #000;
-}
-
-.sislraDate:after {
-  text-shadow: 2px 2px #000;
-  padding-left: 15px;
-  padding-right: 15px;
-  content: " Next SISLRA Race is in: "
-}
-
-.RumbleOnTheRunwayDate:after {
-  text-shadow: 2px 2px #000;
-  content: "Next Rumble on the Runway is in:"
-}
-
-.ThunderInTheValleyDate:after {
-  text-shadow: 2px 2px #000;
-  padding-left: 5px;
-  padding-right: 5px;
-  content: " Thunder in The Valley is in: "
-}
-
-/* ------------- Footer ------------- */
-/* ------------- http://stackoverflow.com/questions/27770310/making-a-responsive-footer-with-3-divs-inside ------------- */
-
-#footerSocial {
-  display:table;
-  width:100%;
-  margin-top: 5px;
-  background-color: #202020;
-  /* background-image: linear-gradient(rgb(60, 60, 60) 0%, rgb(34, 34, 34) 100%); */
-  border-radius: 3px 3px 0px 0px;
-  z-index: 1; 
-  position:relative;
-  margin-bottom: -8px;
-  z-index: 2;
-}
-
-#footerSocial ul {
-  list-style-type: none;
-  margin-bottom: 5px;
-  margin-left: -109px;
+/* ------------- About Us ------------- */
+#aboutUsImg {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
   text-align: center;
 }
 
-#footerSocial li {
-  display: inline;
+/* ------------- Hyperlink Color ------------- */
+a:link {
+  /* unvisited link */
+  color: #FC0;
+  text-decoration: none;
+}
+a:visited {
+  /* visited link */
+  color: #FC0;
+  text-decoration: none;
+}
+a:hover {
+  /* mouse over link */
+  color: #F90;
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition: color .3s ease-in;
+  -moz-transition: color .3s ease-in;
+  -o-transition: color .3s ease-in;
+  transition: color .3s ease-in;
+}
+a:active {
+  /* selected link */
+  color: #FC0;
+  text-decoration: none;
+}
+.buttonHyperLink:link {
+  /* unvisited link */
+  color: #999;
+  text-decoration: none;
+}
+.buttonHyperLink:visited {
+  /* visited link */
+  color: #999;
+  text-decoration: none;
+}
+.buttonHyperLink:hover {
+  /* mouse over link */
+  color: #FFF;
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition:color .3s ease-in;
+  -moz-transition:color .3s ease-in;
+  -o-transition:color .3s ease-in;
+  transition:color .3s ease-in;
+}
+.buttonHyperLink:active {
+  /* selected link */
+  color: #666;
+  text-decoration: none;
 }
 
-#footerSponsors {
-  display:table;
-  width:100%;
+/* ------------- Alerts ------------- */
+.alert {font-size: 15px;}
+
+/* ------------- Footer ------------- */
+/* http://stackoverflow.com/questions/27770310/making-a-responsive-footer-with-3-divs-inside */
+#footerSocial {
+  display: table;
+  width: 100%;
+  margin: 0 auto;
   margin-top: 5px;
-  background-color: #202020;
-  z-index: 1; 
-  position:relative
+  position: relative;
+  z-index: 2;
 }
-
+#footerSocial p {
+  margin: 0px;
+  font-size: 24px;
+}
+#footerSponsors {
+  display: table;
+  width: 100%;
+  z-index: 1; 
+  position: relative
+}
 #footerSponsors p {
   color: #FC0;
   font-size: 20px;
 }
-
 #footerSponsors h3 {
-  margin-left: 10px;
-  margin-top: 10px;
+  text-align: center;
   font-size: 20px;
 }
-
-#footerSponsors ul {
-  padding-left: 30px;
-  padding-bottom: 5px;
-  list-style-type: none;
-}
-
 #footerCopyright {
-  display:table;
-  width:100%;
+  display: table;
+  width: 100%;
+  margin: auto;
+  text-align: center;
   margin-top: -10px;
-  background-color: #202020;
   z-index: 1;
-  position:relative;
+  position: relative;
   cursor: default;
 }
-
-#footerCopyright p{
+#footerCopyright p {
   font-size: 12px;
-  margin-left: 42%;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 0px;
   color: #FC0;
 }
-
+.defaultCursor {cursor: default;}
 .footer-row {
-  display:table-row;
+  display: table-row;
+  margin: auto;
 }
-
 .footer-section {
-  display:table-cell;
+  display: table-cell;
+  text-align: center;
   width: 30%;
   font-size: 20px;
+  margin: auto;
 }
-
 .footer-section-2 {
-  display:table-cell;
-  width: 25%;
-  padding: 10px;
-  margin-top: 0px;
-  padding-top: 0px;
+  display: table-cell;
+  width: 20%;
   vertical-align: middle;
 }
-
-.footer-section-2 img{
+.footer-section-2 img {
   display: block;
   margin: auto;
 }
-
 #SocialMediaDiv-Footer {
-  margin-left: 120px;
+  text-align: center;
   color: #FC0;
 }
-
-#facebook-Footer {
-  margin-left: -22px;
-}
-
-#SISLRALogo-Footer{
-  width: 280px;
-  margin-left: 100px; 
-  margin-top: 0%; 
-  margin-bottom: 0%;
+#SISLRALogo-Footer {
+  width: 310px;
+  margin: 0 auto;
 }
 
 /* ------------- Spinning Tire with Smoke ------------- */
 #spiningTire {
+  display: block;
   position: relative;
+  margin: auto;
   margin-top: 48px;
-  margin-left: 70px;
 }
-
 #smoke {
+  display: block;
   position: absolute;
+  /* margin-top: -54%; */
+  /* margin-left: 16%; */
   top: -70px;
-  left: -70px;
+  left: 75px;
+  margin: auto;
 }
-
-#spin {
+.spin {
   margin: 0px;
   width: 200px;
   height: 200px;
-  /* background: #202020; */
+  background: #1C1C1C;
 
   -webkit-animation-name: spin;
   -webkit-animation-duration: 4000ms;
@@ -708,363 +686,173 @@ td#VolunteerNeeded {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-
 @-ms-keyframes spin {
   from { -ms-transform: rotate(0deg); }
   to { -ms-transform: rotate(360deg); }
 }
-
 @-moz-keyframes spin {
   from { -moz-transform: rotate(0deg); }
   to { -moz-transform: rotate(360deg); }
 }
-
 @-webkit-keyframes spin {
   from { -webkit-transform: rotate(0deg); }
   to { -webkit-transform: rotate(360deg); }
 }
-
 @keyframes spin {
   from { transform:rotate(0deg); }
   to { transform:rotate(360deg); }
 }
 
-/* ------------- http://jsfiddle.net/gaby/9Ryvs/7/ ------------- */
-
-/* ------------- Hyperlink Color ------------- */
-a:link {
-  /* unvisited link */
-  color: #FC0;
-  text-decoration: none;
-}
-
-a:visited {
-  /* visited link */
-  color: #FC0;
-  text-decoration: none;
-}
-
-a:hover {
-  /* color: #2c8bde; */
-  /* mouse over link */
-  color: #F90;
-  text-decoration: none;
-  outline: 0;
-  -webkit-transition:color .3s ease-in;
-  -moz-transition:color .3s ease-in;
-  -o-transition:color .3s ease-in;
-  transition:color .3s ease-in;
-}
-
-a:active {
-  /* selected link */
-  color: #FC0;
-  text-decoration: none;
-}
-
-.scrollingBoxLeft a:link {
-  /* unvisited link */
-  color: #999;
-  text-decoration: none;
-}
-
-.scrollingBoxLeft a:visited {
-  /* visited link */
-  color: #999;
-  text-decoration: none;
-}
-
-.scrollingBoxLeft a:hover {
-  /* mouse over link */
-  color: #FFF;
-  text-decoration: none;
-  outline: 0;
-  -webkit-transition:color .3s ease-in;
-  -moz-transition:color .3s ease-in;
-  -o-transition:color .3s ease-in;
-  transition:color .3s ease-in;
-}
-
-.scrollingBoxLeft a:active {
-  /* selected link */
-  color: #666;
-  text-decoration: none;
-}
-
-.scrollingBoxLeftSponsors a:link {
-  /* unvisited link */
-  color: #999;
-  text-decoration: none;
-}
-
-.scrollingBoxLeftSponsors a:visited {
-  /* visited link */
-  color: #999;
-  text-decoration: none;
-}
-
-.scrollingBoxLeftSponsors a:hover {
-  /* mouse over link */
-  color: #FFF;
-  text-decoration: none;
-  outline: 0;
-  -webkit-transition:color .3s ease-in;
-  -moz-transition:color .3s ease-in;
-  -o-transition:color .3s ease-in;
-  transition:color .3s ease-in;
-}
-
-.scrollingBoxLeftSponsors a:active {
-  /* selected link */
-  color: #666;
-  text-decoration: none;
-}
-
-.buttonHyperLink:link {
-  /* unvisited link */
-  color: #999;
-  text-decoration: none;
-}
-
-.buttonHyperLink:visited {
-  /* visited link */
-  color: #999;
-  text-decoration: none;
-}
-
-.buttonHyperLink:hover {
-  /* mouse over link */
-  color: #FFF;
-  text-decoration: none;
-  outline: 0;
-  -webkit-transition:color .3s ease-in;
-  -moz-transition:color .3s ease-in;
-  -o-transition:color .3s ease-in;
-  transition:color .3s ease-in;
-}
-
-.buttonHyperLink:active {
-  /* selected link */
-  color: #666;
-  text-decoration: none;
-}
-
-#DriverInfoPDF {
-  font-size: 16px;
-  text-decoration: none;
-}
-
-#DriverInfoPDF:link {
-  /* unvisited link */
-  color: #FC0;
-  text-decoration: none;
-}
-
-#DriverInfoPDF:visited {
-  /* visited link */
-  color: #fC0;
-  text-decoration: none;
-}
-
-#DriverInfoPDF:hover {
-  /* mouse over link */
-  color: #FFF;
-  text-decoration: none;
-  outline: 0;
-  -webkit-transition:color .3s ease-in;
-  -moz-transition:color .3s ease-in;
-  -o-transition:color .3s ease-in;
-  transition:color .3s ease-in;
-}
-
-#DriverInfoPDF:active {
-  /* selected link */
-  color: #999;
-  text-decoration: none;
-}
-
 /* ------------- Images ------------- */
-a {
-  outline : none;
-}
+a {outline: none;}
+a img {outline: none;}
+img {border: 0;}
 
-a img {
-  outline : none;
-}
-
-img {
-  border : 0;
-}
-
-/* ------------- Alerts ------------- */
-.alert{
-  font-size: 15px;
-  padding:15px;
-  margin-top:0px;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 10px;
-  border:2px solid transparent;
-  border-radius:4px
-}
-
-.alert-success{
-  color:#3c763d;
-  background-color:#dff0d8;
-  border-color:#d6e9c6;
-}
-
-.alert-success hr{
-  border-top-color:#c9e2b3
-}
-
-.alert-success .alert-link{
-  color:#2b542c
-}
-
-.alert-info{
-  color:#31708f;
-  background-color:#d9edf7;
-  border-color:#bce8f1;
-}
-
-.alert-info hr{
-  border-top-color:#a6e1ec
-}
-
-.alert-info .alert-link{
-  color:#245269
-}
-
-.alert-warning{
-  color:#8a6d3b;
-  background-color:#fcf8e3;
-  border-color:#faebcc;
-}
-
-.alert-warning hr{
-  border-top-color:#f7e1b5
-}
-
-.alert-warning .alert-link{
-  color:#66512c
-}
-
-.alert-danger{
-  color:#a94442;
-  background-color:#f2dede;
-  border-color:#ebccd1
-}
-
-.alert-danger hr{
-  border-top-color:#e4b9c0
-}
-
-.alert-danger .alert-link{
-  color:#843534
-}
-
-/* ------------- Modal ------------- */
-.Poster {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  display: inline;
-  vertical-align: middle;
+/* -------------- W3C Code ----------------- */
+* {box-sizing: border-box;}
+.row {
   margin: 0px;
+  background-color: #141414;
 }
-
-.Poster:hover {
-  opacity: 0.7;
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 10; /* Sit on top */
-  padding-top: 35px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-  color: #fff;
+[class*="col-"] {
+  float: left;
+  padding: 15px;
 }
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 100%;
-  max-width: 29%;
+.header {
+  margin-top: 50px;
+  height: 100%;
 }
-
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 100%;
-  max-width: 700px;
+.themeColor {background-color: #1C1C1C;}
+.menu {
+  border-radius: 3px;
+  padding: 5px;
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
+  box-shadow: 5px 5px 10px #080808;
+}
+.aside {
+  border-radius: 3px;
+  padding: 5px;
+  color: #ffffff;
   text-align: center;
-  color: #fff;
-  padding: 10px 0;
-  height: 15px;
+  font-size: 14px;
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
+  box-shadow: 5px 5px 10px #080808;
+}
+.indexPointsList p {
+  margin: 0px;
+  font-size: 15px;
+  margin-left: 3%;
+}
+.main {text-align: center;}
+.mainCenter {margin-left: 20.5%;}  
+.footer {padding: 15px;}
+
+@media (min-width: 768px) and (max-width: 1010px) { 
+  /* Collapse Nav Bar To avoid ugliness */
+  .navbar-collapse.collapse {display: none !important;}
+  .navbar-collapse.collapse.in {display: block !important;}
+  .navbar-header .collapse, .navbar-toggle {display:block !important;}
+  .navbar-header {float:none;}
 }
 
-/* Add Animation */
-.modal-content, #caption {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
+@media only screen and (max-width: 1200px) { 
+  /* Collapse Footer */
+  .footer-section {display: table-row;}
+  #spiningTire {display: none;}
+  #footerSponsors {display: none;}
+  #SocialMediaDiv-Footer {margin-top: 15px;}
+  #SISLRALogo-Footer {width: 30%; display: block; margin: auto;}
+  .mySlidesPoints {margin: 0px; margin-bottom: 1%; width: 100%;}
+  .col-m-0 {margin: -15px;}
 }
 
-@-webkit-keyframes zoom {
-  from {-webkit-transform: scale(0)}
-  to {-webkit-transform: scale(1)}
+@media only screen and (max-width: 1040px) { 
+  /* To avoid the eventsTableTimes coming out of div activeSchedule */
+  .activeSchedule {width: 100%;}
+  .activeSchedule img {width: 50%;}
+  .eventsTableTimes {padding: 0px;}
+  #eventsComment {padding: 0px;}
 }
 
-@keyframes zoom {
-  from {transform: scale(0.1)}
-  to {transform: scale(1)}
+@media only screen and (max-width: 1000px) { 
+  /* To avoid TableSponsors going out a screen */
+  .TableSponsors {margin-top: -35px;}
+  .TableSponsors h3 {margin-top: 10px;}
+  .TableSponsors-section {display: table-row;}
+  .TableSponsors-section-Tree {display: none;}
+  .SponsorsChristmastree {display: none;}
 }
 
-/* Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover, .close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-     width: 100%;
+@media only screen and (max-width: 768px) { 
+  /* Collapse Header */
+  body {background-color: #000}
+  .shade {background: none;}
+  .Webbanner {display: none;}
+  .marquee {display: none;}
+  .slideshow {display: none;}
+  .indexTableHeader {
+    display: table;
+    width: auto;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    text-align: center;
   }
+  .indexTableHeader-section {
+    display: table-row;
+    margin: auto;
+    font-size: 20px;
+  }
+  #SISLRALogo-Footer {width: 60%;}
+  #pMembers {width: 100%;}
+  .poster {display: none;}
+  .posterMobile {display: initial; width: 80%; height: auto;}
 }
 
-/* -------- Points Buttons -------- */
-.pointsButton {
-  margin-top: 1%;
-  margin-bottom: 3.5%;
-  font-size: 18px;
-  color: #FFF;
-  font-weight: bold;
+@media only screen and (max-width: 650px) { 
+  /* Set Margin to 0 and contactUsTable when on smaller screens to stop content from going out of page*/
+  .mainCenter {margin-left: 0%;}
+  .contactUsTable {width: 600px;}
 }
 
-.mySlidesPoints {
-  margin-left: -170px;
+/* For mobile phones: */
+[class*="col-"] {width: 100%;}
+
+@media only screen and (min-width: 650px) {
+  /* For tablets: */
+  .col-m-0 {width: 0%;}
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 1200px) {
+  /* For desktop: */
+  .col-0 {width: 0%;}
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
 }
