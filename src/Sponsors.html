@@ -18,19 +18,26 @@
     <link rel="stylesheet" href="/CSS/SISLRA.css">
     
     <link rel="stylesheet" href="/CSS/animate.css">
+    
+    <style>
+      #sponsorsActiveNavBar {color: #FFFFFF; background-color: #080808;}
+      #sponsorsActiveNavBar>a {color: #FFFFFF; background-color: #080808;}
+      #sponsorsActiveNavBar>a:hover {color: #FFFFFF; background-color: #080808;}
+    </style>
 
     <!-- JavaScript -->
     <script src="/JavaScript/nextRaceCountdown.js"></script>
+    <script src="/JavaScript/activeSchedule.js"></script>
     <script src="/JavaScript/ETConverter.js"></script>
     
-    <!-- <script src="/JavaScript/jquery.js"></script> -->
+    <script src="/JavaScript/jquery.min.js"></script>
     
     <script src="/JavaScript/W3HTMLInclude.js"></script>
 
     <!-- <script src="/Bootstrap/js/bootstrap.js"></script> -->
-    <!-- <script src="/Bootstrap/js/bootstrap.min.js"></script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/Bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     
   </head>
   
@@ -38,89 +45,7 @@
     
     <div w3-include-html="/inc/ETConverterModal.html"></div>
     
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-          <a class="navbar-brand" href="/"><img src="/SISLRA/NavbarLogo.png" alt="SISLRA"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Racer Info <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/RacerInfo#Fees">Fees</a></li>
-                <li><a href="/RacerInfo#Memberships">Memberships</a></li>
-                <li><a href="/RacerInfo#DriverInformationSheet">Driver Information Sheet</a></li>
-                <li><a href="/RacerInfo#RaceClassesAndTimes">Classes & Times</a></li>
-                <li><a href="/RacerInfo#BracketRacingBasics">Racing Basics</a></li>
-                <li><a href="/RacerInfo#OutSideTrackLineUp">Track Line Up</a></li>
-                <li><a href="/RacerInfo#Tech.Inspection">Tech. Inspection</a></li> 
-                <li><a href="/RacerInfo#TheTrack">The Track</a></li> 
-                <li><a href="/RacerInfo#Qualifying&Eliminations">Qualifying & Eliminations</a></li> 
-                <li><a href="/RacerInfo#Disqualifications">Disqualifications</a></li> 
-                <li><a href="/RacerInfo#Tree">Tree</a></li>
-              </ul>
-            </li>
-            <li><a href="/Points">Points</a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Events <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/Events#RaceSchedule">Race Schedule</a></li>
-                <li><a href="/Events#Posters">Posters</a></li>
-              </ul>
-            </li>
-            <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Sponsors <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/Sponsors#BandDForklift">B&D Forklift</a></li>
-                <li><a href="/Sponsors#Searles">Searles</a></li>
-                <li><a href="/Sponsors#GraphicFX">GraphicFX</a></li>
-                <li><a href="/Sponsors#Dentex">Dentex</a></li>
-                <li><a href="/Sponsors#Lordco">Lordco</a></li>
-                <li><a href="/Sponsors#Used.ca">Used.ca</a></li>
-                <li><a href="/Sponsors#WestBayMechanical">West Bay Mechanical</a></li>
-                <li><a href="/Sponsors#IslandTorque">Island Torque</a></li>
-                <li><a href="/Sponsors#MaMillersPub">MaMillers Pub</a></li>
-                <li><a href="/Sponsors#HenrdrySwinton">Henrdry Swinton</a></li>
-                <li><a href="/Sponsors#SponsorshipInformation">Sponsorship Info.</a></li>
-              </ul>
-            </li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Contact Us <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/ContactUs">Contact Us</a></li>
-                <li><a href="/ContactUs#links">Other Tracks and Clubs</a></li>
-              </ul>
-            </li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">About Us <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/AboutUs">About Us</a></li>
-                <li><a href="/AboutUs#LOCATEDAT">Location</a></li>
-              </ul>
-            </li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Calculators <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#" data-toggle="modal" data-target="#ETConverterModal">ET Converter</a></li>
-              </ul>
-            </li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span class="filetypes filetypes-pdf"></span> PDF<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="/SISLRA/RacersInfo/NewRacersInformation.pdf" target="_blank"><span class="filetypes filetypes-pdf"></span> Racers Information</a></li>
-                <li><a href="/SISLRA/RacersInfo/DriverInformationSlip.pdf" target="_blank"><span class="filetypes filetypes-pdf"></span> Driver Information Slip</a></li>
-              </ul>
-            </li>
-          </ul>
-          <div class="nav navbar-nav navbar-right">
-            <a href="https://www.facebook.com/groups/327092727329942/" target="_blank" class="btn btn-primary" role="button" data-toggle="tooltip" data-placement="bottom" title="Facebook" style="color: #FFF;  margin-top: 4%;"><span class="social social-facebook"></span></a>
-            <a href="https://twitter.com/DragRaceVic" target="_blank" class="btn btn-info" role="button" data-toggle="tooltip" data-placement="bottom" title="Twitter" style="color: #FFF;  margin-top: 4%;"><span class="social social-twitter"></span></a>
-            <a href="https://www.instagram.com/dragracevictoria/?hl=en" target="_blank" class="btn btn-default" role="button" data-toggle="tooltip" data-placement="bottom" title="Instagram" style="color: #000;  margin-top: 4%;"><span class="social social-instagram"></span></a>
-            <a href="https://www.youtube.com/user/nostopinLucR" target="_blank" class="btn btn-danger" role="button" data-toggle="tooltip" data-placement="bottom" title="YouTube" style="color: #FFF; margin-top: 4%;"><span class="social social-youtube"></span></a>          &nbsp;
-          </div>
-        </div>
-      </div>
-    </nav>
+    <div w3-include-html="/inc/navBar.html"></div>
 
     <div class="header shade">
       <!-- Slide show from here https://css-tricks.com/snippets/jquery/simple-auto-playing-slideshow/ -->
@@ -157,7 +82,7 @@
           <div class="TableSponsors-row">
             <div class="TableSponsors-section">
               <h3>Pit Lane Sponsored by:</h3>
-              <a href="http://bdlifttruck.ca/" target="_blank"><img id="BandDForklift" src="/SISLRA/YearSponsors/BandDForklift-300x87.jpg" alt="TowerLaneSponsor" width="300" height="170" /></a>
+              <a href="http://bdlifttruck.ca/" target="_blank"><img id="BandDForklift" src="/SISLRA/YearSponsors/BandDForklift-300x87.jpg" alt="TowerLaneSponsor" width="300" height="160" /></a>
               <p>Celebrating 30 Years of Service; B&D Lift Truck Service Ltd. has been serving the forklift needs of Vancouver Island businesses' since 1984.
                 They provide sales, rental, service and maintenance, and operator training. 100% family owned and operated, B&D Lift Truck Service Ltd. is 
                 the Island's forklift specialist. Contact them at <a href="http://bdlifttruck.ca/" target="_blank">bdlifttruck.ca</a></p>
@@ -167,7 +92,7 @@
             </div>
             <div class="TableSponsors-section">
               <h3>Pit Lane Sponsored by:</h3>
-              <a href="http://searlesauto.ca/" target="_blank"><img id="Searles" src="/SISLRA/YearSponsors/Searles.jpg" alt="PitLaneSponsor" width="345" /></a>
+              <a href="http://searlesauto.ca/" target="_blank"><img id="Searles" src="/SISLRA/YearSponsors/Searles.jpg" alt="PitLaneSponsor" width="300" /></a>
               <p>In operation in since 1979, Searle's, is known by many for its quality work and honesty.
                 With well trained mechanics, quality parts, and cutting edge diagnostics, they work on any make
                 or model, specializing in Air Conditioning. Searle's Auto Repair is a member of the Better Business
@@ -182,7 +107,7 @@
       <div class="col-7 col-m-7 main mainCenter">
         <h1>Supporting Sponsors:</h1>
         
-        <a href="http://www.382sign.com/" target="_blank"><img id="GraphicFX" src="/SISLRA/YearSponsors/GraphicFX.png" alt="Graphic FX" width="345" /></a>
+        <a href="http://www.382sign.com/" target="_blank"><img id="GraphicFX" src="/SISLRA/YearSponsors/GraphicFX.png" alt="Graphic FX" width="300" /></a>
         <p>Thanks goes out to Graphic FX Signworks for our Tower Schedule sign. Graphic FX specializes in professional and affordable
            vehicle graphics, business signage and digital printing services.  From start to finish they can design any sized job through
            computer designed proofs and customer interaction.  Quality is important to them.  All their services are manufactured in-house,
