@@ -83,6 +83,22 @@ h6 {
 .modal-footer {text-align: center; border-top: none;}
 .close, .close:hover {color: #FFF;}
 
+.winCalculatorTable {
+  display: table;
+  width: 100%;
+  margin: auto;
+  margin-top: 0%;
+  margin-bottom: 2.8%;
+  text-align: center;
+  /* text-shadow: 2px 2px #000; */
+}
+.winCalculatorTable-row {display: table-row;}
+.winCalculatorTable-section {
+  display: table-cell;
+  width: 30%;
+  font-size: 20px;
+}
+
 label {
   font-size: 18px;
   margin: 0px;
