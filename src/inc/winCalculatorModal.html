@@ -1,114 +1,124 @@
 <div class="modal fade" id="winCalculatorModal" role="dialog">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Win Calculator</h4>
+        <h2 class="modal-title">Win Calculator <br><span style="color: #F00;">Beta*</span></h2>
       </div>
       <div class="modal-body">
       
-        <div class="winCalculatorTable">
-          <div class="winCalculatorTable-row">
-            <div class="winCalculatorTable-section">
-              <h3>Car #1<h3>
+        <form id="winCalculator">
+          <div class="winCalculatorTable">
+            <div class="winCalculatorTable-row">
+              <div class="winCalculatorTable-section">
+                <p style="color: #FC0;">Car #1</p>
+              </div>
+              <div class="winCalculatorTable-section">
+
+              </div>
+              <div class="winCalculatorTable-section">
+                <p style="color: #FC0;">Car #2</p>
+              </div>
             </div>
-            <div class="winCalculatorTable-section">
+            <div class="winCalculatorTable-row">
+              <div class="winCalculatorTable-section">
+                <input id="DialIna" type="number" placeholder="Dial-in">
+              </div>
+              <div class="winCalculatorTable-section">
+                <p>Dial-in</p>
+              </div>
+              <div class="winCalculatorTable-section">
+                <input id="DialInb" type="number" placeholder="Dial-in">
+              </div>
+            </div>
+            <div class="winCalculatorTable-row">
+              <div class="winCalculatorTable-section">
+                <input id="RTa" type="number" placeholder="Reaction Time">
+              </div>
+              <div class="winCalculatorTable-section">
+                <p>RT</p>
+              </div>
+              <div class="winCalculatorTable-section">
+                <input id="RTb" type="number" placeholder="Reaction Time">
+              </div>
+            </div>
+            <div class="winCalculatorTable-row">
+              <div class="winCalculatorTable-section">
+                <input id="ET1" type="number" placeholder="Elapsed Time">
+              </div>
+              <div class="winCalculatorTable-section">
+                <p>ET</p>
+              </div>
+              <div class="winCalculatorTable-section">
+                <input id="ETb" type="number" placeholder="Elapsed Time">
+              </div>
+            </div>
+          </div>
+          
+          <div class="winCalculatorTable" id="winCalculatorAnswer" style="display: none;">
+            <div class="winCalculatorTable-row">
+              <div class="winCalculatorTable-section">
+                <input class="formOutputs" id="RtaPlusEta" type="number" disabled>
+              </div>
+              <div class="winCalculatorTable-section">
+                <p>RT + ET</p>
+              </div>
+              <div class="winCalculatorTable-section">
+                <input class="formOutputs" id="RtbPlusEtb" type="number" disabled>
+              </div>
+            </div>
+            <div class="winCalculatorTable-row">
+              <div class="winCalculatorTable-section">
+                <input class="formOutputs" color: #FC0;" id="diffa" type="number" disabled>
+              </div>
+              <div class="winCalculatorTable-section">
+                <p>Difference Between Dial-ins</p>
+              </div>
+              <div class="winCalculatorTable-section">
+                <input style="color: #FC0;" class="formOutputs" id="diffb" type="number" disabled>
+              </div>
+            </div>
+            <div class="winCalculatorTable-row">
+              <div class="winCalculatorTable-section">
+                <input class="formOutputs" id="RtaPlusEtaPlusDiff" type="number" disabled>
+              </div>
+              <div class="winCalculatorTable-section">
+                <p>RT + ET + Dial-in Difference</p>
+              </div>
+              <div class="winCalculatorTable-section">
+                <input class="formOutputs" id="RtbPlusEtbPlusDiff" type="number" disabled>
+              </div>
+            </div>
+            <div class="winCalculatorTable-row">
+              <div class="winCalculatorTable-section">
+                <input style="color: #0F0;" class="formOutputs" id="wina" type="text" disabled>
+              </div>
+              <div class="winCalculatorTable-section">
               
+              </div>
+              <div class="winCalculatorTable-section">
+                <input style="color: #0F0;" class="formOutputs" id="winb" type="text" disabled>
+              </div>
             </div>
-            <div class="winCalculatorTable-section">
-              <h3>Car #2<h3>
-            </div>
-          </div>
-          <div class="winCalculatorTable-row">
-            <div class="winCalculatorTable-section">
-              <input id="DialIn1" type="number" placeholder="Dial-in" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)">
-            </div>
-            <div class="winCalculatorTable-section">
-              <p>Dial-in</p>
-            </div>
-            <div class="winCalculatorTable-section">
-              <input id="DialIn2" type="number" placeholder="Dial-in" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)">
-            </div>
-          </div>
-          <div class="winCalculatorTable-row">
-            <div class="winCalculatorTable-section">
-              <input id="RT1" type="number" placeholder="Reaction Time (RT)" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)">
-            </div>
-            <div class="winCalculatorTable-section">
-              <p>Reaction Time (RT)</p>
-            </div>
-            <div class="winCalculatorTable-section">
-              <input id="RT2" type="number" placeholder="Reaction Time (RT)" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)">
+            <div class="winCalculatorTable-row">
+              <div class="winCalculatorTable-section">
+                <input class="formOutputs" id="MOVa" type="number" disabled>
+              </div>
+              <div class="winCalculatorTable-section">
+                <p>Margin of Victory</p>
+              </div>
+              <div class="winCalculatorTable-section">
+                <input class="formOutputs" id="MOVb" type="number" disabled>
+              </div>
             </div>
           </div>
-          <div class="winCalculatorTable-row">
-            <div class="winCalculatorTable-section">
-              <input id="ET1" type="number" placeholder="Elapsed Time (ET)" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)">
-            </div>
-            <div class="winCalculatorTable-section">
-              <p>Elapsed Time (ET)</p>
-            </div>
-            <div class="winCalculatorTable-section">
-              <input id="ET2" type="number" placeholder="Elapsed Time (ET)" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)">
-            </div>
-          </div>
-          <div class="winCalculatorTable-row">
-            <div class="winCalculatorTable-section">
-              <input id="RT1plusET1" type="number" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)" disabled>
-            </div>
-            <div class="winCalculatorTable-section">
-              <p>RT + ET</p>
-            </div>
-            <div class="winCalculatorTable-section">
-              <input id="RT2plusET2" type="number" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)" disabled>
-            </div>
-          </div>
-          <div class="winCalculatorTable-row">
-            <div class="winCalculatorTable-section">
-              <input id="DifferenceDialIn1" type="number" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)" disabled>
-            </div>
-            <div class="winCalculatorTable-section">
-              <p>Difference between Dial-ins</p>
-            </div>
-            <div class="winCalculatorTable-section">
-              <input id="DifferenceDialIn2" type="number" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)" disabled>
-            </div>
-          </div>
-          <div class="winCalculatorTable-row">
-            <div class="winCalculatorTable-section">
-              <input id=" " type="number" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)" disabled>
-            </div>
-            <div class="winCalculatorTable-section">
-              <p>RT + ET + Dial-in Difference</p>
-            </div>
-            <div class="winCalculatorTable-section">
-              <input id=" " type="number" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)" disabled>
-            </div>
-          </div>
-          <div class="winCalculatorTable-row">
-            <div class="winCalculatorTable-section">
-              <input id=" " type="number" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)" disabled>
-            </div>
-            <div class="winCalculatorTable-section">
-              <p>Win</p>
-            </div>
-            <div class="winCalculatorTable-section">
-              <input id=" " type="number" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)" disabled>
-            </div>
-          </div>
-          <div class="winCalculatorTable-row">
-            <div class="winCalculatorTable-section">
-              <input id=" " type="number" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)" disabled>
-            </div>
-            <div class="winCalculatorTable-section">
-              <p>Margin of Victory (MoV)</p>
-            </div>
-            <div class="winCalculatorTable-section">
-              <input id=" " type="number" oninput="winCalculator(this.id,this.value)" onchange="winCalculator(this.id,this.value)" disabled>
-            </div>
-          </div>
+        </form>
+        
+        <div class="form-actions">
+          <button type="button" class="btn btn-warning proButton" onclick="winCalculatorReset()">Reset</button>
+          <button type="button" class="btn btn-primary" onclick="showWinCalculatorAnswer()">Calculate</button>
         </div>
-      
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

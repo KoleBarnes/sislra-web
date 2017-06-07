@@ -36,9 +36,9 @@ h2 {
   margin-top: 0px;
   cursor: default;
 }
-h2.pro {color: #ff0000;}
-h2.street {color: #00ff00;}
-h2.bike {color: #3333ff;}
+h2.pro {color: #F00;}
+h2.street {color: #0F0;}
+h2.bike {color: #33F;}
 h3 {
   font-size: 18px;
   color: #FC0;
@@ -75,6 +75,7 @@ h6 {
     background: #BBB;
 }
 
+/* -------------------- Modal's ---------------------------*/
 .modal-content {background-color: #141414;}
 .modal-content img {margin: auto;display: block;width: 100%;}
 .modal-title {color: #FC0;text-align: center;font-size: 22px;}
@@ -90,15 +91,20 @@ h6 {
   margin-top: 0%;
   margin-bottom: 2.8%;
   text-align: center;
-  /* text-shadow: 2px 2px #000; */
 }
 .winCalculatorTable-row {display: table-row;}
 .winCalculatorTable-section {
   display: table-cell;
-  width: 30%;
+  width: 33.33%;
   font-size: 20px;
 }
-
+.winCalculatorTable-section > p {font-size: 18px;}
+.form-actions {
+  margin: 0;
+  background-color: transparent;
+  text-align: center;
+}
+.formOutputs{background-color: #141414;}
 label {
   font-size: 18px;
   margin: 0px;
@@ -117,6 +123,7 @@ input {
 
 /* ------------- Header Content --------------- */
 /* --------------- Nav Bar ------------- */
+.nav > li > a {padding: 15px 12px;}
 .navbar-brand {padding: 0px; margin: auto;}
 .navbar-brand>img {height: 100%; padding: 15px; width: auto;}
 .navbar-inverse {background-color: #222222;}
@@ -139,7 +146,8 @@ input {
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret {border-top-color: #FFFFFF;}
 .navbar-inverse .navbar-nav>.dropdown>a .caret {border-bottom-color: #999999;}
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret {border-bottom-color: #FFFFFF;}
-  
+.nav .social {margin-top: 6px;}
+
 /* ------------- CountDown ------------ */
 .CountDownTable {
   display: table;
@@ -416,59 +424,55 @@ input {
 }
 
 /* ------------- Hyperlink Color ------------- */
-a:link {
-  /* unvisited link */
-  color: #FC0;
-  text-decoration: none;
-}
-a:visited {
-  /* visited link */
-  color: #FC0;
-  text-decoration: none;
-}
+a:link {color: #FC0; text-decoration: none;}
+a:visited {color: #FC0; text-decoration: none;}
 a:hover {
-  /* mouse over link */
-  color: #F90;
+  color: #ffe066;
   text-decoration: none;
-  outline: 0;
-  -webkit-transition: color .3s ease-in;
-  -moz-transition: color .3s ease-in;
-  -o-transition: color .3s ease-in;
-  transition: color .3s ease-in;
+  text-shadow: 2px 2px #000;
+  -webkit-transition: color .4s linear;
+  -moz-transition: color .4s linear;
+  -o-transition: color .4s linear;
+  transition: color .4s linear;
 }
-a:active {
-  /* selected link */
-  color: #FC0;
-  text-decoration: none;
-}
-.buttonHyperLink:link {
-  /* unvisited link */
-  color: #999;
-  text-decoration: none;
-}
-.buttonHyperLink:visited {
-  /* visited link */
-  color: #999;
-  text-decoration: none;
-}
-.buttonHyperLink:hover {
-  /* mouse over link */
-  color: #FFF;
-  text-decoration: none;
-  outline: 0;
-  -webkit-transition:color .3s ease-in;
-  -moz-transition:color .3s ease-in;
-  -o-transition:color .3s ease-in;
-  transition:color .3s ease-in;
-}
-.buttonHyperLink:active {
-  /* selected link */
-  color: #666;
-  text-decoration: none;
-}
+a:active {color: #997a00; text-shadow: -2px -2px #000; text-decoration: none;}
+
+.fa-facebook {color: #4666aa; padding: 5px; margin-left: 10px;}
+.fa-facebook:hover {color: #8098cb; text-shadow: 2px 2px #000; -webkit-transition: color .4s linear; -moz-transition: color .4s linear; -o-transition: color .4s linear; transition: color .4s linear;}
+.fa-facebook:active {color: #2c416d; text-shadow: -2px -2px #000;}
+
+.fa-twitter{color: #1da1f2; padding: 5px;}
+.fa-twitter:hover {color: #6ec2f7; text-shadow: 2px 2px #000; -webkit-transition: color .4s linear; -moz-transition: color .4s linear; -o-transition: color .4s linear; transition: color .4s linear;}
+.fa-twitter:active {color: #0a6ca9; text-shadow: -2px -2px #000;}
+
+.fa-instagram{color: #FFFFFF; padding: 5px;}
+.fa-instagram:hover {color: #d10869; text-shadow: 2px 2px #000; -webkit-transition: color .4s linear; -moz-transition: color .4s linear; -o-transition: color .4s linear; transition: color .4s linear;}
+.fa-instagram:active {color: #7b043e; text-shadow: -2px -2px #000;}
+
+.fa-youtube-play{color: #e72e24; padding: 5px; margin-right: 10px;}
+.fa-youtube-play:hover {color: #f07b75; text-shadow: 2px 2px #000; -webkit-transition: color .4s linear; -moz-transition: color .4s linear; -o-transition: color .4s linear; transition: color .4s linear;}
+.fa-youtube-play:active {color: #a11912; text-shadow: -2px -2px #000;}
 
 /* ------------- Alerts ------------- */
 .alert {font-size: 15px;}
+
+.callout{padding:15px;margin-bottom:20px;border:1px solid #999999;border-left-width:5px;border-right-width:5px;border-radius:3px}
+.callout h4{margin-top:0;margin-bottom:5px;font-size: 20px;}
+.callout p:last-child{margin-bottom:0;}
+.callout code{border-radius:3px;}
+.callout+.bs-callout{margin-top:-5px;}
+.callout-info{border-left-color:#0CF;border-right-color:#0CF;background-color: #00141a;}
+.callout-info h4{color:#0CF;}
+.callout-info p{color:#0CF;}
+.callout-success{border-left-color:#00cc00;border-right-color:#00cc00;background-color: #001a00;}
+.callout-success h4{color:#00cc00;}
+.callout-success p{color:#00cc00;}
+.callout-warning{border-left-color:#CC0;border-right-color:#CC0;background-color: #1a1a00;}
+.callout-warning h4{color:#CC0;}
+.callout-warning p{color:#CC0;}
+.callout-danger{border-left-color:#ce4844;border-right-color:#ce4844;background-color: #140605;}
+.callout-danger h4{color:#ce4844;}
+.callout-danger p{color:#ce4844;}
 
 /* ------------- Footer ------------- */
 /* http://stackoverflow.com/questions/27770310/making-a-responsive-footer-with-3-divs-inside */
@@ -536,6 +540,7 @@ a:active {
   margin: auto;
 }
 #SocialMediaDiv-Footer {
+  cursor: default;
   text-align: center;
   color: #FC0;
 }
@@ -644,7 +649,7 @@ img {border: 0;}
 .mainCenter {margin-left: 20.5%;}  
 .footer {padding: 15px;}
 
-@media (min-width: 768px) and (max-width: 1120px) { 
+@media (min-width: 768px) and (max-width: 1080px) { 
   /* Collapse Nav Bar To avoid ugliness */
   .navbar-collapse.collapse {display: none !important;}
   .navbar-collapse.collapse.in {display: block !important;}
@@ -687,6 +692,7 @@ img {border: 0;}
   .Webbanner {display: none;}
   .marquee {display: none;}
   .slideshow {display: none;}
+  .nav > li > a {padding: 10px;}
   .CountDownTable {
     display: table;
     width: auto;
