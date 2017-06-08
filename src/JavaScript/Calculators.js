@@ -26,10 +26,10 @@ function winCalculator(source,valNum) {
   var RTa = document.getElementById("RTa");
   var RTb = document.getElementById("RTb");
   
-  var ET1 = document.getElementById("ET1");
+  var ETa = document.getElementById("ETa");
   var ETb = document.getElementById("ETb");
  
-  RtaPlusEta.value = (+RTa.value + +ET1.value).toFixed(3);
+  RtaPlusEta.value = (+RTa.value + +ETa.value).toFixed(3);
   RtbPlusEtb.value = (+RTb.value + +ETb.value).toFixed(3);
   
   var diff = Math.abs(+DialIna.value - +DialInb.value).toFixed(3);
@@ -41,7 +41,7 @@ function winCalculator(source,valNum) {
     RtbPlusEtbPlusDiff.value = (+RtbPlusEtbPlusDiff.value + +diff).toFixed(3);
     diffb.value = diff;
   } else  {
-    RtaPlusEtaPlusDiff.value = (RtaPlusEtaPlusDiff.value + +diff).toFixed(3);
+    RtaPlusEtaPlusDiff.value = (+RtaPlusEtaPlusDiff.value + +diff).toFixed(3);
     diffa.value = diff;
   }
   
