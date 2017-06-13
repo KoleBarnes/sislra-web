@@ -189,6 +189,7 @@ input {
   font-size: 16px;
   overflow: hidden;
   position: relative;
+  text-shadow: 2px 2px #000;
   -webkit-animation-delay: 1s;
 }
 .marquee div {
@@ -207,11 +208,10 @@ input {
   0% { left: 0; }
   100% { left: -100%; }
 }
-.marqueeInfo:after {
-  text-shadow: 2px 2px #000;
-  content: "THE FORTH RACE OF THE SEASON IS ON SUNDAY JUNE 11TH! GATES OPEN AT 2:00PM!";
-/*content: "THE ..... RACE OF THE SEASON IS ON SUNDAY .... ....! GATES OPEN AT 2:00PM, QUALIFYING AT 3:00PM & ELIMINATIONS AT 6:00PM."; */
-}
+/* .marqueeInfo:after { */
+  /* content: "THE FIFTH RACE OF THE SEASON IS ON SATURDAY JUNE 17TH! GATES OPEN AT 8:00AM! DOUBLE HEADER WEEKEND!"; */
+/* /*content: "THE ..... RACE OF THE SEASON IS ON SUNDAY .... ....! GATES OPEN AT 2:00PM, QUALIFYING AT 3:00PM & ELIMINATIONS AT 6:00PM."; */
+/* } */
 
 /* ------------- Slides and Banner --------------- */
 .Webbanner {
@@ -456,7 +456,8 @@ a:active {color: #997a00; text-shadow: -2px -2px #000; text-decoration: none;}
 /* ------------- Alerts ------------- */
 .alert {font-size: 15px;}
 
-.callout{padding:15px;margin-bottom:15px;border:1px solid #141414;border-left-width:5px;border-radius:3px}
+/* div .callout{text-shadow: 2px 2px #000;} */
+.callout{padding:15px;margin-bottom:15px;border:1px solid #141414;border-left-width:5px;border-radius:3px;}
 .callout h4{margin-top:0;margin-bottom:5px;font-size: 20px;}
 .callout p:last-child{margin-bottom:0;}
 .callout code{border-radius:3px;}
@@ -633,6 +634,8 @@ img {border: 0;}
   border-radius: 3px;
   padding: 5px;
   box-shadow: 5px 5px 10px #080808;
+  position: relative; /* Set to make things slide behind Div when animated */
+  z-index: 1;
 }
 .aside {
   border-radius: 3px;
@@ -641,6 +644,8 @@ img {border: 0;}
   text-align: center;
   font-size: 14px;
   box-shadow: 5px 5px 10px #080808;
+  position: relative; /* Set to make things slide behind Div when animated */
+  z-index: 1;
 }
 .indexPointsList p {
   margin: 0px;

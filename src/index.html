@@ -70,7 +70,34 @@
         <img src="/SISLRA/Slides/Untitled-11.jpg" alt="Slide11"/>
       </div>
       <script src="/JavaScript/headerSlideShow.js"></script>
-      <div w3-include-html="/inc/header.html"></div>
+      
+      <div class="animated fadeIn marquee">
+        <div>
+          <span class="marqueeInfo"></span>
+          <span class="marqueeInfo2"></span>
+        </div>
+      </div>
+      <script src="/JavaScript/marquee.js"></script>
+
+      <a href="/"><img class="animated flipInX Webbanner" src="/SISLRA/WebBanner.png" alt="SISLRA" /></a>
+
+      <div class="animated fadeIn CountDownTable">
+        <div class="CountDownTable-row">
+          <div class="CountDownTable-section">
+            <h3><a href="/Events.html">Next SISLRA Race</a></h3>
+            <div id="SISLRARace">&nbsp;</div>
+          </div>
+          <div class="CountDownTable-section">
+            <h3><a href="http://www.northislandtimingassociation.com/" target="_blank">Next Rumble on the Runway</a></h3>
+            <div id="PortMcNeill">&nbsp;</div>
+          </div>
+          <div class="CountDownTable-section">
+            <h3><a href="http://www.albernidragracing.com/" target="_blank">Thunder in The Valley</a></h3>
+            <div id="PortAlberni">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+      
     </div>
 
     <div class="row">
@@ -111,7 +138,7 @@
           <h4>Info!</h4><p> </p>
         </div> -->
         
-        <div class="callout callout-success">
+        <div id="success" class="animated fadeInLeftBig callout callout-success">
           <h4>Rain Date!</h4><p>A rain date has been set for Saturday June 17. There is also a race that Sunday June 18 which mean we will have a double header weekend. Check out the <a href="/Events.html" class="alert-link">events page</a> for times.</p>
         </div>
         
@@ -122,9 +149,16 @@
         <!-- <div class="callout callout-danger">
           <h4>Race Cancelled!</h4><p>The April 23rd Race Has Been Cancelled Due To Weather!</p>
         </div> -->
-          
-        <h1>New To The Website</h1>
-        <p>- Now Mobile Friendly! <br>- Updated look, with animations. <br> - Win Calculator and ET Converter in Testing/Beta Stages <br> (located in the Nav Bar). <br>- Navigate the website from anywhere on the page with the scrolling Nav Bar.</p>
+        
+        <div id="content">
+          <h1>Double Header Weekend!</h1>
+          <p>This weekend there will be two races! The first race is on Saturday June 17 starting at 8:00am and the second race is on Sunday June 18th starting at 2:00pm. See you there!</p> 
+        </div>
+        
+        <div id="content2">
+          <h1>New To The Website</h1>
+          <p>- Now Mobile Friendly! <br>- Updated look, with animations. <br> - Win Calculator and ET Converter in Testing/Beta Stages <br> (located in the Nav Bar). <br>- Navigate the website from anywhere on the page with the scrolling Nav Bar.</p>
+        </div>  
           
         <h1>We're Social</h1>
         <p>Drag Race Victoria is on <a href="https://www.facebook.com/groups/327092727329942/" target="_blank"> Facebook</a>, <a href="https://twitter.com/DragRaceVic">Twitter</a> and <a href="https://www.instagram.com/dragracevictoria/?hl=en">Instagram</a>!</p>  
@@ -145,7 +179,7 @@
         <h1><a href="/RacerInfo.html#Memberships">Memberships Have Their Rewards</a></h1>
         <p>Help support our club and purchase <a href="/RacerInfo.html#Memberships">membership.</a></p>
         
-        <h1>Tillicum Drive-In T-Shirt</h1>
+        <h1><a href="http://tillicumtshirts.com/">Tillicum Drive-In T-Shirt</a></h1>
         <p>Check out <a href="http://tillicumtshirts.com/">tillicumtshirts.com</a> to get your T-Shirt!</p>
         
       </div>
@@ -196,7 +230,7 @@
 
       <div w3-include-html="/inc/footerSocial.html"></div> <!-- Start Of Footer -->
       <div w3-include-html="/inc/footerSponsors.html"></div>
-  
+
       <script>
         w3IncludeHTML();
       </script>
@@ -206,6 +240,8 @@
       </div>
       
     </div> <!-- end of footer -->
+    
+    <script src="/JavaScript/expire.js"></script>
     
   </body>
 </html>
