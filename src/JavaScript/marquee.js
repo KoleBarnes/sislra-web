@@ -14,12 +14,12 @@ function marquee() {
   var marquee = document.getElementsByClassName("marquee")[0];
   
   if ((RaceFour.getTime() < now.getTime()) && (now.getTime() < RaceFive.getTime()) ) {
-    marquee.getElementsByClassName("marqueeInfo")[0].innerHTML  = "THE FIFTH RACE OF THE SEASON IS ON SATURDAY JUNE 17TH! GATES OPEN AT 8:00AM! DOUBLE HEADER WEEKEND!";
-    marquee.getElementsByClassName("marqueeInfo2")[0].innerHTML = "THE FIFTH RACE OF THE SEASON IS ON SATURDAY JUNE 17TH! GATES OPEN AT 8:00AM! DOUBLE HEADER WEEKEND!";
+    marquee.getElementsByClassName("marqueeInfo")[0].innerHTML  = "DOUBLE HEADER WEEKEND! THE FIFTH RACE OF THE SEASON IS ON SATURDAY JUNE 17TH! GATES OPEN AT 8:00AM!";
+    marquee.getElementsByClassName("marqueeInfo2")[0].innerHTML = "DOUBLE HEADER WEEKEND! THE FIFTH RACE OF THE SEASON IS ON SATURDAY JUNE 17TH! GATES OPEN AT 8:00AM!";
   }
   else if ((RaceFive.getTime() < now.getTime()) && (now.getTime() < RaceSix.getTime()) ) {
-    marquee.getElementsByClassName("marqueeInfo")[0].innerHTML  = "THE SIXTH RACE OF THE SEASON IS ON SUNDAY JUNE 18TH! GATES OPEN AT 2:00PM! DOUBLE HEADER WEEKEND!";
-    marquee.getElementsByClassName("marqueeInfo2")[0].innerHTML = "THE SIXTH RACE OF THE SEASON IS ON SUNDAY JUNE 18TH! GATES OPEN AT 2:00PM! DOUBLE HEADER WEEKEND!";
+    marquee.getElementsByClassName("marqueeInfo")[0].innerHTML  = "DOUBLE HEADER WEEKEND! THE SIXTH RACE OF THE SEASON IS ON SUNDAY JUNE 18TH! GATES OPEN AT 2:00PM!";
+    marquee.getElementsByClassName("marqueeInfo2")[0].innerHTML = "DOUBLE HEADER WEEKEND! THE SIXTH RACE OF THE SEASON IS ON SUNDAY JUNE 18TH! GATES OPEN AT 2:00PM!";
   }
   else if ((RaceSix.getTime() < now.getTime()) && (now.getTime() < RaceSeven.getTime()) ) {
     marquee.getElementsByClassName("marqueeInfo")[0].innerHTML  = "THE SEVENTH RACE OF THE SEASON IS ON SUNDAY JULY 9TH! GATES OPEN AT 2:00PM!";

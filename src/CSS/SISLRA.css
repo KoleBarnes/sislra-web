@@ -243,11 +243,10 @@ input {
 .indexWinnersTable td{padding: 0px 5px 0px 0px;}
 
 /* --------------- indexSchedule ------------ */
-.current {color: #0CF;}
-.over {text-decoration: line-through; color: #888;}
 .cancelled {color: #F00;}
 .new {color: #0F0;}
-.future {color: #ff0;}
+.over {color: #888; text-decoration: line-through;}
+.current {color: #0CF;}
 .indexSchedule {
   margin-top: -10px;
   margin: 0px;
@@ -274,7 +273,7 @@ input {
   color: #FC0;
   font-size: 17px;
   font-weight: bold;
-  content: "8/6/2017"
+  content: "17/6/2017"
 }
 #pMembers {
   width: 80%;
