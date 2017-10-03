@@ -16,22 +16,22 @@ var sislraRaceSchedule = {
 
 // Port McNeill Race Schedule
 var portMcNeillRaceSchedule = {
-  '06/23/2017 12:00 AM': 'PortMcNeill', //{
-  '06/24/2017 12:00 AM': 'PortMcNeill', // 
-  '06/25/2017 12:00 AM': 'PortMcNeill', //}
-  '07/21/2017 12:00 AM': 'PortMcNeill', //{
-  '07/22/2017 12:00 AM': 'PortMcNeill', //
-  '07/23/2017 12:00 AM': 'PortMcNeill', //}
-  '08/25/2017 12:00 AM': 'PortMcNeill', //{
-  '08/26/2017 12:00 AM': 'PortMcNeill', //
-  '08/27/2017 12:00 AM': 'PortMcNeill'  //}
+  '06/22/2018 12:00 AM': 'PortMcNeill', // {
+  '06/23/2018 12:00 AM': 'PortMcNeill',
+  '06/24/2018 12:00 AM': 'PortMcNeill', // }
+  '07/20/2018 12:00 AM': 'PortMcNeill', // {
+  '07/21/2018 12:00 AM': 'PortMcNeill',
+  '07/22/2018 12:00 AM': 'PortMcNeill', // }
+  '08/24/2018 12:00 AM': 'PortMcNeill', // {
+  '08/25/2018 12:00 AM': 'PortMcNeill',
+  '08/26/2018 12:00 AM': 'PortMcNeill'  // }
 };
 
 // Port Alberni Race Schedule
 var portAlberniRaceSchedule = {
-  '08/11/2017 12:00 AM': 'PortAlberni', //{
-  '08/12/2017 12:00 AM': 'PortAlberni', // 
-  '08/13/2017 12:00 AM': 'PortAlberni'  //}
+  '08/10/2018 12:00 AM': 'PortAlberni', // {
+  '08/11/2018 12:00 AM': 'PortAlberni',
+  '08/12/2018 12:00 AM': 'PortAlberni'  // }
 };
 
 CountDownTimer(sislraRaceSchedule);

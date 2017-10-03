@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/Glyphicons/glyphicons/css/glyphicons.css">
 
     <link rel="stylesheet" href="/CSS/SISLRA.css">
+    <!-- <link rel="stylesheet" href="/SISLRA/RacePoints/stylesheet.css"> -->
     
     <link rel="stylesheet" href="/CSS/animate.css">
     
@@ -36,9 +37,22 @@
     
     <script src="/JavaScript/W3HTMLInclude.js"></script>
     
+    <script type="text/javascript">
+        function GetFileInfo () {
+            var message = "";
+            
+            if (document.lastModified) {
+                message += "<b>" + document.lastModified + "</b><br />";
+            }
+            
+            var PointsUpdate = document.getElementById ("PointsUpdate");
+            PointsUpdate.innerHTML = message;
+        }
+    </script>
+	
   </head>
   
-  <body>
+  <body onload="GetFileInfo();">
   
     <div w3-include-html="/inc/ETConverterModal.html"></div>
     <div w3-include-html="/inc/winCalculatorModal.html"></div>
@@ -98,7 +112,7 @@
     </div>
 
     <div class="row">
-      <div class="col-12 col-m-12 main">
+<!--      <div class="col-12 col-m-12 main">
       
         <h1><a href="/RacerInfo#Memberships">Points Are Valid Only For Members.</a></h1>
         <p id="pMembers">To be eligible to compete in this season's Points Competition you must be a registered SISLRA member.
@@ -115,8 +129,33 @@
         <button type="button" class="btn btn-success pointsButtons" onclick="currentDiv(2)">Street</button>
         <button type="button" class="btn btn-primary pointsButtons" onclick="currentDiv(3)">Bike</button>
 
+        <script src="/JavaScript/pointsSelector.js"></script> -->
+        
+      <div class="col-12 col-m-12 main">  
+      
+        <h1><a href="/RacerInfo#Memberships">Points Are Valid Only For Members.</a></h1>
+        <p id="pMembers" style="margin-bottom: 20px;">To be eligible to compete in this season's Points Competition you must be a registered <a href="/RacerInfo.html#Memberships">SISLRA member</a>.
+        Only races raced after your <a href="/RacerInfo.html#Memberships">membership</a> is paid, are eligible to be counted in the competition. For more infomation on <a href="/RacerInfo.html#Memberships">memberships click here</a> or see Bill
+        Jamieson on race day to purchase your <a href="/RacerInfo.html#Memberships">membership</a>.</p>
+        
+		<!-- <div id="info" style="width:500px; overflow:auto; background-color:#e0d0d0;"></div> -->
+		
+        <!-- <h2 style="margin-top: 15px;">Points Updated as of: <span id="PointsUpdate"></span></h2> -->
+        
+        <div class="pointsTable">
+          <div class="mySlidesPoints" w3-include-html="/SISLRA/RacePoints/ProPoints.htm"></div>
+          <div class="mySlidesPoints" w3-include-html="/SISLRA/RacePoints/StreetPoints.htm"></div>
+          <div class="mySlidesPoints" w3-include-html="/SISLRA/RacePoints/BikePoints.htm"></div>
+        </div>
+		
+        <button type="button" class="btn btn-danger pointsButtons proButton" onclick="currentDiv(1)">Pro</button>
+        <button type="button" class="btn btn-success pointsButtons" onclick="currentDiv(2)">Street</button>
+        <button type="button" class="btn btn-primary pointsButtons" onclick="currentDiv(3)">Bike</button>
+
         <script src="/JavaScript/pointsSelector.js"></script>
+        
       </div>
+      
     </div> <!-- End of row -->
 
     <div class="footer themeColor">

@@ -38,7 +38,7 @@ h2 {
 }
 h2.pro {color: #F00;}
 h2.street {color: #0F0;}
-h2.bike {color: #33F;}
+h2.bike {color: #4D4DFF;}
 h3 {
   font-size: 18px;
   color: #FC0;
@@ -269,11 +269,11 @@ input {
 .listStyleDisc ul {list-style-type: disc;}
 
 /* -------------- Points ------------- */
-#PointsUpdate:after {
+#PointsUpdate/* :after */ {
   color: #FC0;
   font-size: 17px;
   font-weight: bold;
-  content: "17/6/2017"
+  /* content: "17/6/2017" */
 }
 #pMembers {
   width: 80%;
@@ -282,7 +282,7 @@ input {
 .mySlidesPoints {
   margin: auto;
   margin-bottom: 1%;
-  width: 80%;
+  width: 100%;
 }
 .proButton {
   margin: auto;
@@ -291,10 +291,18 @@ input {
 }
 .pointsButtons {
   margin-top: 1%;
-  margin-bottom: 1%;
+  margin-bottom: 1.5%;
   font-size: 18px;
   color: #FFF;
   font-weight: bold;
+}
+
+.pointsTable {
+  width: 100% !important;
+  height: auto;
+  margin: auto;
+  margin-bottom: 0px;
+  overflow-x:auto;
 }
 
 /* ------------- Events ----------- */
@@ -720,6 +728,7 @@ img {border: 0;}
   /* Set Margin to 0 and contactUsTable when on smaller screens to stop content from going out of page*/
   .mainCenter {margin-left: 0%;}
   .contactUsTable {width: 600px;}
+  /* .pointsTable {width: 600px;} */
 }
 
 /* For mobile phones: */
