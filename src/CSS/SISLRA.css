@@ -264,7 +264,7 @@ input {
 
 /* -------------- RacerInfo -------------- */
 #feesDiv {margin-bottom: 20px;}
-#feesDiv p {margin: 0px; text-align: left;}
+#feesDiv p {margin: 0px; text-align: center;}
 .DriverInfoPDF {font-size: 16px;}
 .listStyleDisc ul {list-style-type: disc;}
 
