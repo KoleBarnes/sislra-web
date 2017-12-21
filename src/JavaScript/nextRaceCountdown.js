@@ -1,17 +1,17 @@
 // SISLRA Race Schedule
 var sislraRaceSchedule = {
-  '04/22/2017 12:00 AM': 'SISLRARace',
-  '04/30/2017 12:00 AM': 'SISLRARace',
-  '05/07/2017 12:00 AM': 'SISLRARace',
-  '05/14/2017 12:00 AM': 'SISLRARace',
-  '06/11/2017 12:00 AM': 'SISLRARace',
-  '06/17/2017 12:00 AM': 'SISLRARace',
-  '06/18/2017 12:00 AM': 'SISLRARace',
-  '07/09/2017 12:00 AM': 'SISLRARace',
-  '07/30/2017 12:00 AM': 'SISLRARace',
-  '08/20/2017 12:00 AM': 'SISLRARace',
-  '09/10/2017 12:00 AM': 'SISLRARace',
-  '09/17/2017 12:00 AM': 'SISLRARace'
+  '04/22/2018 12:00 AM': 'SISLRARace',
+  '04/29/2018 12:00 AM': 'SISLRARace',
+  '05/06/2018 12:00 AM': 'SISLRARace',
+  '05/13/2018 12:00 AM': 'SISLRARace',
+  '06/03/2018 12:00 AM': 'SISLRARace',
+  '06/10/2018 12:00 AM': 'SISLRARace',
+  '07/08/2018 12:00 AM': 'SISLRARace',
+  '07/29/2018 12:00 AM': 'SISLRARace',
+  '08/19/2018 12:00 AM': 'SISLRARace',
+  '09/09/2018 12:00 AM': 'SISLRARace',
+  '09/23/2018 12:00 AM': 'SISLRARace'//,
+  //'09/17/2018 12:00 AM': 'SISLRARace'
 };
 
 // Port McNeill Race Schedule

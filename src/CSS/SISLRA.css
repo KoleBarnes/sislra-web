@@ -335,7 +335,7 @@ input {
   margin: 0 auto;
   -webkit-animation-delay: 1s;
 }
-.activeSchedule>div>ul {width: 275px;}
+.activeSchedule>div>ul {width: 276px;}
 .eventsTableTimes {
   width: 100%;
   margin: auto;
