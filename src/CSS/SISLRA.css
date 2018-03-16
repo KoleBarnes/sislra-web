@@ -208,10 +208,6 @@ input {
   0% { left: 0; }
   100% { left: -100%; }
 }
-/* .marqueeInfo:after { */
-  /* content: "THE FIFTH RACE OF THE SEASON IS ON SATURDAY JUNE 17TH! GATES OPEN AT 8:00AM! DOUBLE HEADER WEEKEND!"; */
-/* /*content: "THE ..... RACE OF THE SEASON IS ON SUNDAY .... ....! GATES OPEN AT 2:00PM, QUALIFYING AT 3:00PM & ELIMINATIONS AT 6:00PM."; */
-/* } */
 
 /* ------------- Slides and Banner --------------- */
 .Webbanner {
