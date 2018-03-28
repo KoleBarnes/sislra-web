@@ -2,6 +2,7 @@ function marquee() {
 
   var now = new Date();
   
+  var BurnOff          = new Date('04/10/2018');
   var RaceOne          = new Date('04/23/2018');
   var RaceTwo          = new Date('04/30/2018');
   var RaceThree        = new Date('05/07/2018');
@@ -16,7 +17,11 @@ function marquee() {
   
   var marquee = document.getElementsByClassName("marquee")[0];
   
-  if (now.getTime() < RaceOne.getTime() ) {
+  if (now.getTime() < BurnOff.getTime() ) {
+    marquee.getElementsByClassName("marqueeInfo")[0].innerHTML  = "TRACK BURN OFF MONDAY APRIL 9TH AT 5:30PM!";
+    marquee.getElementsByClassName("marqueeInfo2")[0].innerHTML = "TRACK BURN OFF MONDAY APRIL 9TH AT 5:30PM!";
+  }
+  else if ((BurnOff.getTime() < now.getTime()) && (now.getTime() < RaceOne.getTime()) ) {
     marquee.getElementsByClassName("marqueeInfo")[0].innerHTML  = "THE FIRST RACE OF THE SEASON IS ON SUNDAY APRIL 22ND! GATES OPEN AT 2:00PM!";
     marquee.getElementsByClassName("marqueeInfo2")[0].innerHTML = "THE FIRST RACE OF THE SEASON IS ON SUNDAY APRIL 22ND! GATES OPEN AT 2:00PM!";
   }

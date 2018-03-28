@@ -2,8 +2,8 @@ function expire() {
 
   var current = new Date();
   var expiry  = new Date('06/12/2017');
-  var expiry2 = new Date('06/16/2017');
-  var expiry3 = new Date('06/30/2017');
+  var expiry2 = new Date('04/10/2018');
+  var expiry3 = new Date('04/29/2018');
   
   // var expiry2 = new Date('04/22/2017 12:00 AM')
 
