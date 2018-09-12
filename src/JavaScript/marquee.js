@@ -13,7 +13,8 @@ function marquee() {
   var RaceShootout     = new Date('07/30/2018');
   var RaceNine         = new Date('08/20/2018');
   var RaceTen          = new Date('09/10/2018');
-  var RaceChampionship = new Date('09/24/2018');
+  var RaceEleven       = new Date('09/24/2018');
+  var RaceChampionship = new Date('10/01/2018');
   
   var marquee = document.getElementsByClassName("marquee")[0];
   
@@ -62,8 +63,12 @@ function marquee() {
     marquee.getElementsByClassName("marqueeInfo2")[0].innerHTML = "THE TENTH RACE OF THE SEASON IS ON SUNDAY SEPTEMBER 9TH! GATES OPEN AT 2:00PM!";
   }
   else if ((RaceTen.getTime() < now.getTime()) && (now.getTime() < RaceChampionship.getTime()) ) {
-    marquee.getElementsByClassName("marqueeInfo")[0].innerHTML  = "THE CHAMPIONSHIP RACE IS ON SUNDAY SEPTEMBER 23RD! GATES OPEN AT 2:00PM!";
-    marquee.getElementsByClassName("marqueeInfo2")[0].innerHTML = "THE CHAMPIONSHIP RACE IS ON SUNDAY SEPTEMBER 23RD! GATES OPEN AT 2:00PM!";
+    marquee.getElementsByClassName("marqueeInfo")[0].innerHTML  = "THE ELEVENTH RACE OF THE SEASON IS ON SUNDAY SEPTEMBER 23RD! GATES OPEN AT 2:00PM!";
+    marquee.getElementsByClassName("marqueeInfo2")[0].innerHTML = "THE ELEVENTH RACE OF THE SEASON IS ON SUNDAY SEPTEMBER 23RD! GATES OPEN AT 2:00PM!";
+  }
+  else if ((RaceEleven.getTime() < now.getTime()) && (now.getTime() < RaceChampionship.getTime()) ) {
+    marquee.getElementsByClassName("marqueeInfo")[0].innerHTML  = "THE CHAMPIONSHIP RACE IS ON SUNDAY SEPTEMBER 30TH! GATES OPEN AT 2:00PM!";
+    marquee.getElementsByClassName("marqueeInfo2")[0].innerHTML = "THE CHAMPIONSHIP RACE IS ON SUNDAY SEPTEMBER 30TH! GATES OPEN AT 2:00PM!";
   }
   else if (RaceChampionship.getTime() < now.getTime()) {
     marquee.getElementsByClassName("marqueeInfo")[0].innerHTML  = "THANK YOU TO EVERYONE FOR ANOTHER GREAT YEAR!";
