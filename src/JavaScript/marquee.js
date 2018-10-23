@@ -49,6 +49,8 @@ function marquee() {
 
   var ThanksText           = "THANK YOU TO EVERYONE FOR ANOTHER GREAT YEAR!" 
 
+  var SilentAuction        = "Our Silent Auction will be held on December 1st, 2018 at 7pm at Ma Miller's Pub"
+
   if (now.getTime() <= BurnOff.getTime() ) {
     displayMarquee(BurnOffText);
   }
@@ -86,7 +88,7 @@ function marquee() {
     displayMarquee(RaceChampionshipText);
   }
   else if (RaceChampionship.getTime() <= now.getTime() ) {
-    displayMarquee(ThanksText);
+    displayMarquee(SilentAuction);
   }
   
 };
