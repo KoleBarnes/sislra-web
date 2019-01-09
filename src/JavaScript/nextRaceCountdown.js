@@ -1,38 +1,38 @@
 // SISLRA Race Schedule
 var sislraRaceSchedule = {
-  '04/22/2018 12:00 AM': 'SISLRARace',
-  '04/29/2018 12:00 AM': 'SISLRARace',
-  '05/06/2018 12:00 AM': 'SISLRARace',
-  '05/13/2018 12:00 AM': 'SISLRARace',
-  '06/03/2018 12:00 AM': 'SISLRARace',
-  '06/10/2018 12:00 AM': 'SISLRARace',
-  '07/08/2018 12:00 AM': 'SISLRARace',
-  '07/29/2018 12:00 AM': 'SISLRARace',
-  '08/19/2018 12:00 AM': 'SISLRARace',
-  '09/09/2018 12:00 AM': 'SISLRARace',
-  '09/23/2018 12:00 AM': 'SISLRARace',
-  '09/30/2018 12:00 AM': 'SISLRARace'
+  '04/07/2019 12:00 AM': 'SISLRARace',
+  '04/28/2019 12:00 AM': 'SISLRARace',
+  '05/05/2019 12:00 AM': 'SISLRARace',
+  '05/12/2019 12:00 AM': 'SISLRARace',
+  '06/02/2019 12:00 AM': 'SISLRARace',
+  '06/09/2019 12:00 AM': 'SISLRARace',
+  '07/14/2019 12:00 AM': 'SISLRARace',
+  '07/28/2019 12:00 AM': 'SISLRARace',
+  '08/18/2019 12:00 AM': 'SISLRARace',
+  '09/08/2019 12:00 AM': 'SISLRARace',
+  '09/22/2019 12:00 AM': 'SISLRARace',
+  //'09/30/2019 12:00 AM': 'SISLRARace'
   //'09/17/2018 12:00 AM': 'SISLRARace'
 };
 
 // Port McNeill Race Schedule
 var portMcNeillRaceSchedule = {
-  '06/22/2018 12:00 AM': 'PortMcNeill', // {
-  '06/23/2018 12:00 AM': 'PortMcNeill',
-  '06/24/2018 12:00 AM': 'PortMcNeill', // }
-  '07/20/2018 12:00 AM': 'PortMcNeill', // {
-  '07/21/2018 12:00 AM': 'PortMcNeill',
-  '07/22/2018 12:00 AM': 'PortMcNeill', // }
-  '08/24/2018 12:00 AM': 'PortMcNeill', // {
-  '08/25/2018 12:00 AM': 'PortMcNeill',
-  '08/26/2018 12:00 AM': 'PortMcNeill'  // }
+  '06/21/2019 12:00 AM': 'PortMcNeill', // {
+  '06/22/2019 12:00 AM': 'PortMcNeill',
+  '06/23/2019 12:00 AM': 'PortMcNeill', // }
+  '07/19/2019 12:00 AM': 'PortMcNeill', // {
+  '07/20/2019 12:00 AM': 'PortMcNeill',
+  '07/21/2019 12:00 AM': 'PortMcNeill', // }
+  '08/23/2019 12:00 AM': 'PortMcNeill', // {
+  '08/24/2019 12:00 AM': 'PortMcNeill',
+  '08/25/2019 12:00 AM': 'PortMcNeill'  // }
 };
 
 // Port Alberni Race Schedule
 var portAlberniRaceSchedule = {
-  '08/10/2018 12:00 AM': 'PortAlberni', // {
-  '08/11/2018 12:00 AM': 'PortAlberni',
-  '08/12/2018 12:00 AM': 'PortAlberni'  // }
+  '08/09/2019 12:00 AM': 'PortAlberni', // {
+  '08/10/2019 12:00 AM': 'PortAlberni',
+  '08/11/2019 12:00 AM': 'PortAlberni'  // }
 };
 
 CountDownTimer(sislraRaceSchedule);

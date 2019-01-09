@@ -14,42 +14,42 @@ function marquee() {
   var BurnOff              = new Date('04/09/2018');
   var BurnOffText          = "TRACK BURN OFF MONDAY APRIL 9TH AT 5:30PM!"
 
-  var RaceOne              = new Date('04/23/2018');
-  var RaceOneText          = "THE FIRST RACE OF THE SEASON IS ON SUNDAY APRIL 22ND! GATES OPEN AT 2:00PM!"
+  var RaceOne              = new Date('04/08/2019');
+  var RaceOneText          = "THE FIRST RACE OF THE SEASON IS ON SUNDAY APRIL 7TH! GATES OPEN AT 2:00PM!"
 
-  var RaceTwo              = new Date('04/30/2018');
-  var RaceTwoText          = "THE SECOND RACE OF THE SEASON IS ON SUNDAY APRIL 29TH! GATES OPEN AT 2:00PM!"
+  var RaceTwo              = new Date('04/29/2019');
+  var RaceTwoText          = "THE SECOND RACE OF THE SEASON IS ON SUNDAY APRIL 28TH! GATES OPEN AT 2:00PM!"
 
-  var RaceThree            = new Date('05/07/2018');
-  var RaceThreeText        = "THE THIRD RACE OF THE SEASON IS ON SUNDAY MAY 6TH! GATES OPEN AT 2:00PM!"
+  var RaceThree            = new Date('05/06/2019');
+  var RaceThreeText        = "THE THIRD RACE OF THE SEASON IS ON SUNDAY MAY 5TH! GATES OPEN AT 2:00PM!"
 
-  var RaceFour             = new Date('05/14/2018');
-  var RaceFourText         = "THE FOURTH RACE OF THE SEASON IS ON SUNDAY MAY 13TH! GATES OPEN AT 2:00PM!"
+  var RaceFour             = new Date('05/13/2019');
+  var RaceFourText         = "THE FOURTH RACE OF THE SEASON IS ON SUNDAY MAY 12TH! GATES OPEN AT 2:00PM!"
 
-  var RaceFive             = new Date('06/04/2018');
-  var RaceFiveText         = "THE FIFTH RACE OF THE SEASON IS ON SUNDAY JUNE 3RD! GATES OPEN AT 2:00PM!"
+  var RaceFive             = new Date('06/03/2019');
+  var RaceFiveText         = "THE FIFTH RACE OF THE SEASON IS ON SUNDAY JUNE 2ND! GATES OPEN AT 2:00PM!"
 
-  var RaceSix              = new Date('06/11/2018');
-  var RaceSixText          = "THE SIXTH RACE OF THE SEASON IS ON SUNDAY JUNE 10TH! GATES OPEN AT 2:00PM!"
+  var RaceSix              = new Date('06/10/2019');
+  var RaceSixText          = "THE SIXTH RACE OF THE SEASON IS ON SUNDAY JUNE 9TH! GATES OPEN AT 2:00PM!"
 
-  var RaceSeven            = new Date('07/09/2018');
-  var RaceSevenText        = "THE SEVENTH RACE OF THE SEASON IS ON SUNDAY JULY 8TH! GATES OPEN AT 2:00PM!"
+  var RaceSeven            = new Date('07/15/2019');
+  var RaceSevenText        = "THE SEVENTH RACE OF THE SEASON IS ON SUNDAY JULY 14TH! GATES OPEN AT 2:00PM!"
 
-  var RaceShootout         = new Date('07/30/2018');
-  var RaceShootoutText     = "THE STREET CAR SHOOTOUT IS ON SUNDAY JULY 29TH! GATES OPEN AT 2:00PM!"
+  var RaceShootout         = new Date('07/29/2019');
+  var RaceShootoutText     = "THE STREET CAR SHOOTOUT IS ON SUNDAY JULY 28TH! GATES OPEN AT 2:00PM!"
 
-  var RaceNine             = new Date('08/20/2018');
-  var RaceNineText         = "THE NINTH RACE OF THE SEASON IS ON SUNDAY AUGUST 19TH! GATES OPEN AT 2:00PM!"
+  var RaceNine             = new Date('08/19/2019');
+  var RaceNineText         = "THE NINTH RACE OF THE SEASON IS ON SUNDAY AUGUST 18TH! GATES OPEN AT 2:00PM!"
 
-  var RaceTen              = new Date('09/10/2018');
-  var RaceTenText          = "THE TENTH RACE OF THE SEASON IS ON SUNDAY SEPTEMBER 9TH! GATES OPEN AT 2:00PM!"
+  var RaceTen              = new Date('09/09/2019');
+  var RaceTenText          = "THE TENTH RACE OF THE SEASON IS ON SUNDAY SEPTEMBER 8TH! GATES OPEN AT 2:00PM!"
 
-  var RaceChampionship     = new Date('09/24/2018');
-  var RaceChampionshipText = "THE CHAMPIONSHIP RACE IS ON SUNDAY SEPTEMBER 23RD! GATES OPEN AT 2:00PM!"
+  var RaceChampionship     = new Date('09/23/2019');
+  var RaceChampionshipText = "THE CHAMPIONSHIP RACE IS ON SUNDAY SEPTEMBER 22ND! GATES OPEN AT 2:00PM!"
 
   var ThanksText           = "THANK YOU TO EVERYONE FOR ANOTHER GREAT YEAR!" 
 
-  var SilentAuction        = "Our Silent Auction will be held on December 1st, 2018 at 7pm at Ma Miller's Pub"
+  //var SilentAuction        = "Our Silent Auction will be held on December 1st, 2018 at 7pm at Ma Miller's Pub"
 
   if (now.getTime() <= BurnOff.getTime() ) {
     displayMarquee(BurnOffText);
@@ -88,7 +88,7 @@ function marquee() {
     displayMarquee(RaceChampionshipText);
   }
   else if (RaceChampionship.getTime() <= now.getTime() ) {
-    displayMarquee(SilentAuction);
+    displayMarquee(ThanksText);
   }
   
 };
