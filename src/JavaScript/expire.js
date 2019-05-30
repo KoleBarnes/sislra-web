@@ -11,9 +11,9 @@ function expire() {
     $('#success').show();
   } */
   
-  if((expiry.getTime() < currentTime.getTime() ) && (currentTime.getTime() < expiry2.getTime() )) {
+/*   if((expiry.getTime() < currentTime.getTime() ) && (currentTime.getTime() < expiry2.getTime() )) {
     $('#content').show();
-  } 
+  }  */
 
   /* if (currentTime.getTime() < SilentAuctionEnd.getTime() ) {
     $('#SilentAuctionEnd').show();
