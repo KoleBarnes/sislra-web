@@ -30,9 +30,9 @@ var portMcNeillRaceSchedule = {
 
 // Port Alberni Race Schedule
 var portAlberniRaceSchedule = {
-  '08/09/2019 12:00 AM': 'PortAlberni', // {
-  '08/10/2019 12:00 AM': 'PortAlberni',
-  '08/11/2019 12:00 AM': 'PortAlberni'  // }
+  '08/09/2018 12:00 AM': 'PortAlberni', // {
+  '08/10/2018 12:00 AM': 'PortAlberni',
+  '08/11/2018 12:00 AM': 'PortAlberni'  // }
 };
 
 CountDownTimer(sislraRaceSchedule);
@@ -86,6 +86,13 @@ function showRemaining(raceSchedule) {
     
     // Otherwise find the next race date ...
   }
-  
+
   document.getElementById(id).innerHTML = 'TBD';
+
+  if (id === 'PortAlberni') {
+    var str = "Revive Port Alberni. Sign the petition.";
+    var result = str.link("https://wildpacific.co/savealbernidragracing/?fbclid=IwAR2YF4vJtpRc1Ecu-eJwdBPCkkFWah5xDKFp1xXIMHqF3y8m_xDdVNvGZgE");
+    document.getElementById(id).innerHTML = result;
+  }
+
 }
