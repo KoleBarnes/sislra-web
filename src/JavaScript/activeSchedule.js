@@ -10,7 +10,7 @@ var sislraRaceDates = {
   '9thRace': '08/19/2019',
   '10thRace': '09/09/2019',
   '11thRace': '09/23/2019',
-  //'12thRace': '10/01/2019'
+  '12thRace': '10/06/2019'
 };
 
 CountDownTimer(sislraRaceDates);

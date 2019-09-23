@@ -11,7 +11,7 @@ var sislraRaceSchedule = {
   '08/18/2019 12:00 AM': 'SISLRARace',
   '09/08/2019 12:00 AM': 'SISLRARace',
   '09/22/2019 12:00 AM': 'SISLRARace',
-  //'09/30/2019 12:00 AM': 'SISLRARace'
+  '10/05/2019 12:00 AM': 'SISLRARace'
   //'09/17/2018 12:00 AM': 'SISLRARace'
 };
 

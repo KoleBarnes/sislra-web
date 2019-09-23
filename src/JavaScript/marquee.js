@@ -44,8 +44,8 @@ function marquee() {
   var RaceTen              = new Date('09/09/2019');
   var RaceTenText          = "THE TENTH RACE OF THE SEASON IS ON SUNDAY SEPTEMBER 8TH! GATES OPEN AT 2:00PM!"
 
-  var RaceChampionship     = new Date('09/23/2019');
-  var RaceChampionshipText = "THE CHAMPIONSHIP RACE IS ON SUNDAY SEPTEMBER 22ND! GATES OPEN AT 2:00PM!"
+  var RaceChampionship     = new Date('10/6/2019');
+  var RaceChampionshipText = "A RAIN DATE HAS BEEN SET FOR SATURDAY OCTOBER 5TH! GATES OPEN AT 8:00AM!"
 
   var ThanksText           = "THANK YOU TO EVERYONE FOR ANOTHER GREAT YEAR!" 
 
