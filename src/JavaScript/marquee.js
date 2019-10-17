@@ -44,12 +44,15 @@ function marquee() {
   var RaceTen              = new Date('09/09/2019');
   var RaceTenText          = "THE TENTH RACE OF THE SEASON IS ON SUNDAY SEPTEMBER 8TH! GATES OPEN AT 2:00PM!"
 
-  var RaceChampionship     = new Date('10/6/2019');
+  var RaceChampionship     = new Date('10/06/2019');
   var RaceChampionshipText = "A RAIN DATE HAS BEEN SET FOR SATURDAY OCTOBER 5TH! GATES OPEN AT 8:00AM!"
+
+  var RaceChampionship     = new Date('12/08/2019');
+  var RaceChampionshipText = "Our Silent Auction will be held on December 7th, 2019 at 7pm at Ma Miller's Pub"
 
   var ThanksText           = "THANK YOU TO EVERYONE FOR ANOTHER GREAT YEAR!" 
 
-  //var SilentAuction        = "Our Silent Auction will be held on December 1st, 2018 at 7pm at Ma Miller's Pub"
+  //var SilentAuction        = "Our Silent Auction will be held on December 7th, 2019 at 7pm at Ma Miller's Pub"
 
   if (now.getTime() <= BurnOff.getTime() ) {
     displayMarquee(BurnOffText);
