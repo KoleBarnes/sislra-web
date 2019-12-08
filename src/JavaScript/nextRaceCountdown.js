@@ -1,31 +1,31 @@
+// Put exact dates.
 // SISLRA Race Schedule
 var sislraRaceSchedule = {
-  '04/07/2019 12:00 AM': 'SISLRARace',
-  '04/28/2019 12:00 AM': 'SISLRARace',
-  '05/05/2019 12:00 AM': 'SISLRARace',
-  '05/12/2019 12:00 AM': 'SISLRARace',
-  '06/02/2019 12:00 AM': 'SISLRARace',
-  '06/09/2019 12:00 AM': 'SISLRARace',
-  '07/14/2019 12:00 AM': 'SISLRARace',
-  '07/28/2019 12:00 AM': 'SISLRARace',
-  '08/18/2019 12:00 AM': 'SISLRARace',
-  '09/08/2019 12:00 AM': 'SISLRARace',
-  '09/22/2019 12:00 AM': 'SISLRARace',
-  '10/05/2019 12:00 AM': 'SISLRARace'
+  '04/05/2020 12:00 AM': 'SISLRARace',
+  '04/19/2020 12:00 AM': 'SISLRARace',
+  '05/03/2020 12:00 AM': 'SISLRARace',
+  '05/10/2020 12:00 AM': 'SISLRARace',
+  '06/07/2020 12:00 AM': 'SISLRARace',
+  '06/28/2020 12:00 AM': 'SISLRARace',
+  '07/05/2020 12:00 AM': 'SISLRARace',
+  '07/26/2020 12:00 AM': 'SISLRARace',
+  '08/16/2020 12:00 AM': 'SISLRARace',
+  '08/23/2020 12:00 AM': 'SISLRARace',
+  '09/13/2020 12:00 AM': 'SISLRARace',
   //'09/17/2018 12:00 AM': 'SISLRARace'
 };
 
 // Port McNeill Race Schedule
 var portMcNeillRaceSchedule = {
-  '06/21/2019 12:00 AM': 'PortMcNeill', // {
-  '06/22/2019 12:00 AM': 'PortMcNeill',
-  '06/23/2019 12:00 AM': 'PortMcNeill', // }
-  '07/19/2019 12:00 AM': 'PortMcNeill', // {
-  '07/20/2019 12:00 AM': 'PortMcNeill',
-  '07/21/2019 12:00 AM': 'PortMcNeill', // }
-  '08/23/2019 12:00 AM': 'PortMcNeill', // {
-  '08/24/2019 12:00 AM': 'PortMcNeill',
-  '08/25/2019 12:00 AM': 'PortMcNeill'  // }
+  '06/19/2020 12:00 AM': 'PortMcNeill', // {
+  '06/20/2020 12:00 AM': 'PortMcNeill',
+  '06/21/2020 12:00 AM': 'PortMcNeill', // }
+  '07/17/2020 12:00 AM': 'PortMcNeill', // {
+  '07/18/2020 12:00 AM': 'PortMcNeill',
+  '07/19/2020 12:00 AM': 'PortMcNeill', // }
+  '08/28/2020 12:00 AM': 'PortMcNeill', // {
+  '08/29/2020 12:00 AM': 'PortMcNeill',
+  '08/30/2020 12:00 AM': 'PortMcNeill'  // }
 };
 
 // Port Alberni Race Schedule

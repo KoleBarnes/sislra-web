@@ -1,16 +1,17 @@
+//Day One day to race date
 var sislraRaceDates = {
-  '1stRace': '04/08/2019',
-  '2ndRace': '04/29/2019',
-  '3rdRace': '05/06/2019',
-  '4thRace': '05/13/2019',
-  '5thRace': '06/03/2019',
-  '6thRace': '06/10/2019',
-  '7thRace': '07/15/2019',
-  '8thRace': '07/29/2019',
-  '9thRace': '08/19/2019',
-  '10thRace': '09/09/2019',
-  '11thRace': '09/23/2019',
-  '12thRace': '10/06/2019'
+  '1stRace': '04/06/2020',
+  '2ndRace': '04/20/2020',
+  '3rdRace': '05/04/2020',
+  '4thRace': '05/11/2020',
+  '5thRace': '06/08/2020',
+  '6thRace': '06/29/2020',
+  '7thRace': '07/06/2020',
+  '8thRace': '07/27/2020',
+  '9thRace': '08/17/2020',
+  '10thRace': '08/24/2020',
+  '11thRace': '09/14/2020'/* ,
+  '12thRace': '10/06/2019' */
 };
 
 CountDownTimer(sislraRaceDates);
