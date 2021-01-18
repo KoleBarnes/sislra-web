@@ -104,8 +104,19 @@
 
     <div class="row">
       <div class="col-12 col-m-12 main">
-      
-        <h1 id="RaceSchedule">Race Schedule</h1>
+
+          <div style='max-width: 50%;text-align:center;margin:auto;' id="SilentAuctionEnd">
+            <h1>SILENT AUCTION</h1>
+            <p>The South Island Straight Liners Racing Association a.k.a. Drag Race Victoria seeks your support for our annual SILENT AUCTION which will be held on December 1st, 2018 at 7pm at Ma Miller's Pub at 2903 Sooke Lake Road.
+              Auction entry fees are $5.00 for members and $10.00 for non-members to cover the cost of the appetizers.  Beverages can be purchased at the bar.  Under 19 are welcome at this event.</p>
+            <p>We're a non-profit organization and our goal for this auction is to raise funds to help offset the costs of future race seasons and for equipment needed to host races.</p>
+            <p>We are in need of donations you may have that can be auctioned. Anything would be greatly appreciated such as gift certificates or merchandise for example. Used items in new condition are welcome as well. Remember, for this event to be a success, your participation is needed. With a little effort we can make this a great and fun event with a lot of benefits for the club and the sport we all love.</p>
+            <p>Please contact Bill Jamieson at 250-888-0053 for more details including donation drop off.</p>
+            <p>Thank you for supporting our great club!</p>
+          </div>
+        <script src="/JavaScript/expire.js"></script>
+        
+        <!-- <h1 id="RaceSchedule">Race Schedule</h1> -->
         
         <div class="activeSchedule">
 
@@ -113,19 +124,21 @@
           
           <h1>Race Schedule</h1>
 
-          <div class="animated zoomInDown">
+          <div class="animated zoomInDown" style="margin-left: 35px; margin-top: 10px; margin-bottom: 20px;">
             <ul>
-              <li style="margin-left: 10px; margin-top: 10px;" id="1stRace">Apr 22 - Points - All Classes</li>
-              <li style="margin-left: 37px;" id="2ndRace">29 - Points - All Classes</li>
-              <li style="margin-left: 5px;" id="3rdRace">May &nbsp;&nbsp;6 - Points - All Classes</li>
-              <li style="margin-left: 37px;" id="4thRace">13 - Points - All Classes</li>
-              <li style="margin-left: 0px;" id="5thRace">June &nbsp;&nbsp;3 - Points - All Classes</li>
-              <li style="margin-left: 36px;" id="6thRace">10 - Points - All Classes</li> 
-              <li style="margin-left: 5px;" id="7thRace">July &nbsp;&nbsp;8 - Points - All Classes</li> 
-              <li style="margin-left: 36px;" id="8thRace">29 - SHOOTOUT</li>
-              <li style="margin-left: 5px;" id="9thRace">Aug 19 - Points - All Classes</li>
-              <li style="margin-left: 1px;" id="10thRace">Sept &nbsp;&nbsp;9 - Points - All Classes</li>
-              <li style="margin-left: 35px; margin-bottom: 5px;" id="11thRace">23 - Championship Race</li>
+              <!-- <li style='text-align:center;'>To Be Determined</li> -->
+              <li style="margin-left: 10px;" id="1stRace">Apr &nbsp;&nbsp;5 - Points - All Classes</li>
+              <li style="margin-left: 37px;" id="2ndRace">19 - Points - All Classes</li>
+              <li style="margin-left: 5px;"  id="3rdRace">May &nbsp;&nbsp;3 - Points - All Classes</li>
+              <li style="margin-left: 37px;" id="4thRace">10 - Points - All Classes</li>
+              <li style="margin-left: 0px;"  id="5thRace">June &nbsp;&nbsp;7 - Points - All Classes</li>
+              <li style="margin-left: 36px;" id="6thRace">28 - Points - All Classes</li> 
+              <li style="margin-left: 5px;"  id="7thRace">July &nbsp;&nbsp;5 - Points - All Classes</li> 
+              <li style="margin-left: 36px;" id="8thRace">26 - SHOOTOUT</li>
+              <li style="margin-left: 0px;"  id="9thRace">Aug &nbsp;16 - Points - All Classes</li>
+              <li style="margin-left: 35px;" id="10thRace">23 - Points - All Classes</li>
+              <li style="margin-left: -4px;"  id="11thRace">Sept &nbsp;13 - Points - All Classes</li>
+              <!-- <li class="new" style="margin-left: 35px; margin-bottom: 5px;" id="12thRace">30 - Championship Race</li> -->
               <!-- Classes .current .over .cancelled .new -->
             </ul>
           </div>
@@ -165,9 +178,12 @@
         <h1 id="Posters">Posters</h1>
     
         <div class="posterCenter">
+           <h2>2019</h2>
+            <img id="YearPoster2019" class="poster" data-toggle="modal" data-target="#YearPoster2019Modal" src="/SISLRA/Events/YearPoster2019.jpg" />
+            <img id="StreetCarShootoutPoster2019" class="poster" data-toggle="modal" data-target="#StreetCarShootout2019Modal" src="/SISLRA/Events/StreetCarShootout2019.jpg" />
           <h2>2018</h2>
             <img id="YearPoster2018" class="poster" data-toggle="modal" data-target="#YearPoster2018Modal" src="/SISLRA/Events/YearPoster2018.jpg" />
-            <!-- <img id="StreetCarShootoutPoster2018" class="poster" data-toggle="modal" data-target="#StreetCarShootout2018Modal" src="/SISLRA/Events/StreetCarShootout2018.jpg" /> -->
+            <img id="StreetCarShootoutPoster2018" class="poster" data-toggle="modal" data-target="#StreetCarShootout2018Modal" src="/SISLRA/Events/StreetCarShootout2018.jpg" />
           <h2>2017</h2>
             <img id="YearPoster2017" class="poster" data-toggle="modal" data-target="#YearPoster2017Modal" src="/SISLRA/Events/YearPoster2017.jpg" />
             <img id="StreetCarShootoutPoster2017" class="poster" data-toggle="modal" data-target="#StreetCarShootout2017Modal" src="/SISLRA/Events/StreetCarShootout2017.jpg" />
@@ -176,6 +192,40 @@
             <img id="StreetCarShootoutPoster2016" class="poster" data-toggle="modal" data-target="#StreetCarShootout2016Modal" src="/SISLRA/Events/StreetCarShootout2016.jpg" />
         </div>
         
+        <div class="modal fade" id="YearPoster2019Modal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Year Poster 2019</h4>
+              </div>
+              <div class="modal-body">
+                <img id="YearPoster2019" src="/SISLRA/Events/YearPoster2019.jpg" />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="StreetCarShootout2019Modal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Street Car Shootout 2019</h4>
+              </div>
+              <div class="modal-body">
+                <img id="StreetCarShootoutPoster2019" src="/SISLRA/Events/StreetCarShootout2019.jpg" />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="modal fade" id="YearPoster2018Modal" role="dialog">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -193,7 +243,7 @@
           </div>
         </div>
           
-        <!-- <div class="modal fade" id="StreetCarShootout2018Modal" role="dialog">
+        <div class="modal fade" id="StreetCarShootout2018Modal" role="dialog">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -208,7 +258,7 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
         
         <div class="modal fade" id="YearPoster2017Modal" role="dialog">
           <div class="modal-dialog">

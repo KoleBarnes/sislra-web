@@ -1,37 +1,38 @@
+// Put exact dates.
 // SISLRA Race Schedule
 var sislraRaceSchedule = {
-  '04/22/2018 12:00 AM': 'SISLRARace',
-  '04/29/2018 12:00 AM': 'SISLRARace',
-  '05/06/2018 12:00 AM': 'SISLRARace',
-  '05/13/2018 12:00 AM': 'SISLRARace',
-  '06/03/2018 12:00 AM': 'SISLRARace',
-  '06/10/2018 12:00 AM': 'SISLRARace',
-  '07/08/2018 12:00 AM': 'SISLRARace',
-  '07/29/2018 12:00 AM': 'SISLRARace',
-  '08/19/2018 12:00 AM': 'SISLRARace',
-  '09/09/2018 12:00 AM': 'SISLRARace',
-  '09/23/2018 12:00 AM': 'SISLRARace'//,
+  '04/05/2020 12:00 AM': 'SISLRARace',
+  '04/19/2020 12:00 AM': 'SISLRARace',
+  '05/03/2020 12:00 AM': 'SISLRARace',
+  '05/10/2020 12:00 AM': 'SISLRARace',
+  '06/07/2020 12:00 AM': 'SISLRARace',
+  '06/28/2020 12:00 AM': 'SISLRARace',
+  '07/05/2020 12:00 AM': 'SISLRARace',
+  '07/26/2020 12:00 AM': 'SISLRARace',
+  '08/16/2020 12:00 AM': 'SISLRARace',
+  '08/23/2020 12:00 AM': 'SISLRARace',
+  '09/13/2020 12:00 AM': 'SISLRARace',
   //'09/17/2018 12:00 AM': 'SISLRARace'
 };
 
 // Port McNeill Race Schedule
 var portMcNeillRaceSchedule = {
-  '06/22/2018 12:00 AM': 'PortMcNeill', // {
-  '06/23/2018 12:00 AM': 'PortMcNeill',
-  '06/24/2018 12:00 AM': 'PortMcNeill', // }
-  '07/20/2018 12:00 AM': 'PortMcNeill', // {
-  '07/21/2018 12:00 AM': 'PortMcNeill',
-  '07/22/2018 12:00 AM': 'PortMcNeill', // }
-  '08/24/2018 12:00 AM': 'PortMcNeill', // {
-  '08/25/2018 12:00 AM': 'PortMcNeill',
-  '08/26/2018 12:00 AM': 'PortMcNeill'  // }
+  '06/19/2020 12:00 AM': 'PortMcNeill', // {
+  '06/20/2020 12:00 AM': 'PortMcNeill',
+  '06/21/2020 12:00 AM': 'PortMcNeill', // }
+  '07/17/2020 12:00 AM': 'PortMcNeill', // {
+  '07/18/2020 12:00 AM': 'PortMcNeill',
+  '07/19/2020 12:00 AM': 'PortMcNeill', // }
+  '08/28/2020 12:00 AM': 'PortMcNeill', // {
+  '08/29/2020 12:00 AM': 'PortMcNeill',
+  '08/30/2020 12:00 AM': 'PortMcNeill'  // }
 };
 
 // Port Alberni Race Schedule
 var portAlberniRaceSchedule = {
-  '08/10/2018 12:00 AM': 'PortAlberni', // {
-  '08/11/2018 12:00 AM': 'PortAlberni',
-  '08/12/2018 12:00 AM': 'PortAlberni'  // }
+  '08/09/2018 12:00 AM': 'PortAlberni', // {
+  '08/10/2018 12:00 AM': 'PortAlberni',
+  '08/11/2018 12:00 AM': 'PortAlberni'  // }
 };
 
 CountDownTimer(sislraRaceSchedule);
@@ -85,6 +86,13 @@ function showRemaining(raceSchedule) {
     
     // Otherwise find the next race date ...
   }
-  
+
   document.getElementById(id).innerHTML = 'TBD';
+
+  if (id === 'PortAlberni') {
+    var str = "Revive Port Alberni. Sign the petition.";
+    var result = str.link("https://wildpacific.co/savealbernidragracing/?fbclid=IwAR2YF4vJtpRc1Ecu-eJwdBPCkkFWah5xDKFp1xXIMHqF3y8m_xDdVNvGZgE");
+    document.getElementById(id).innerHTML = result;
+  }
+
 }

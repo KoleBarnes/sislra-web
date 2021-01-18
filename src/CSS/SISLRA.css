@@ -174,6 +174,7 @@ input {
 }
 .CountDownTable-section>div {
   color: #FFF;
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 15px;
 }
@@ -246,7 +247,7 @@ input {
 .indexSchedule {
   margin-top: -10px;
   margin: 0px;
-  margin-left: 10px;
+  margin-left: 15px;
   cursor: default;
   width: 260px;
   -webkit-animation-delay: 1s;
@@ -471,6 +472,9 @@ a:active {color: #997a00; text-shadow: -2px -2px #000; text-decoration: none;}
 .callout-success{border-left-color:#00cc00;background-color: #001a00;}
 .callout-success h4{color:#00cc00;}
 .callout-success p{color:#00cc00;}
+.callout-success a{color: #00cc00; text-decoration: underline;}
+.callout-success a:hover {color: #1aff1a;text-shadow: 2px 2px #000; -webkit-transition: color .4s linear; -moz-transition: color .4s linear;-o-transition: color .4s linear; transition: color .4s linear; text-decoration: none;}
+.callout-success a:active {color: #00b300; text-shadow: -2px -2px #000; text-decoration: none;}
 .callout-warning{border-left-color:#CC0;background-color: #1a1a00;}
 .callout-warning h4{color:#CC0;}
 .callout-warning p{color:#CC0;}
@@ -715,6 +719,9 @@ img {border: 0;}
     display: table-row;
     margin: auto;
     font-size: 20px;
+  }
+  .CountDownTable-section>div {
+    margin-bottom: 0px;
   }
   #SISLRALogo-Footer {width: 60%;}
   #pMembers {width: 100%;}
