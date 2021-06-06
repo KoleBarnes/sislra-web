@@ -1,17 +1,17 @@
 // Put exact dates.
 // SISLRA Race Schedule
 var sislraRaceSchedule = {
-  '04/05/2020 12:00 AM': 'SISLRARace',
-  '04/19/2020 12:00 AM': 'SISLRARace',
-  '05/03/2020 12:00 AM': 'SISLRARace',
-  '05/10/2020 12:00 AM': 'SISLRARace',
-  '06/07/2020 12:00 AM': 'SISLRARace',
-  '06/28/2020 12:00 AM': 'SISLRARace',
-  '07/05/2020 12:00 AM': 'SISLRARace',
-  '07/26/2020 12:00 AM': 'SISLRARace',
-  '08/16/2020 12:00 AM': 'SISLRARace',
-  '08/23/2020 12:00 AM': 'SISLRARace',
-  '09/13/2020 12:00 AM': 'SISLRARace',
+  '06/06/2021 12:00 AM': 'SISLRARace',
+  '06/27/2021 12:00 AM': 'SISLRARace',
+  '07/04/2021 12:00 AM': 'SISLRARace',
+  '07/25/2021 12:00 AM': 'SISLRARace',
+  '08/08/2021 12:00 AM': 'SISLRARace',
+  '08/29/2021 12:00 AM': 'SISLRARace',
+  '09/12/2021 12:00 AM': 'SISLRARace',
+  // '07/26/2020 12:00 AM': 'SISLRARace',
+  // '08/16/2020 12:00 AM': 'SISLRARace',
+  // '08/23/2020 12:00 AM': 'SISLRARace',
+  // '09/13/2020 12:00 AM': 'SISLRARace',
   //'09/17/2018 12:00 AM': 'SISLRARace'
 };
 
@@ -89,10 +89,10 @@ function showRemaining(raceSchedule) {
 
   document.getElementById(id).innerHTML = 'TBD';
 
-  if (id === 'PortAlberni') {
-    var str = "Revive Port Alberni. Sign the petition.";
-    var result = str.link("https://wildpacific.co/savealbernidragracing/?fbclid=IwAR2YF4vJtpRc1Ecu-eJwdBPCkkFWah5xDKFp1xXIMHqF3y8m_xDdVNvGZgE");
-    document.getElementById(id).innerHTML = result;
-  }
+  // if (id === 'PortAlberni') {
+  //   var str = "Revive Port Alberni. Sign the petition.";
+  //   var result = str.link("https://wildpacific.co/savealbernidragracing/?fbclid=IwAR2YF4vJtpRc1Ecu-eJwdBPCkkFWah5xDKFp1xXIMHqF3y8m_xDdVNvGZgE");
+  //   document.getElementById(id).innerHTML = result;
+  // }
 
 }

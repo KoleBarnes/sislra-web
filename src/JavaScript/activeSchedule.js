@@ -1,16 +1,16 @@
-//Day One day to race date
+//ADD One day to race date
 var sislraRaceDates = {
-  '1stRace': '04/06/2020',
-  '2ndRace': '04/20/2020',
-  '3rdRace': '05/04/2020',
-  '4thRace': '05/11/2020',
-  '5thRace': '06/08/2020',
-  '6thRace': '06/29/2020',
-  '7thRace': '07/06/2020',
+  '1stRace': '06/07/2021',
+  '2ndRace': '06/28/2021',
+  '3rdRace': '07/05/2021',
+  '4thRace': '07/26/2021',
+  '5thRace': '08/09/2021',
+  '6thRace': '08/30/2021',
+  '7thRace': '09/12/2020'/*,
   '8thRace': '07/27/2020',
   '9thRace': '08/17/2020',
   '10thRace': '08/24/2020',
-  '11thRace': '09/14/2020'/* ,
+  '11thRace': '09/14/2020' ,
   '12thRace': '10/06/2019' */
 };
 
