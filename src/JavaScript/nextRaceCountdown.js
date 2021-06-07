@@ -2,6 +2,7 @@
 // SISLRA Race Schedule
 var sislraRaceSchedule = {
   '06/06/2021 12:00 AM': 'SISLRARace',
+  '06/20/2021 12:00 AM': 'SISLRARace',
   '06/27/2021 12:00 AM': 'SISLRARace',
   '07/04/2021 12:00 AM': 'SISLRARace',
   '07/25/2021 12:00 AM': 'SISLRARace',
