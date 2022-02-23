@@ -1,15 +1,16 @@
 // Put exact dates.
+// MM/DD/YYYY
 // SISLRA Race Schedule
 var sislraRaceSchedule = {
-  '06/06/2021 12:00 AM': 'SISLRARace',
-  '06/20/2021 12:00 AM': 'SISLRARace',
-  '06/27/2021 12:00 AM': 'SISLRARace',
-  '07/04/2021 12:00 AM': 'SISLRARace',
-  '07/25/2021 12:00 AM': 'SISLRARace',
-  '08/08/2021 12:00 AM': 'SISLRARace',
-  '08/29/2021 12:00 AM': 'SISLRARace',
-  '09/12/2021 12:00 AM': 'SISLRARace',
-  // '07/26/2020 12:00 AM': 'SISLRARace',
+  '04/17/2022 12:00 AM': 'SISLRARace',
+  '04/24/2022 12:00 AM': 'SISLRARace',
+  '05/15/2022 12:00 AM': 'SISLRARace',
+  '06/05/2022 12:00 AM': 'SISLRARace',
+  '06/26/2022 12:00 AM': 'SISLRARace',
+  '07/24/2022 12:00 AM': 'SISLRARace',
+  '08/07/2022 12:00 AM': 'SISLRARace',
+  '08/28/2022 12:00 AM': 'SISLRARace',
+  '09/11/2022 12:00 AM': 'SISLRARace',
   // '08/16/2020 12:00 AM': 'SISLRARace',
   // '08/23/2020 12:00 AM': 'SISLRARace',
   // '09/13/2020 12:00 AM': 'SISLRARace',

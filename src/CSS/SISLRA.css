@@ -154,7 +154,7 @@ input {
   width: 100%;
   margin: auto;
   margin-top: 0%;
-  margin-bottom: 2.8%;
+  padding-bottom: 2%;
   text-align: center;
   text-shadow: 2px 2px #000;
   -webkit-animation-delay: 1s;
@@ -194,7 +194,7 @@ input {
   -webkit-animation-delay: 1s;
 }
 .marquee div {
-  display: block;
+  display: none;
   width: 200%;
   height: 35px;
   position: absolute;
@@ -571,9 +571,9 @@ a:active {color: #997a00; text-shadow: -2px -2px #000; text-decoration: none;}
   position: absolute;
   /* margin-top: -54%; */
   /* margin-left: 16%; */
-  top: -70px;
+  top: -70px; /* -34% */
   left: 60px;
-  margin: auto;
+  /* margin: auto; */
 }
 .spin {
   margin: 0px;
@@ -712,7 +712,7 @@ img {border: 0;}
     width: auto;
     margin: auto;
     margin-top: 60px;
-    margin-bottom: 15px;
+    padding-bottom: 2.8%;
     text-align: center;
   }
   .CountDownTable-section {
