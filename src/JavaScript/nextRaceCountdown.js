@@ -2,7 +2,7 @@
 // MM/DD/YYYY
 // SISLRA Race Schedule
 var sislraRaceSchedule = {
-  '04/17/2022 12:00 AM': 'SISLRARace',
+  '04/18/2022 12:00 AM': 'SISLRARace',
   '04/24/2022 12:00 AM': 'SISLRARace',
   '05/15/2022 12:00 AM': 'SISLRARace',
   '06/05/2022 12:00 AM': 'SISLRARace',
@@ -19,9 +19,9 @@ var sislraRaceSchedule = {
 
 // Port McNeill Race Schedule
 var portMcNeillRaceSchedule = {
-  '06/19/2020 12:00 AM': 'PortMcNeill', // {
-  '06/20/2020 12:00 AM': 'PortMcNeill',
-  '06/21/2020 12:00 AM': 'PortMcNeill', // }
+  '07/15/2022 12:00 AM': 'PortMcNeill', // {
+  '07/16/2022 12:00 AM': 'PortMcNeill',
+  '07/17/2022 12:00 AM': 'PortMcNeill', // }
   '07/17/2020 12:00 AM': 'PortMcNeill', // {
   '07/18/2020 12:00 AM': 'PortMcNeill',
   '07/19/2020 12:00 AM': 'PortMcNeill', // }

@@ -1,7 +1,7 @@
 //ADD One day to race date
 // MM/DD/YYYY
 var sislraRaceDates = {
-  '1stRace': '04/18/2022',
+  '1stRace': '04/19/2022',
   '2ndRace': '04/25/2022',
   '3rdRace': '05/16/2022',
   '4thRace': '06/06/2022',
